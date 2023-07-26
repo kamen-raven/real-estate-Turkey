@@ -3,22 +3,27 @@ $white: #ffffff;
 $accent-blue: #16B2B2;
 $black-bg: #212022;
 
+
 //fonts
 // font-family:
 $montserrat: 'Montserrat', sans-serif;
+
 // font-weight:
 $extra-light: 200;
 $regular: 400;
 $medium: 500;
 $semi-bold: 600;
 $bold: 700;
-//font-size:
-$title: 44px;
-$subtitle: 24px;
-$description: 26px;
-$small-text: 20px;
-$link-text: 18px;
 
+//font-size:
+$h1: 48px;
+$title: 40px;
+$subtitle: 26px;
+$description-big: 24px;
+$description: 20px;
+$link-text: 18px;
+$small-text: 16px;
 
 //
-$height-gap: 60px;
+$gap: 40px;
+$margin-side: 60px;

@@ -4,25 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/index.scss" />
+    <link rel="stylesheet" href="./styles/scss/index.scss" />
     <title>Real estate in Turkey</title>
   </head>
 
   <body class="page">
     <div class="page__container">
       <header class="header container">
+        <div class="header__background">
+        </div>
         <!--внутренняя часть хэдера - скрыта на мобилке -->
         <div class="header__inner">
           <div class="header__logo">
-            <img class="lazyloaded" src="./images/Для сайтаpng 1.png" alt="logo">
+            <img class="lazyloaded" src="./images/logo.png" alt="logo">
           </div>
           <div class="header__block">
             <div class="header__social">
               <a href="" class="header__social_link">
-                <img class="lazyloaded" src="./images/telegram.svg" alt="">
+                <img class="lazyloaded" src="./images/svg/telegram.svg" alt="">
               </a>
               <a href="" class="header__social_link ">
-                <img class="lazyloaded" src="./images/whatsapp.svg" alt="">
+                <img class="lazyloaded" src="./images/svg/whatsapp.svg" alt="">
               </a>
             </div>
             <a href="tel:+79219311501" class="link header__link header__link_phone">
@@ -34,60 +36,63 @@
           </div>
         </div>
         <!-- меню навигации -->
-        <nav class="nav">
-          <!-- кнопки бургер и закрытие -->
-          <div class="nav__mob mob">
-            <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="14.9996" height="2.62717" fill="white" />
-              <rect y="7.30664" width="10.9088" height="2.62717" fill="white" />
-            </svg>
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49994 9.18959L1.86075 14.9999L0 13.0827L5.63919 7.27239L0.441823 1.91733L2.30257 0.000131333L7.49994 5.35518L12.6974 0L14.5582 1.9172L9.36068 7.27239L15 13.0828L13.1393 15L7.49994 9.18959Z" fill="white" />
-            </svg>
-          </div>
-          <!-- пункты меню навигации -->
-          <ul class="nav__list ">
-            <li class="nav__item ">
-              <a class="header__link link" href="#example">
-                Проекты 2023</a>
-            </li>
-            <li class="nav__item">
-              <a class="header__link link" href="#conditions">
-                Условия
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="header__link link" href="#income">
-                Как начать
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="header__link link" href="#quiz">
-                Рассчитать
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="header__link link" href="#warranty">
-                Гарантии
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="header__link link" href="#about">
-                О нас
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="header__link link" href="#vantages">
-                Вопросы
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="header__link link" href="#contacts">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div class="header__nav">
+          <nav class="nav">
+            <!-- кнопки бургер и закрытие -->
+            <div class="nav__mob mob">
+              <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="14.9996" height="2.62717" fill="white" />
+                <rect y="7.30664" width="10.9088" height="2.62717" fill="white" />
+              </svg>
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49994 9.18959L1.86075 14.9999L0 13.0827L5.63919 7.27239L0.441823 1.91733L2.30257 0.000131333L7.49994 5.35518L12.6974 0L14.5582 1.9172L9.36068 7.27239L15 13.0828L13.1393 15L7.49994 9.18959Z" fill="white" />
+              </svg>
+            </div>
+            <!-- пункты меню навигации -->
+            <ul class="nav__list ">
+              <li class="nav__item ">
+                <a class="header__link link" href="#example">
+                  Проекты 2023</a>
+              </li>
+              <li class="nav__item">
+                <a class="header__link link" href="#conditions">
+                  Условия
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="header__link link" href="#income">
+                  Как начать
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="header__link link" href="#quiz">
+                  Рассчитать
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="header__link link" href="#warranty">
+                  Гарантии
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="header__link link" href="#about">
+                  О нас
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="header__link link" href="#vantages">
+                  Вопросы
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="header__link link" href="#contacts">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
       </header>
 <!-- <header class="header">
         <div class="header__inner">
@@ -271,12 +276,132 @@
               прозрачность процесса
             </li>
           </ul>
-          <div class="head-block__background">
-            <img class="head-block__img" src="./images/istockphoto.jpg" alt="">
-          </div>
         </section>
+
+
+
         <section class="projects container">
-          хуй 
+            <h2 class="projects__title title">
+              Проекты
+              <span class="title__span-accent">
+                2023 года
+              </span>
+            </h2>
+  <!-- 1 -->
+            <div class="project-example">
+
+
+              <h3 class="project-example__name subtitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </h3>
+
+
+                <div class="project-example__grid">
+
+
+                  <div class="project-example__item counter">
+                    <p class="project-example__description description">
+                      Lorem ipsum dolor  - sit amet - <br>
+                      consectetur adipisicing elit.
+                      Accusamus dolorem doloribus quasi, <br>
+
+                      modi magnam maiores mollitia neque nam pariatur,<br>
+                      saepe laborum accusantium repellat!
+                    </p>
+                  </div>
+
+                  <div class="project-example__item counter">
+                    <p class="project-example__description description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem doloribus quasi, dolorum magni debitis
+                      modi magnam maiores mollitia neque nam pariatur, saepe laborum ratione quo distinctio tenetur accusantium repellat!
+                    </p>
+                  </div>
+
+
+                  <div class="project-example__item project-example__img ">
+                    <img  class="project-example__img"
+                          src="./images/image 1.jpg"
+                          alt="" >
+                  </div>
+
+                  <div class="project-example__item project-example__item_color">
+                    <p class="project-example__description description-big">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem doloribus quasi, dolorum magni debitis
+                    </p>
+                  </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+  <!-- 2 -->
+  <div class="project-example">
+
+
+    <h3 class="project-example__name subtitle">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </h3>
+
+
+      <div class="project-example__grid">
+
+
+        <div class="project-example__item counter">
+          <p class="project-example__description description">
+            Lorem ipsum dolor  - sit amet - <br>
+            consectetur adipisicing elit.
+            Accusamus dolorem doloribus quasi, <br>
+
+            modi magnam maiores mollitia neque nam pariatur,<br>
+            saepe laborum accusantium repellat!
+          </p>
+        </div>
+
+        <div class="project-example__item counter">
+          <p class="project-example__description description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem doloribus quasi, dolorum magni debitis
+            modi magnam maiores mollitia neque nam pariatur, saepe laborum ratione quo distinctio tenetur accusantium repellat!
+          </p>
+        </div>
+
+
+
+        <div class="project-example__item project-example__item_color">
+          <p class="project-example__description description-big">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem doloribus quasi, dolorum magni debitis
+          </p>
+        </div>
+
+        <div class="project-example__item project-example__img ">
+          <img  class="project-example__img"
+                src="./images/image 1.jpg"
+                alt="" >
+        </div>
+
+
+        <div class="project-example__item counter">
+          <p class="project-example__description description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem doloribus quasi, dolorum magni debitis
+            modi magnam maiores mollitia neque nam pariatur, saepe laborum ratione quo distinctio tenetur accusantium repellat!
+          </p>
+        </div>
+
+        <div class="project-example__item project-example__item_color">
+          <p class="project-example__description description-big">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolorem doloribus quasi, dolorum magni debitis
+          </p>
+        </div>
+      </div>
+
+
+  </div>
+
+
+
         </section>
 
 

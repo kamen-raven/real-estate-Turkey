@@ -1,0 +1,53 @@
+//подключаем normalize
+@import url(../vendor/normalize.css);
+//подключаем шрифты
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+//подключаем переменные
+@import './variables/variables';
+@import './base/base';
+
+//dev-style
+body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
+  outline: solid red 1px;
+}
+
+//общие и основные селекторы
+
+
+
+
+
+.mob{
+  display: none;
+
+  &_active {
+      display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  grid-area: footer;
+  z-index: 1;
+}
+
+
+//подключаем UI-компоненты
+@import './UI/button';
+@import './UI/counter';
+
+//подключаем блоки
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/head-block';
+@import './blocks/projects';

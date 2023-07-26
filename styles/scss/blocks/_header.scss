@@ -1,6 +1,6 @@
 .header {
   grid-area: header;
-  margin-top: calc($height-gap / 3);
+  margin-top: calc($gap / 2);
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -24,8 +24,8 @@
     &_link {
       display: flex;
       &:hover {
-        transform: scale(1.1);
-        transition: all .4s;
+        transform: scale(1.2);
+        transition: transform .4s;
       }
     }
   }
@@ -41,8 +41,8 @@
       padding-bottom: 2px;
     }
     &_phone:hover {
-      transform: scale(1.03);
-      transition: all 1s;
+      transform: scale(1.05);
+      transition: transform 1s;
     }
   //ссылка кнопки обратного звонка
     &_call {
@@ -63,4 +63,50 @@
       width: 55%;
     }
   }
+
+  &__nav {
+
+  }
 }
+
+
+.header__background {
+    z-index: -10;
+    width: 100%;
+    height: 95%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../../../images/main-background.jpg);
+
+    &::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: radial-gradient(70.38% 109.56% at 65.1% 57.12%, rgba(0, 0, 0, 0.1005) 16.36%, rgba(0, 0, 0, 0.67) 46.71%, rgba(0, 0, 0, 0.67) 78.62%);
+    }
+  }
+/*    */
+/*   &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: -10;
+    object-fit: cover;
+
+  }
+ */
+
+
