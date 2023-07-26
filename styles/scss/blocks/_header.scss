@@ -1,5 +1,16 @@
 .header {
   grid-area: header;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: calc(100% - $margin-side*2);
+  width: 100%;
+  height: 15vh;
   margin-top: calc($gap / 2);
   &__inner {
     display: flex;
@@ -64,13 +75,11 @@
     }
   }
 
-  &__nav {
 
-  }
 }
 
 
-.header__background {
+/* .header__background {
     z-index: -10;
     width: 100%;
     height: 95%;
@@ -92,21 +101,6 @@
       left: 0;
       background-image: radial-gradient(70.38% 109.56% at 65.1% 57.12%, rgba(0, 0, 0, 0.1005) 16.36%, rgba(0, 0, 0, 0.67) 46.71%, rgba(0, 0, 0, 0.67) 78.62%);
     }
-  }
-/*    */
-/*   &__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 90%;
-    width: 100%;
-    background-size: inherit;
-    background-repeat: no-repeat;
-    background-position: top;
-    z-index: -10;
-    object-fit: cover;
-
-  }
- */
+  } */
 
 

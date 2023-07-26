@@ -61,8 +61,13 @@
 
   &__description {
     padding: 1em 5vw;
-
     text-align: justify;
+    opacity: .8;
+
+    &_big {
+      font-size: $description-big;
+      opacity: 1;
+    }
   }
 
   &__img {
@@ -72,9 +77,4 @@
     border-radius: 10px;
   }
 
-
-
-  &__conclusion {
-
-  }
 }

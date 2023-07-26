@@ -1,7 +1,11 @@
 .head-block {
+
   grid-area: headblock;
   display: flex;
   flex-direction: column;
+  position: relative;
+  height: calc(100vh - (15vh + $gap / 2));
+  padding-top: calc(15vh + $gap / 2);
   &__inner {
     display: flex;
     flex-direction: column;
@@ -9,7 +13,7 @@
   }
   &__title {
     font-size: $h1;
-    margin: 2em 0 0 0;
+    margin: 3em 0 0 0;
     width: min-content;
   }
   &__subtitle {
@@ -29,7 +33,7 @@
     justify-content: space-between;
     list-style: none;
     padding: 0;
-    margin: 130px 0 40px 0;
+    margin: 130px 0 auto 0;
     gap: 1em;
   }
   &__list-item {
@@ -49,6 +53,7 @@
       opacity: 1;
     }
   }
+}
 /*   &__background {
     &::before {
       content: "";
@@ -77,5 +82,4 @@
     object-fit: cover;
     background-image: url(../images/istockphoto.jpg);
   } */
-}
 
