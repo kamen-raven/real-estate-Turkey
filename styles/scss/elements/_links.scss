@@ -1,0 +1,58 @@
+.link {
+  opacity: .8;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $link-text;
+  line-height: 100%;
+  color: $white;
+
+  &:hover {
+  cursor: pointer;
+  transition: color .4s;
+  color: $accent-blue;
+  }
+
+  //ссылка номера телефона
+  &_phone {
+    opacity: 1;
+    font-size: $subtitle;
+    letter-spacing: 0.1em;
+    font-weight: $medium;
+    padding-bottom: 2px;
+  }
+  &_phone:hover {
+    transform: scale(1.05);
+    transition: transform 1s;
+  }
+  //ссылка кнопки обратного звонка
+  &_call {
+    position: relative;
+    padding: 0 2px 4px;
+  }
+  &_call::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px solid $accent-blue;
+    transition: all .4s;
+  }
+  &_call:hover:before {
+    width: 55%;
+  }
+  &_social {
+    display: flex;
+    opacity: 1;
+    &:hover {
+      transform: scale(1.2);
+      transition: transform .4s;
+    }
+  }
+
+
+}
+
+
+

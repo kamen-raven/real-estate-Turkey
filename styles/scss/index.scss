@@ -7,10 +7,10 @@
 @import './base/base';
 
 //dev-style
-body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
+/* body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
   outline: solid red 1px;
 }
-
+ */
 //общие и основные селекторы
 
 
@@ -43,11 +43,14 @@ body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span,
 
 
 //подключаем UI-компоненты
-@import './UI/button';
-@import './UI/counter';
+@import './elements/text-block';
+@import './elements/button';
+@import './elements/counter';
+@import './elements/links';
 
 //подключаем блоки
 @import './blocks/header';
 @import './blocks/nav';
 @import './blocks/head-block';
 @import './blocks/projects';
+@import './blocks/call-block';

@@ -1,0 +1,35 @@
+
+.title {
+  font-weight: $regular;
+  font-size: $title;
+  text-transform: uppercase;
+  line-height: 120%;
+  margin: 1em 0 1em;
+  &__span-accent {
+    font-weight: $medium;
+    color: $accent-blue;
+  }
+}
+
+.subtitle {
+  font-weight: $regular;
+  font-size: $subtitle;
+  text-transform: uppercase;
+  line-height: 120%;
+  margin: 0;
+}
+
+.description {
+  font-weight: $regular;
+  font-size: $description;
+  line-height: 120%;
+  margin: 0;
+}
+
+.small-text {
+  font-weight: $regular;
+  font-size: $small-text;
+  line-height: 120%;
+  margin: 0;
+
+}

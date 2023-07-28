@@ -25,6 +25,37 @@
   }
 }
 
+.background {
+  z-index: -10;
+  width: 100%;
+  height: 100vh;
+  min-height: 910px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 55%;
+  background-image:
+    radial-gradient(70.38% 109.56% at 65.1% 57.12%,
+      rgba(0, 0, 0, 0.1005) 16.36%,
+      rgba(0, 0, 0, 0.67) 46.71%,
+      rgba(0, 0, 0, 0.67) 78.62%),
+    url(../../../images/background/main-background.jpg);
+  border-radius: 0 0 10px 10px;
+/*   &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    min-height: 910px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(70.38% 109.56% at 65.1% 57.12%, rgba(0, 0, 0, 0.1005) 16.36%, rgba(0, 0, 0, 0.67) 46.71%, rgba(0, 0, 0, 0.67) 78.62%);
+  } */
+}
+
 .container {
   margin: 0 $margin-side;
 }
@@ -38,85 +69,12 @@
   grid-auto-flow: column;
   gap: $gap;
   grid-template-areas:
-  "headblock "
+  "head-block"
   "projects"
+  "call-block"
   ;
 }
 
 
-.background {
-  z-index: -10;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-image: url(../../../images/main-background.jpg);
 
-  &::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: radial-gradient(70.38% 109.56% at 65.1% 57.12%, rgba(0, 0, 0, 0.1005) 16.36%, rgba(0, 0, 0, 0.67) 46.71%, rgba(0, 0, 0, 0.67) 78.62%);
-  }
-}
-
-
-
-.link {
-  opacity: .8;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: $link-text;
-  line-height: 100%;
-
-  &:hover {
-  cursor: pointer;
-  transition: all .4s;
-  color: $accent-blue;
-  }
-}
-
-
-
-.title {
-  font-weight: $regular;
-  font-size: $title;
-  text-transform: uppercase;
-  line-height: 120%;
-  margin: 0;
-  &__span-accent {
-    font-weight: $medium;
-    color: $accent-blue;
-  }
-}
-
-.subtitle {
-  font-weight: $regular;
-  font-size: $subtitle;
-  text-transform: uppercase;
-  line-height: 120%;
-  margin: 0;
-}
-
-.description {
-  font-weight: $regular;
-  font-size: $description;
-  line-height: 120%;
-  margin: 0;
-}
-
-.small-text {
-  font-weight: $regular;
-  font-size: $small-text;
-  line-height: 120%;
-  margin: 0;
-}
 

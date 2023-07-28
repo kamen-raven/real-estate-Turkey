@@ -12,6 +12,7 @@
   width: 100%;
   height: 15vh;
   margin-top: calc($gap / 2);
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -32,75 +33,8 @@
   &__social {
     display: flex;
     gap: 1.2em;
-    &_link {
-      display: flex;
-      &:hover {
-        transform: scale(1.2);
-        transition: transform .4s;
-      }
-    }
-  }
-//ссылки в шапке - телефон и обратный звонок
-  &__link {
-    color: $white;
-  //ссылка номера телефона
-    &_phone {
-      opacity: 1;
-      font-size: $subtitle;
-      letter-spacing: 0.1em;
-      font-weight: $medium;
-      padding-bottom: 2px;
-    }
-    &_phone:hover {
-      transform: scale(1.05);
-      transition: transform 1s;
-    }
-  //ссылка кнопки обратного звонка
-    &_call {
-      position: relative;
-      padding: 0 2px 4px;
-    }
-    &_call::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 1px;
-      border-bottom: 2px solid $accent-blue;
-      transition: all .4s;
-    }
-    &_call:hover:before {
-      width: 55%;
-    }
-  }
 
-
+  }
 }
-
-
-/* .header__background {
-    z-index: -10;
-    width: 100%;
-    height: 95%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-image: url(../../../images/main-background.jpg);
-
-    &::before {
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: radial-gradient(70.38% 109.56% at 65.1% 57.12%, rgba(0, 0, 0, 0.1005) 16.36%, rgba(0, 0, 0, 0.67) 46.71%, rgba(0, 0, 0, 0.67) 78.62%);
-    }
-  } */
 
 
