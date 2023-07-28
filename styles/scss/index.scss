@@ -28,7 +28,9 @@
 
 
 
-
+.conditions {
+  grid-area: conditions;
+}
 
 
 
@@ -47,6 +49,7 @@
 @import './elements/button';
 @import './elements/counter';
 @import './elements/links';
+@import './elements/background';
 
 //подключаем блоки
 @import './blocks/header';
@@ -54,3 +57,4 @@
 @import './blocks/head-block';
 @import './blocks/projects';
 @import './blocks/call-block';
+@import './blocks/info-block';

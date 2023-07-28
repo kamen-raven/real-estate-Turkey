@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/css/index.css" />
+    <link rel="stylesheet" href="./styles/scss/index.scss" />
     <title>Real estate in Turkey</title>
   </head>
 
   <body class="page">
-<!--     <div class="background"></div> -->
+    <!--     <div class="background"></div> -->
     <div class="page__container">
       <header class="header container">
         <!--внутренняя часть хэдера - скрыта на мобилке -->
@@ -34,16 +34,10 @@
                 />
               </a>
             </div>
-            <a
-              href="tel:+79219311501"
-              class="link  link_phone"
-            >
+            <a href="tel:+79219311501" class="link link_phone">
               +7-921-931-15-01
             </a>
-            <a
-              href="#modal-call"
-              class="link link_call js-btn"
-            >
+            <a href="#modal-call" class="link link_call js-btn">
               Обратный звонок
             </a>
           </div>
@@ -89,16 +83,16 @@
                 <a class="link" href="#example"> Проекты 2023</a>
               </li>
               <li class="nav__item">
-                <a class=" link" href="#conditions"> Условия </a>
+                <a class="link" href="#conditions"> Условия </a>
               </li>
               <li class="nav__item">
-                <a class=" link" href="#income"> Как начать </a>
+                <a class="link" href="#income"> Как начать </a>
               </li>
               <li class="nav__item">
                 <a class="link" href="#quiz"> Рассчитать </a>
               </li>
               <li class="nav__item">
-                <a class=" link" href="#warranty"> Гарантии </a>
+                <a class="link" href="#warranty"> Гарантии </a>
               </li>
               <li class="nav__item">
                 <a class="link" href="#about"> О нас </a>
@@ -116,15 +110,14 @@
 
       <main class="main">
         <div class="background"></div>
+        <!-- заглавная страница  -->
         <section class="container head-block" id="main">
           <div class="head-block__inner">
             <h1 class="head-block__title title">
               Инвестиции в строительство
-              <span class="title__span-accent"> в Турции </span>
+              <span class="span-accent span-accent_title"> в Турции </span>
             </h1>
-            <p class="head-block__subtitle subtitle">
-              доходность до 20%
-            </p>
+            <p class="head-block__subtitle subtitle">доходность до 20%</p>
             <button
               class="head-block__button button button__blink js-btn"
               type="button"
@@ -145,11 +138,11 @@
             </li>
           </ul>
         </section>
-
+        <!-- проекты 2023 года -->
         <section class="projects container" id="example">
           <h2 class="projects__title title">
             Проекты
-            <span class="title__span-accent"> 2023 года </span>
+            <span class="span-accent span-accent_title"> 2023 года </span>
           </h2>
           <!-- 1 -->
           <div class="project-example">
@@ -157,7 +150,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </h3>
             <div class="project-example__grid">
-              <div class="project-example__item counter">
+              <div class="project-example__item counter counter_center">
                 <p class="project-example__description description">
                   Lorem ipsum dolor - sit amet - <br />
                   consectetur adipisicing elit. Accusamus dolorem doloribus
@@ -166,7 +159,7 @@
                   saepe laborum accusantium repellat!
                 </p>
               </div>
-              <div class="project-example__item counter">
+              <div class="project-example__item counter counter_center">
                 <p class="project-example__description description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Accusamus dolorem doloribus quasi, dolorum magni debitis modi
@@ -197,7 +190,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </h3>
             <div class="project-example__grid">
-              <div class="project-example__item counter">
+              <div class="project-example__item counter counter_center">
                 <p class="project-example__description description">
                   Lorem ipsum dolor - sit amet - <br />
                   consectetur adipisicing elit. Accusamus dolorem doloribus
@@ -207,7 +200,7 @@
                   saepe laborum accusantium repellat!
                 </p>
               </div>
-              <div class="project-example__item counter">
+              <div class="project-example__item counter counter_center">
                 <p class="project-example__description description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Accusamus dolorem doloribus quasi, dolorum magni debitis modi
@@ -230,7 +223,7 @@
                   alt=""
                 />
               </div>
-              <div class="project-example__item counter">
+              <div class="project-example__item counter counter_center">
                 <p class="project-example__description description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Accusamus dolorem doloribus quasi, dolorum magni debitis modi
@@ -249,13 +242,12 @@
             </div>
           </div>
         </section>
-
-        <section class=" call-block" id="call">
+        <!-- контакт-блок -->
+        <section class="call-block" id="call">
           <div class="call-block__inner">
-
             <div class="call-block__block">
               <h2 class="title call-block__title">
-                <span class="title__span-accent"> Ответим</span>
+                <span class="span-accent span-accent_title"> Ответим</span>
                 на любые вопросы
               </h2>
               <p class="call-block__subtitle subtitle">
@@ -272,12 +264,11 @@
             </div>
 
             <div class="call-block__block">
-
               <p class="call-block__subtitle subtitle">
                 на связи в мессенджерах
               </p>
               <div class="call-block__social">
-                <a href="" class="link link_social ">
+                <a href="" class="link link_social">
                   <img
                     class="lazyloaded"
                     src="./images/svg/telegram.svg"
@@ -294,36 +285,112 @@
               </div>
 
               <div class="call-block__contacts">
-
-                <p class="description">
-                  или по телефону
-                </p>
-                <a
-                href="tel:+79219311501"
-                class="link link_phone"
-              >
-                +7-921-931-15-01
-              </a>
+                <p class="description">или по телефону</p>
+                <a href="tel:+79219311501" class="link link_phone">
+                  +7-921-931-15-01
+                </a>
                 <a
                   href="#modal-call"
                   class="link link_call js-btn call-block__contacts_link"
                 >
                   Обратный звонок
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+<section class="conditions container">
+  хуй
+</section>
 
 
+
+        <!-- варианты инвестиций -->
+        <section class="info container" id="info">
+          <h2 class="info__title title">
+            Существует 2 классических
+            <span class="span-accent span-accent_title">
+              варианта инвестиций
+            </span>
+            в недвижимость
+          </h2>
+
+          <div class="info-block">
+            <div class="info-block__grid">
+              <!-- заголовок 1й пункт -->
+              <div class="info-block__item counter counter_top">
+                <h3 class="info-block__subtitle subtitle">
+                  <span class="span-accent"> Покупка квартиты </span>
+                  и сдача в аренду
+                </h3>
+              </div>
+              <!-- заголовок 2й пункт -->
+              <div class="info-block__item counter counter_top">
+                <h3 class="info-block__subtitle subtitle">
+                  <span class="span-accent">Инвестиции </span>
+                  в девелоперские проекты
+                </h3>
+              </div>
+                  <!-- разделители вместо gap на 30px  -->
+                <div></div>
+                <div></div>
+              <!-- информация 1й пункт -->
+              <div class="info-block__item">
+                <ul class="info-block__list description">
+                  <li class="info-block__list-item">
+                    Инвестор владеет реальным активом
+                  </li>
+                  <li class="info-block__list-item">
+                    Низкая доходность ~3,5% годовых
+                  </li>
+                  <li class="info-block__list-item">
+                    Много издержек - арендаторы, амортизация, налоги и т.д.
+                  </li>
+                </ul>
+              </div>
+              <!-- информация 2й пункт -->
+              <div class="info-block__item">
+                <ul class="info-block__list description">
+                  <li class="info-block__list-item">
+                    Инвестор не владеет реальным активом, обеспечением является
+                    некий договор
+                  </li>
+                  <li class="info-block__list-item">
+                    Выше доходность ~10% годовых
+                  </li>
+                  <li class="info-block__list-item">
+                    Выше риски, сложнее юридическая схема
+                  </li>
+                </ul>
+              </div>
+                <!-- разделители вместо gap на 70px -->
+                <div></div>
+                <div></div>
+              <!-- цветной блок с преимуществами -->
+
+
+              <div class="info-block__item info-block__item_color">
+                <h3 class="info-block__subtitle subtitle">
+                  Наше предложение сочетает в себе лучшее из обоих вариантов:
+                </h3>
+                <ul class="info-block__description description">
+                  <li class="info-block__list-item">
+                    надежность владения ликвиднойнедвижимостью от первого варианта
+                  </li>
+                  <li class="info-block__list-item">
+                    высокая доходность от второго
+                  </li>
+                </ul>
               </div>
 
 
+              <div class="background-info ">
+                <div class="background-decoration"></div>
+              </div>
             </div>
-
-
           </div>
-
-
-
         </section>
-
       </main>
       <footer class="footer">foooolter</footer>
     </div>

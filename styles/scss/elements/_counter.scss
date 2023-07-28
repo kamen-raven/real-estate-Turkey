@@ -2,18 +2,34 @@
   counter-increment: num;
   font-size: $small-text;
   font-weight: $medium;
+
   &::before {
     content: counter(num);
     width: 2.5em;
     height: 2.5em;
     border-radius: 50%;
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
     background: $accent-blue;
   }
+
+  &_center {
+    &::before {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &_top {
+    &::before {
+      left: 0;
+      top: 0;
+      
+    }
+  }
+
+
 }
