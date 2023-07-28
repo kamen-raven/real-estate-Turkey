@@ -32,7 +32,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55%;
-  background-image: radial-gradient(70.38% 109.56% at 65.1% 57.12%, rgba(0, 0, 0, 0.1005) 16.36%, rgba(0, 0, 0, 0.67) 46.71%, rgba(0, 0, 0, 0.67) 78.62%), url(../../../images/background/main-background.jpg);
+  background-image: radial-gradient(70.38% 109.56% at 65.1% 57.12%, rgba(0, 0, 0, 0.1005) 16.36%, rgba(0, 0, 0, 0.67) 46.71%, rgba(0, 0, 0, 0.67) 78.62%), url(../../images/background/main-background.jpg);
   border-radius: 0 0 10px 10px;
   /*   &::before {
       content: "";
@@ -439,7 +439,7 @@
   align-items: center;
   height: 80vh;
   min-height: 600px;
-  background: linear-gradient(108.83deg, rgba(0, 0, 0, 0.67) 56.27%, rgba(0, 0, 0, 0.2211) 88.62%), url(../../../images/background/call-background.jpg);
+  background: linear-gradient(108.83deg, rgba(0, 0, 0, 0.67) 56.27%, rgba(0, 0, 0, 0.2211) 88.62%), url(../../images/background/call-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
