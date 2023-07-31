@@ -41,36 +41,100 @@
 
 
 
-.background-info {
+.background-text {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+
   height: auto;
   width: auto;
   position: relative;
 
-  &::after {
-    content: "инвестиции";
-  position: absolute;
-
   font-weight: $medium;
   font-size: $decorate;
-  line-height: 120%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1518) 0%, rgba(255, 255, 255, 0) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+
+
+//блок условия сотрудничества
+&_conditions {
+  justify-content: flex-start;
+  align-items: center;
+  &::before {
+    content: "Условия";
+    font-size: $decorate * 2.5;
+
+    position: absolute;
+    top: 20%;
+
+
+    background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 71.8%);
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+
+
+
+
+
+
   }
+  &::after {
+    content: "сотрудничества";
+    font-size: $decorate * 1.5;
+    position: absolute;
+    top: 40%;
+    background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+
+
+    }
+}
+
+
+
+//блок с информацией
+  &_info {
+    justify-content: flex-start;
+    align-items: center;
+    &::after {
+      content: "инвестиции";
+      position: absolute;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1518) 0%, rgba(255, 255, 255, 0) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      }
+  }
+
+
 
 }
 
 .background-decoration {
-  margin-left: 5vw;
-  width: 300px;
-  height: 300px;
-
   border-radius: 50%;
   background: rgba(22, 178, 178, 0.16);
   filter: blur(35px);
+
+//блок условия сотрудничества
+&_conditions {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+//блок с информацией
+  &_info {
+    margin-left: 5vw;
+    width: 300px;
+    height: 300px;
+  }
+
 }

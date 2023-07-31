@@ -4,14 +4,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
 //подключаем переменные
 @import './variables/variables';
+
+//подключаем базовые стили
 @import './base/base';
+//подключаем мобильные стили
+@import './base/mobile';
+
+//подключаем UI-компоненты
+@import './elements/text-block';
+@import './elements/button';
+@import './elements/counter';
+@import './elements/links';
+@import './elements/background';
+
+//подключаем блоки
+@import './blocks/header';
+@import './blocks/nav';
+@import './blocks/head-block';
+@import './blocks/projects-block';
+@import './blocks/call-block';
+@import './blocks/conditions-block';
+@import './blocks/info-block';
+
+
 
 //dev-style
 /* body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
   outline: solid red 1px;
 }
  */
-//общие и основные селекторы
+//
 
 
 
@@ -44,17 +66,3 @@
 }
 
 
-//подключаем UI-компоненты
-@import './elements/text-block';
-@import './elements/button';
-@import './elements/counter';
-@import './elements/links';
-@import './elements/background';
-
-//подключаем блоки
-@import './blocks/header';
-@import './blocks/nav';
-@import './blocks/head-block';
-@import './blocks/projects';
-@import './blocks/call-block';
-@import './blocks/info-block';
