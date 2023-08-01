@@ -2,6 +2,7 @@
   grid-area: info;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 
   &__title {
     max-width: 1000px;

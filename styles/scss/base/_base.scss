@@ -59,11 +59,11 @@
 }
 
 .container {
-  margin: 0 $margin-side;
+  padding: 0 $margin-side;
 }
 
 .main {
-  overflow-x: hidden;
+
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr;
