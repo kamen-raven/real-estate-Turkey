@@ -70,7 +70,7 @@
   grid-auto-rows: max-content;
   justify-items: stretch;
   grid-auto-flow: column;
-  gap: $gap;
+  row-gap: $gap;
   grid-template-areas:
   "head-block"
   "projects"
