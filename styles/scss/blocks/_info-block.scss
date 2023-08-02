@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-
+  padding: 0 $margin-side;
   &__title {
     max-width: 1000px;
     width: 100%;
@@ -58,7 +58,7 @@
   &__list {
     padding: 0 5vw;
     text-align: justify;
-    opacity: .8;
+
   }
 
   &__list-item {
