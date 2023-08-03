@@ -1,0 +1,26 @@
+.law{
+  grid-area: law-block;
+  display: flex;
+  flex-direction: column;
+
+    &__title {
+
+  }
+    &__block {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin: 2.5rem 0;
+  }
+    &__grid {
+      display: grid;
+      grid-template-columns: minmax(min-content, 2fr) 1fr;
+      column-gap: 40px;
+  }
+    &__item {
+
+  }
+    &__subtitle {
+
+  }
+}

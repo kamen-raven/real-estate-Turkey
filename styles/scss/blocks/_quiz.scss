@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: minmax(min-content, 2fr) minmax(min-content, 1fr);
     grid-template-rows: auto;
-    column-gap: $gap;
+    column-gap: 40px;
     justify-items: end;
     align-items: stretch;
 }
@@ -37,7 +37,7 @@
     position: relative;
     width: 100%;
     padding: 0;
-    margin: 5rem 0;
+    margin: 2.5rem 0;
 
     background-color: $white;
     border-radius: 10px;
@@ -56,7 +56,7 @@
 
 
   &__img {
-    margin: 5rem 0;
+    margin: 2.5rem 0;
     object-fit: cover;
     width: auto;
     max-width: 100%;
