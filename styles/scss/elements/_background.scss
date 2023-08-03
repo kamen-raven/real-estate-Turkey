@@ -38,11 +38,10 @@
   width: auto;
   position: relative;
 
-
 //блок условия сотрудничества
 &_conditions {
   &::before {
-    content: "Условия";
+    content: "условия";
     font-size: $decorate * 2.5;
     font-weight: $medium;
     position: absolute;
@@ -86,7 +85,7 @@
       }
   }
 
-
+//блок с сотрудничеством
   &_cooperation {
     &::after {
       content: "сотрудничество";
@@ -101,11 +100,29 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
-
-
-
-
       }
+  }
+
+//блок с динамикой
+  &_dynamics {
+    justify-content: flex-start;
+    align-items: center;
+    &::after {
+      content: "динамика";
+      font-weight: $medium;
+      font-size: $decorate;
+      position: absolute;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1518) 0%, rgba(255, 255, 255, 0) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      }
+
+
+
+
+
   }
 }
 
@@ -136,13 +153,32 @@
     height: 300px;
   }
 
-
+//блок с сотрудничеством
   &_cooperation {
-    filter: blur(35px);
+    filter: blur(55px);
     position: absolute;
     bottom: -10%;
     left: -5%;
     width: 300px;
     height: 300px;
+  }
+
+  &_quiz {
+    filter: blur(55px);
+    z-index: -1;
+    position: absolute;
+    bottom: -45%;
+    right: -35%;
+    width: 300px;
+    height: 300px;
+  }
+
+
+//блок с динамикой
+  &_dynamics {
+    margin-left: 2rem;
+    width: 250px;
+    height: 250px;
+    filter: blur(35px);
   }
 }

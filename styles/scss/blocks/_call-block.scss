@@ -1,20 +1,37 @@
 
 .call-block {
-  grid-area: call-block;
   display: flex;
   align-items: center;
   height: 80vh;
   min-height: 600px;
-  background:
-          linear-gradient(108.83deg,
-          rgba(0, 0, 0, 0.67) 56.27%,
-          rgba(0, 0, 0, 0.2211) 88.62%),
-          url(../../images/background/call-background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   border-radius: 10px;
-  background-attachment: fixed;
+
+    &_1 {
+      grid-area: call-block;
+      background:
+                linear-gradient(108.83deg,
+                rgba(0, 0, 0, 0.67) 56.27%,
+                rgba(0, 0, 0, 0.2211) 88.62%),
+                url(../../images/background/call-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
+    &_2 {
+      grid-area: call-block-2;
+      background:
+                linear-gradient(108.83deg,
+                rgba(0, 0, 0, 0.67) 56.27%,
+                rgba(0, 0, 0, 0.2211) 88.62%),
+                url(../../images/background/call-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
+
 
   &__title {
     margin: auto 0 0.5em;
@@ -83,11 +100,7 @@
 
     }
   }
-
-
-
 }
-
 
 
 

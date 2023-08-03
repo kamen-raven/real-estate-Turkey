@@ -86,7 +86,7 @@
             <!-- пункты меню навигации -->
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="link" href="#example"> Проекты 2023</a>
+                <a class="link" href="#projects"> Проекты 2023</a>
               </li>
               <li class="nav__item">
                 <a class="link" href="#conditions"> Условия </a>
@@ -101,10 +101,10 @@
                 <a class="link" href="#warranty"> Гарантии </a>
               </li>
               <li class="nav__item">
-                <a class="link" href="#about"> О нас </a>
+                <a class="link" href="#about-us"> О нас </a>
               </li>
               <li class="nav__item">
-                <a class="link" href="#vantages"> Вопросы </a>
+                <a class="link" href="#FAQ"> Вопросы </a>
               </li>
               <li class="nav__item">
                 <a class="link" href="#contacts"> Контакты </a>
@@ -117,8 +117,8 @@
       <main class="main">
         <div class="background"></div>
 
-<!-- заглавная страница  -->
-        <section class="container head-block" id="main">
+<!-- Заглавная страница - ИНВЕСТИЦИИ В СТРОИТЕЛЬСТВО  -->
+        <section id="main" class="container head-block" >
           <div class="head-block__inner">
             <h1 class="head-block__title title">
               Инвестиции в строительство
@@ -145,13 +145,13 @@
             </li>
           </ul>
         </section>
-<!-- проекты 2023 года-->
-        <section class="projects container" id="example">
+<!-- Проекты - ПРОЕКТЫ 2023 ГОДА -->
+        <section id="projects" class="projects container" >
           <h2 class="projects__title title">
             Проекты
             <span class="span-accent span-accent_title"> 2023 года </span>
           </h2>
-          <!-- 1 -->
+    <!-- ПРОЕКТ №1-->
           <div class="project-example">
             <h3 class="project-example__name subtitle">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -191,7 +191,7 @@
               </div>
             </div>
           </div>
-          <!-- 2 -->
+    <!-- ПРОЕКТ №2 -->
           <div class="project-example">
             <h3 class="project-example__name subtitle">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -249,8 +249,8 @@
             </div>
           </div>
         </section>
-<!--  контакт-блок-->
-        <section class="call-block" id="call">
+<!-- Контакт-блок №1 - ОТВЕТИМ НА ЛЮБЫЕ ВОПРОСЫ-->
+        <section id="call" class="call-block call-block_1">
           <div class="call-block__inner">
             <div class="call-block__block">
               <h2 class="title call-block__title">
@@ -307,11 +307,12 @@
           </div>
         </section>
 
-<!--  условия сотрудничества в цифрах-->
-        <section class="conditions
+<!-- Условия - УСЛОВИЯ СОТРУДНИЧЕСТВА В ЦИФРАХ-->
+        <section id="conditions" class="conditions
                         background-text
                         background-text_conditions
-                        ">
+                        "
+                        >
           <div class="background-decoration background-decoration_conditions"></div>
           <div class="conditions__grid">
             <div class="conditions__title">
@@ -326,7 +327,7 @@
             <div class="conditions__inner">
               <ul class="conditions__list">
                 <li class="conditions__list-item">
-                  <h3 class="conditions__point title">от 
+                  <h3 class="conditions__point title">от
                     <span class="conditions__point_span">400 000</span>$
                     </h3>
                   <p class="conditions__description description">
@@ -387,16 +388,17 @@
           </div>
         </section>
 
-<!--  варианты инвестиций-->
-        <section class="info " id="info">
-          <h2 class="info__title title">
-            Существует 2 классических
-            <span class="span-accent span-accent_title">
-              варианта инвестиций
-            </span>
-            в недвижимость
-          </h2>
-
+<!-- Варианты инвестиций - СУЩЕСТВУЕТ 2 ВАРИАНТА ИНВЕСТИЦИЙ-->
+        <section id="info" class="info " >
+          <div class="info__title">
+            <h2 class=" title">
+              Существует 2 классических
+              <span class="span-accent span-accent_title">
+                варианта инвестиций
+              </span>
+              в недвижимость
+            </h2>
+          </div>
           <div class="info-block">
             <div class="info-block__grid">
               <!-- заголовок 1й пункт -->
@@ -472,8 +474,8 @@
           </div>
         </section>
 
-<!--  как начать сотрудничество -->
-        <section class="cooperation
+<!-- Сотрудничество - КАК НАЧАТЬ СОТРУДНИЧЕСТВО -->
+        <section id="cooperation" class="cooperation
                         container
                         background-text
                         background-text_cooperation
@@ -504,10 +506,9 @@
             <div class="cooperation__video video">
               <a class="video__link"
                 data-fancybox
-    
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                 <img class="video__img"
-                src="./images/video-template.jpg"
+                src="./images/templates/Cooperation_Video 1.jpg"
                 alt="ШАБЛОН">
                   <div class="video__play"></div>
               </a>
@@ -517,7 +518,149 @@
           </div>
         </section>
 
+<!-- Квиз - ПРОСЧИТАЙТЕ ДОХОДНОСТЬ -->
+        <section id="quiz" class="quiz
+                        container
+                        "
+                  >
 
+          <div class="quiz__inner">
+            <div class="quiz__title">
+              <h2 class="title ">
+                <span class="span-accent span-accent_title">
+                  Просчитайте
+                </span>
+                доходность своих вложений
+              </h2>
+            </div>
+            <div class="quiz__subtitle">
+              <p class="subtitle">
+                Ответьте на несколько вопросов
+              </p>
+            </div>
+          </div>
+
+
+          <div class="quiz__grid ">
+            <div class="quiz__form">
+              <div class="background-decoration background-decoration_quiz"></div>
+              <div class="quiz__item">
+                <img src="./images/templates/TEMPLATE_Quiz.jpg" alt="тут будет квиз" class="quiz__form_template">
+
+              </div>
+            </div>
+            <div class="quiz__item">
+              <img src="./images/Quiz-image.jpg" alt="" class="quiz__img">
+            </div>
+          </div>
+        </section>
+
+
+
+<!-- Варианты инвестиций - СУЩЕСТВУЕТ 2 ВАРИАНТА ИНВЕСТИЦИЙ-->
+        <section id="dynamics" class="dynamics container" >
+          <div class="dynamics__title">
+            <h2 class=" title">
+              Динамика
+              <span class="span-accent span-accent_title">
+                роста цен на недвижимость
+              </span>
+              в Турции
+            </h2>
+          </div>
+          <div class="dynamics__block">
+            <div class="dynamics__grid">
+              <div class="dynamics__inner">
+                <div class="dynamics__item">
+                  <p class="dynamics__description description">
+                    По законам маркетинга
+                    в этом разделе должны быть указаны данные
+                    о стабильном росте Турецкой экономики
+                    и прочие «индексы».
+                  </p>
+                  <p class="dynamics__description description">
+                    Но как говорится:
+                    «Если надо объяснять,
+                    то не надо объяснять».
+                    Лишь 1 график заслуживает внимания.
+                  </p>
+                  <div class="background-text background-text_dynamics">
+                    <div class="background-decoration background-decoration_dynamics"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="dynamics__inner">
+                <dic class="dynamics__item">
+                  <img class="dynamics__img"
+                  src="./images/templates/Dynamics_graph 1.jpg"
+                  alt="График роста цен на недвижимость в Турции" >
+                </dic>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+
+
+
+<!-- Контакт-блок #2 - ПОРА ЛИЧНО ПОГОВОРИТЬ -->
+        <section id="call-2" class="call-block call-block_2" >
+          <div class="call-block__inner">
+            <div class="call-block__block">
+              <h2 class="title call-block__title">
+                Пора поговорить<br>
+                <span class="span-accent span-accent_title"> лично</span>
+              </h2>
+              <p class="call-block__subtitle subtitle">
+                расскажем, на что можно рассчитывать с вашем бюджетом,
+                и спланируем доходность
+              </p>
+              <button
+                class="call-block__button button button__blink js-btn"
+                type="button"
+                aria-label="получить консультацию"
+              >
+                Получить консультацию
+              </button>
+            </div>
+
+            <div class="call-block__block">
+              <p class="call-block__subtitle subtitle">
+                на связи в мессенджерах
+              </p>
+              <div class="call-block__social">
+                <a href="" class="link link_social">
+                  <img
+                    class="lazyloaded"
+                    src="./images/svg/telegram.svg"
+                    alt=""
+                  />
+                </a>
+                <a href="" class="link link_social">
+                  <img
+                    class="lazyloaded"
+                    src="./images/svg/whatsapp.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+
+              <div class="call-block__contacts">
+                <p class="description">или по телефону</p>
+                <a href="tel:+79219311501" class="link link_phone">
+                  +7-921-931-15-01
+                </a>
+                <a
+                  href="#modal-call"
+                  class="link link_call js-btn call-block__contacts_link"
+                >
+                  Обратный звонок
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">foooolter</footer>
     </div>

@@ -27,6 +27,8 @@
 @import './blocks/conditions-block';
 @import './blocks/info-block';
 @import './blocks/cooperation';
+@import './blocks/quiz';
+@import './blocks/dynamics';
 
 
 
@@ -58,6 +60,8 @@ body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span,
 
 .footer {
   grid-area: footer;
+
+  margin-top: 300px;
   z-index: 1;
 }
 

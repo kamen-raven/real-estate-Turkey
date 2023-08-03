@@ -23,7 +23,7 @@
     grid-column: 2 / 3;
 
 
-    margin: 2.5rem 0 0;
+    margin: 2.5rem 0 2.5rem ;
 
 }
   &__blocks {
@@ -38,6 +38,9 @@
   &__list-item {
     margin: 0 0 60px;
     list-style-type: none;
+    &:last-of-type {
+      margin: 0;
+    }
 }
   &__point {
   text-transform: lowercase;
