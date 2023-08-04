@@ -1016,6 +1016,13 @@
   min-height: 2.5rem;
   padding-left: 5rem;
   margin-bottom: 2.5rem;
+<<<<<<< HEAD
+=======
+}
+
+body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
+  outline: solid red 1px;
+>>>>>>> e29aa72fc18043deb31d559644510850a8b75f7c
 }
 
 /* body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
