@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/css/index.css" />
-
-    <!--     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-    />
- -->
+    <link rel="stylesheet" href="./styles/scss/index.scss" />
     <title>Real estate in Turkey</title>
   </head>
 
@@ -119,7 +113,7 @@
 
         <!-- Заглавная страница - ИНВЕСТИЦИИ В СТРОИТЕЛЬСТВО  -->
         <section id="main" class="container head-block">
-          <div class="head-block__inner">
+          <div class="head-block__inner" >
             <h1 class="head-block__title title">
               Инвестиции в строительство
               <span class="span-accent span-accent_title"> в Турции </span>
@@ -133,7 +127,7 @@
               Получить консультацию
             </button>
           </div>
-          <ul class="head-block__advantages-list">
+          <ul class="head-block__advantages-list" >
             <li class="head-block__list-item description">
               понятная юридическая схема
             </li>
@@ -145,14 +139,20 @@
             </li>
           </ul>
         </section>
+
         <!-- Проекты - ПРОЕКТЫ 2023 ГОДА -->
         <section id="projects" class="projects container">
-          <h2 class="projects__title title">
-            Проекты
-            <span class="span-accent span-accent_title"> 2023 года </span>
-          </h2>
+          <div class="projects__title">
+            <h2 class="title">
+              Проекты
+              <span class="span-accent span-accent_title"> 2023 года </span>
+            </h2>
+          </div>
           <!-- ПРОЕКТ №1-->
-          <div class="project-example">
+          <div class="project-example"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                >
             <h3 class="project-example__name subtitle">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </h3>
@@ -192,9 +192,11 @@
             </div>
           </div>
           <!-- ПРОЕКТ №2 -->
-          <div class="project-example">
+          <div class="project-example"
+                data-aos="fade-right"
+                data-aos-delay="50">
             <h3 class="project-example__name subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Id Lorem laborum nisi laborum irure.
             </h3>
             <div class="project-example__grid">
               <div class="project-example__item counter counter_center">
@@ -248,11 +250,72 @@
               </div>
             </div>
           </div>
+          <!-- ПРОЕКТ №3 -->
+          <div class="project-example"
+                data-aos="fade-right"
+                data-aos-delay="50">
+            <h3 class="project-example__name subtitle">
+              Minim nulla ex fugiat excepteur consectetur irure ea laborum.
+            </h3>
+            <div class="project-example__grid">
+              <div class="project-example__item counter counter_center">
+                <p class="project-example__description description">
+                Qui consectetur aliquip qui aliqua nostrud sint laboris eiusmod non consequat. Ullamco consectetur eu irure et. Esse eiusmod voluptate elit deserunt enim ullamco est officia aliqua.
+                </p>
+              </div>
+              <div class="project-example__item counter counter_center">
+                <p class="project-example__description description">
+                Culpa do aliqua Lorem consectetur. Elit ad sunt magna ex esse dolor elit do.
+                </p>
+              </div>
+              <div class="project-example__item counter counter_center">
+                <p class="project-example__description description">
+                  Labore anim excepteur sint occaecat ut. Nulla excepteur magna occaecat commodo aliqua excepteur nisi pariatur sit ut aliqua cillum ex. Eu consectetur mollit proident enim. Aliquip elit ipsum ipsum eu officia enim. Non eiusmod mollit pariatur occaecat mollit sint aute dolore. Excepteur ad sunt cillum excepteur ea eiusmod eiusmod culpa. Consequat ipsum elit anim anim consequat.
+                </p>
+              </div>
+              <div class="project-example__item project-example__item_color">
+                <p
+                  class="project-example__description project-example__description_big"
+                >
+                  Culpa consequat aliqua sunt deserunt aute laboris pariatur aliquip. Aute non amet exercitation incididunt qui cillum labore adipisicing. Aliquip sunt irure magna proident do proident irure eu cillum velit deserunt fugiat. Aute deserunt aute officia exercitation nulla anim sint.
+                </p>
+              </div>
+              <div class="project-example__item project-example__img">
+                <img
+                  class="project-example__img"
+                  src="./images/image 1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="project-example__item counter counter_center">
+                <p class="project-example__description description">
+                  Labore anim excepteur sint occaecat ut. Nulla excepteur magna occaecat commodo aliqua excepteur nisi pariatur sit ut aliqua cillum ex. Eu consectetur mollit proident enim. Aliquip elit ipsum ipsum eu officia enim. Non eiusmod mollit pariatur occaecat mollit sint aute dolore. Excepteur ad sunt cillum excepteur ea eiusmod eiusmod culpa. Consequat ipsum elit anim anim consequat.
+                </p>
+              </div>
+              <div class="project-example__item counter counter_center">
+                <p class="project-example__description description">
+                  Deserunt mollit consectetur ipsum fugiat esse veniam. Magna dolor culpa in eiusmod aliqua cillum ipsum ea ipsum Lorem. Tempor qui cupidatat enim deserunt incididunt proident labore ullamco magna amet excepteur dolor incididunt ex. Veniam minim ea ipsum magna ad cillum eiusmod exercitation.
+                </p>
+              </div>
+              <div class="project-example__item project-example__item_color">
+                <p
+                  class="project-example__description project-example__description_big"
+                >
+                  Dolore ad aliquip proident eiusmod do eu duis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
         </section>
+
         <!-- Контакт-блок №1 - ОТВЕТИМ НА ЛЮБЫЕ ВОПРОСЫ-->
         <section id="call" class="call-block call-block_1">
           <div class="call-block__inner">
-            <div class="call-block__block">
+            <div class="call-block__block"
+                  data-aos="fade-right"
+                  data-aos-delay="50">
               <h2 class="title call-block__title">
                 <span class="span-accent span-accent_title"> Ответим</span>
                 на любые вопросы
@@ -270,7 +333,9 @@
               </button>
             </div>
 
-            <div class="call-block__block">
+            <div class="call-block__block"
+                  data-aos="fade-left"
+                  data-aos-delay="50">
               <p class="call-block__subtitle subtitle">
                 на связи в мессенджерах
               </p>
@@ -308,9 +373,9 @@
         </section>
 
         <!-- Условия - УСЛОВИЯ СОТРУДНИЧЕСТВА В ЦИФРАХ-->
-        <section
-          id="conditions"
-          class="conditions background-text background-text_conditions"
+        <section id="conditions" class="conditions
+                                        background-text
+                                        background-text_conditions"
         >
           <div
             class="background-decoration background-decoration_conditions"
@@ -325,9 +390,11 @@
 
             <div class="conditions__inner">
               <ul class="conditions__list">
-                <li class="conditions__list-item">
+                <li class="conditions__list-item"
+                      data-aos="slide-left"
+                      data-aos-once="false">
                   <h3 class="conditions__point title">
-                    от <span class="conditions__point_span">400 000</span>$
+                    от <span class="conditions__point_span">400 000</span>$
                   </h3>
                   <p class="conditions__description description">
                     минимальная инвестиция, начальная стоимость земельного
@@ -335,7 +402,10 @@
                     девелоперского проекта
                   </p>
                 </li>
-                <li class="conditions__list-item">
+                <li class="conditions__list-item"
+                      data-aos="slide-left"
+                      data-aos-delay="100"
+                      data-aos-once="false">
                   <h3 class="conditions__point title">
                     <span class="conditions__point_span">24</span>
                      месяца
@@ -345,7 +415,10 @@
                     собственности инвестора на участок
                   </p>
                 </li>
-                <li class="conditions__list-item">
+                <li class="conditions__list-item"
+                      data-aos="slide-left"
+                      data-aos-delay="200"
+                      data-aos-once="false">
                   <h3 class="conditions__point title">
                     <span class="conditions__point_span">20</span>
                     % годовых
@@ -354,7 +427,10 @@
                     ожидаемая доходность инвестора
                   </p>
                 </li>
-                <li class="conditions__list-item">
+                <li class="conditions__list-item"
+                      data-aos="slide-left"
+                      data-aos-delay="300"
+                      data-aos-once="false">
                   <h3 class="conditions__point title">
                     <span class="conditions__point_span">2-3</span>%
                   </h3>
@@ -364,7 +440,10 @@
                     напрямую исполнителям
                   </p>
                 </li>
-                <li class="conditions__list-item">
+                <li class="conditions__list-item"
+                      data-aos="slide-left"
+                      data-aos-delay="400"
+                      data-aos-once="false">
                   <h3 class="conditions__point title">
                     <span class="conditions__point_span">0</span>$
                   </h3>
@@ -373,7 +452,10 @@
                     менеджерских выплат и пр.
                   </p>
                 </li>
-                <li class="conditions__list-item">
+                <li class="conditions__list-item"
+                      data-aos="slide-left"
+                      data-aos-delay="500"
+                      data-aos-once="false">
                   <h3 class="conditions__point title">
                     <span class="conditions__point_span">100</span>%
                   </h3>
@@ -400,14 +482,18 @@
           <div class="info-block">
             <div class="info-block__grid">
               <!-- заголовок 1й пункт -->
-              <div class="info-block__item counter counter_top">
+              <div class="info-block__item counter counter_top"
+                  data-aos="fade-right"
+                  data-aos-offset="150">
                 <h3 class="info-block__subtitle subtitle">
                   <span class="span-accent"> Покупка квартиты </span>
                   и сдача в аренду
                 </h3>
               </div>
               <!-- заголовок 2й пункт -->
-              <div class="info-block__item counter counter_top">
+              <div class="info-block__item counter counter_top"
+                    data-aos="fade-left"
+                    data-aos-offset="150">
                 <h3 class="info-block__subtitle subtitle">
                   <span class="span-accent">Инвестиции </span>
                   в девелоперские проекты
@@ -417,7 +503,10 @@
               <div></div>
               <div></div>
               <!-- информация 1й пункт -->
-              <div class="info-block__item">
+              <div class="info-block__item"
+                    data-aos="fade-right"
+                    data-aos-offset="0"
+                    data-aos-delay="100">
                 <ul class="info-block__list description">
                   <li class="info-block__list-item">
                     Инвестор владеет реальным активом
@@ -431,7 +520,10 @@
                 </ul>
               </div>
               <!-- информация 2й пункт -->
-              <div class="info-block__item">
+              <div class="info-block__item"
+                    data-aos="fade-left"
+                    data-aos-offset="0"
+                    data-aos-delay="100">
                 <ul class="info-block__list description">
                   <li class="info-block__list-item">
                     Инвестор не владеет реальным активом, обеспечением является
@@ -475,12 +567,16 @@
         </section>
 
         <!-- Сотрудничество - КАК НАЧАТЬ СОТРУДНИЧЕСТВО -->
-        <section
-          id="cooperation"
-          class="cooperation container background-text background-text_cooperation"
+        <section id="cooperation" class="cooperation
+                                        container
+                                        background-text
+                                        background-text_cooperation"
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           <div
-            class="background-decoration background-decoration_cooperation"
+            class="background-decoration
+                  background-decoration_cooperation"
           ></div>
           <div class="cooperation__grid">
             <div class="cooperation__inner">
@@ -536,7 +632,10 @@
           </div>
 
           <div class="quiz__grid">
-            <div class="quiz__form">
+            <div class="quiz__form"
+                data-aos="fade-right"
+                data-aos-offset="400"
+                data-aos-duration="800">
               <div
                 class="background-decoration background-decoration_quiz"
               ></div>
@@ -555,7 +654,9 @@
         </section>
 
         <!-- Варианты инвестиций - СУЩЕСТВУЕТ 2 ВАРИАНТА ИНВЕСТИЦИЙ-->
-        <section id="dynamics" class="dynamics container">
+        <section id="dynamics" class="dynamics container"
+                  data-aos="fade-up"
+                  data-aos-delay="200">
           <div class="dynamics__title">
             <h2 class="title">
               Динамика
@@ -598,7 +699,7 @@
           </div>
         </section>
 
-        <!-- Варианты инвестиций - СУЩЕСТВУЕТ 2 ВАРИАНТА ИНВЕСТИЦИЙ-->
+        <!-- ЮРИДИЧЕСКАЯ СХЕМА-->
         <section id="law" class="law container">
           <div class="law__title">
             <h2 class="title">
@@ -608,25 +709,45 @@
           </div>
           <div class="law__block">
             <div class="law__grid">
-              <div class="law__inner">
-                <div class="law__item counter counter_top">
+              <ol class="law__list">
+                <li class="law__item counter counter_top"
+                      data-aos="law-opacity"
+                      data-aos-anchor-placement="center-center"
+                      data-aos-duration="500"
+                      data-aos-delay="50"
+                      data-aos-once="false">
                   <p class="law__subtitle subtitle">
                     Aute laboris elit voluptate est veniam commodo deserunt nisi
                     ipsum.
                   </p>
-                </div>
-                <div class="law__item counter counter_top">
+                </li>
+                <li class="law__item counter counter_top"
+                      data-aos="law-opacity"
+                      data-aos-anchor-placement="center-center"
+                      data-aos-duration="500"
+                      data-aos-delay="50"
+                      data-aos-once="false">
                   <p class="law__subtitle subtitle">
                     Dolore commodo reprehenderit duis nulla elit quis non
                     ullamco.
                   </p>
-                </div>
-                <div class="law__item counter counter_top">
+                </li>
+                <li class="law__item counter counter_top"
+                      data-aos="law-opacity"
+                      data-aos-anchor-placement="center-center"
+                      data-aos-duration="500"
+                      data-aos-delay="50"
+                      data-aos-once="false">
                   <p class="law__subtitle subtitle">
                     Quis anim esse ex anim enim.
                   </p>
-                </div>
-                <div class="law__item counter counter_top">
+                </li>
+                <li class="law__item counter counter_top"
+                      data-aos="law-opacity"
+                      data-aos-anchor-placement="center-center"
+                      data-aos-duration="500"
+                      data-aos-delay="50"
+                      data-aos-once="false">
                   <p class="law__subtitle subtitle">
                     Laboris dolore ex eu ut consectetur voluptate irure aliqua
                     ex cupidatat mollit Lorem irure mollit. Est proident ullamco
@@ -634,32 +755,52 @@
                     dolor cupidatat in nulla id. Qui aliqua est dolore est non
                     consectetur ad exercitation.
                   </p>
-                </div>
-                <div class="law__item counter counter_top">
+                </li>
+                <li class="law__item counter counter_top"
+                      data-aos="law-opacity"
+                      data-aos-anchor-placement="center-center"
+                      data-aos-duration="500"
+                      data-aos-delay="50"
+                      data-aos-once="false">
                   <p class="law__subtitle subtitle">
                     Occaecat sit pariatur incididunt culpa consectetur laborum
                     enim tempor et commodo mollit eiusmod ad est.
                   </p>
-                </div>
-                <div class="law__item counter counter_top">
+                </li>
+                <li class="law__item counter counter_top"
+                      data-aos="law-opacity"
+                      data-aos-anchor-placement="center-center"
+                      data-aos-duration="500"
+                      data-aos-delay="50"
+                      data-aos-once="false">
                   <p class="law__subtitle subtitle">
                     Anim ipsum amet pariatur pariatur culpa sint sit quis
                     consequat fugiat veniam non veniam.
                   </p>
-                </div>
-                <div class="law__item counter counter_top">
+                </li>
+                <li class="law__item counter counter_top"
+                      data-aos="law-opacity"
+                      data-aos-anchor-placement="center-center"
+                      data-aos-duration="500"
+                      data-aos-delay="50"
+                      data-aos-once="false">
                   <p class="law__subtitle subtitle">
                     Voluptate incididunt cillum esse et.
                   </p>
-                </div>
-                <div class="law__item counter counter_top">
+                </li>
+                <li class="law__item counter counter_top"
+                      data-aos="law-opacity"
+                      data-aos-anchor-placement="center-center"
+                      data-aos-duration="500"
+                      data-aos-delay="50"
+                      data-aos-once="false">
                   <p class="law__subtitle subtitle">
                     Non aliqua aliqua sint nisi quis non nisi velit elit. Culpa
                     magna exercitation culpa ea aliqua ea ullamco aliqua non
                     enim culpa.
                   </p>
-                </div>
-              </div>
+                </li>
+              </ol>
               <div
                 class="background-decoration background-decoration_law1"
               ></div>
@@ -676,7 +817,9 @@
         <!-- Контакт-блок #2 - ПОРА ЛИЧНО ПОГОВОРИТЬ -->
         <section id="call-2" class="call-block call-block_2">
           <div class="call-block__inner">
-            <div class="call-block__block">
+            <div class="call-block__block"
+                  data-aos="fade-right"
+                  data-aos-delay="50">
               <h2 class="title call-block__title">
                 Пора поговорить<br />
                 <span class="span-accent span-accent_title"> лично</span>
@@ -694,7 +837,9 @@
               </button>
             </div>
 
-            <div class="call-block__block">
+            <div class="call-block__block"
+                  data-aos="fade-left"
+                  data-aos-delay="50">
               <p class="call-block__subtitle subtitle">
                 на связи в мессенджерах
               </p>
@@ -730,12 +875,109 @@
             </div>
           </div>
         </section>
+
+        <!-- Условия - УСЛОВИЯ СОТРУДНИЧЕСТВА В ЦИФРАХ-->
+        <section id="guarantees" class="guarantees container
+                                    background-text
+                                    background-text_guarantees"
+        >
+
+        <div class=" background-decoration background-decoration_guarantees"></div>
+          <div class="guarantees__grid">
+            <div class="guarantees__title">
+              <h2 class="title">
+                <span class="span-accent span-accent_title"> Гарантии </span>
+              </h2>
+            </div>
+
+            <div class="guarantees__inner">
+              <ul class="guarantees__list">
+                <li class="guarantees__list-item"
+                      data-aos="slide-left"
+                      data-aos-once="false">
+                  <h3 class="guarantees__point subtitle">
+                    Участок под строительство - собственность инвестора
+                  </h3>
+                  <p class="guarantees__description description">
+                    Риск полной утраты капитала
+                  </p>
+                </li>
+                <li class="guarantees__list-item"
+                    data-aos="slide-left"
+                    data-aos-once="false"
+                    data-aos-delay="100">
+                  <h3 class="guarantees__point subtitle">
+                    Отбираем наиболее интересные объекты,
+                    глубокая экспертиза,
+                    смотрите проекты 2023
+                  </h3>
+                  <p class="guarantees__description description">
+                    Риск неликвидности актива
+                  </p>
+                </li>
+                <li class="guarantees__list-item"
+                    data-aos="slide-left"
+                    data-aos-once="false"
+                    data-aos-delay="150">
+                  <h3 class="guarantees__point subtitle">
+                    Консервативная стратегия - строим то, что точно купят. <br>
+                    Низкая чувствительность проекта к негативным сценариям
+                  </h3>
+                  <p class="guarantees__description description">
+                    Риск меньшей прибыли
+                  </p>
+                </li>
+                <li class="guarantees__list-item"
+                    data-aos="slide-left"
+                    data-aos-once="false"
+                    data-aos-delay="200">
+                  <h3 class="guarantees__point subtitle">
+                    Инвестируем собственный капитал совместно с инвестором
+                  </h3>
+                  <p class="guarantees__description description">
+                    Разделяем проектные риски
+                  </p>
+                </li>
+                <li class="guarantees__list-item"
+                    data-aos="slide-left"
+                    data-aos-once="false"
+                    data-aos-delay="250">
+                  <h3 class="guarantees__point subtitle">
+                    Отсутствие разовых и регулярных выплат за покупку
+                    и ведение проекта
+                    (комиссий, менеджерских и сервисных сборов)
+                  </h3>
+                  <p class="guarantees__description description">
+                    Риск невозвратных затрат
+                  </p>
+                </li>
+                <li class="guarantees__list-item"
+                    data-aos="slide-left"
+                    data-aos-once="false"
+                    data-aos-delay="300">
+                  <h3 class="guarantees__point subtitle">
+                    Мы последними получаем прибыль -
+                    сначала возвращается вклад инвестора <br>
+                    + его % доходности
+                  </h3>
+                  <p class="guarantees__description description">
+                    Административные и мотивационные риски
+                  </p>
+                </li>
+
+              </ul>
+            </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+          
+        </section>
+
+
       </main>
       <footer class="footer">foooolter</footer>
     </div>
-    <!--     <script type="text/javascript" src="./src/index.js"></script> -->
     <script type="module" src="./src/index.js"></script>
-    <!--     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
- -->
   </body>
 </html>

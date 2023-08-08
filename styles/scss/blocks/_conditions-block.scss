@@ -34,6 +34,7 @@
     margin: 0;
     text-align: justify;
     opacity: .8;
+    overflow: hidden;
 }
   &__list-item {
     margin: 0 0 60px;
@@ -52,12 +53,11 @@
   line-height: 100%;
     &_span {
       font-size: $decorate;
-line-height: 100%;
+      line-height: 100%;
     }
 }
   &__description {
     max-width: 70%;
-    font-size: $description;
     text-align: left;
 }
 }

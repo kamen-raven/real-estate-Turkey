@@ -2,7 +2,7 @@
   grid-area: law-block;
   display: flex;
   flex-direction: column;
-
+  o
     &__title {
 
   }
@@ -20,13 +20,20 @@
       position: relative;
   }
 
-  &__inner {
+  &__list {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 
     &__item {
       position: relative;
+      list-style: none;
+      
+      padding-left: 5rem;
+      margin-bottom: 2.5rem;
+
   }
     &__subtitle {
       font-size: $description-big;
@@ -34,9 +41,6 @@
       text-align: justify;
 
       min-height: 2.5rem;
-      padding-left: 5rem;
-
-      margin-bottom: 2.5rem;
 
   }
 }

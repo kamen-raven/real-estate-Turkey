@@ -2,7 +2,7 @@
   grid-area: info;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 0 $margin-side;
   &__title {
     max-width: 780px;
