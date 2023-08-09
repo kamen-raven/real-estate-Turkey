@@ -156,7 +156,22 @@
       }
   }
 
-
+  &_about-us {
+    &::after {
+      content: "о компании";
+      font-size: $decorate * 2;
+      font-weight: $medium;
+      position: absolute;
+      top: -15%;
+      right: 0;
+      opacity: .8;
+      background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      }
+  }
 
 }
 
@@ -233,6 +248,16 @@
     left: 35%;
     width: 300px;
     height: 300px;
+  }
+
+// блок О нас
+  &_about-us {
+    position: absolute;
+    filter: blur(35px);
+    top: 10%;
+    right: 10%;
+    width: 200px;
+    height: 200px;
   }
 }
 

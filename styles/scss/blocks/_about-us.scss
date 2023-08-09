@@ -1,0 +1,34 @@
+.about-us {
+  grid-area: about-us;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0 $margin-side;
+
+  &__title {
+
+}
+  &__inner {
+    display: flex;
+    gap: $gap;
+    margin: 40px 0 40px;
+}
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  &__point {
+    text-transform: lowercase;
+    align-self: flex-start;
+}
+  &__span-accent {
+    font-size: $title * 1.5;
+    line-height: 120%;
+  }
+
+  &__description {
+    font-size: $small-text;
+}
+}
