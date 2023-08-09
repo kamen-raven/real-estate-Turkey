@@ -173,6 +173,22 @@
       }
   }
 
+  &_team {
+    &::after {
+      content: "люди";
+      font-size: $decorate * 1.5;
+      font-weight: $medium;
+      position: absolute;
+      top: 25%;
+      right: 15%;
+      background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      }
+  }
+
 }
 
 .background-decoration {
@@ -253,11 +269,20 @@
 // блок О нас
   &_about-us {
     position: absolute;
-    filter: blur(35px);
+    filter: blur(45px);
     top: 10%;
     right: 10%;
     width: 200px;
     height: 200px;
+  }
+
+  &_team {
+    position: absolute;
+    filter: blur(100px);
+    top: 35%;
+    right: 35%;
+    width: 250px;
+    height: 250px;
   }
 }
 
