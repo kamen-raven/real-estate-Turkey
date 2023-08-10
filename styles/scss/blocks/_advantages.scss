@@ -1,0 +1,86 @@
+.advantages {
+  grid-area: advantages;
+
+
+  &__grid {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 120px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;//repeat(3, auto);
+    align-items: start;
+}
+
+  &__title-block {
+    position: sticky;
+    top: 0;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+
+  }
+
+  &__subtitle {
+    margin: 0 0 2.5rem;
+  }
+
+
+  &__inner {
+    grid-column: 2 / 3;
+    margin: 2.5rem 0 2.5rem ;
+}
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
+    grid-auto-flow: column;
+    row-gap: $gap;
+    column-gap: $gap / 2;
+
+
+}
+  &__list-item {
+position: relative;
+}
+
+
+  &__container {
+    display: flex;
+    justify-content: baseline;
+  }
+
+  &__point {
+      text-transform: none;
+      font-size: $description-big;
+    display: flex;
+    align-items: baseline;
+
+    margin: 0;
+    padding-left: 2rem;
+    padding-bottom: 10px;
+
+      &::before {
+        content: url(/images/svg/advntgs.svg);
+        width: auto;
+        height: auto;
+        position: absolute;
+        left: 0;
+      }
+  }
+      &__description {
+        padding-left: 2rem;
+    }
+
+
+
+}
+
+

@@ -189,6 +189,24 @@
       }
   }
 
+  &_advantages {
+    text-align: right;
+    padding-top: 10rem;
+    &::after {
+      content: "преимущества";
+      font-weight: $medium;
+      font-size: $decorate * 1.5;
+      position: absolute;
+      bottom: 2rem;
+      left: -80px;
+      background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      }
+  }
+
 }
 
 .background-decoration {
@@ -283,6 +301,14 @@
     right: 35%;
     width: 250px;
     height: 250px;
+  }
+
+  &_advantages {
+    position: absolute;
+    top: -150%;
+    left: 10%;
+    width: 350px;
+    height: 350px;
   }
 }
 
