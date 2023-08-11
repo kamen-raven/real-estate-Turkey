@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/scss/index.scss" />
+    <!-- libs -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+    <!-- libs -->
+    <link rel="stylesheet" href="./styles/css/index.css" />
     <title>Real estate in Turkey</title>
   </head>
 
@@ -193,7 +201,7 @@
           </div>
           <!-- ПРОЕКТ №2 -->
           <div class="project-example"
-                data-aos="fade-left"
+                data-aos="fade-right"
                 data-aos-delay="300"
                 >
             <h3 class="project-example__name subtitle">
@@ -904,7 +912,8 @@
             </h2>
           </div>
           <div class="about-us__inner">
-            <div class="about-us__item">
+            <div class="about-us__item"
+            data-aos="slide-right">
               <p class="about-us__point subtitle">
                 <span class="about-us__span-accent decoration-text">3 </span>млн. $
               </p>
@@ -913,7 +922,9 @@
               </p>
             </div>
 
-            <div class="about-us__item">
+            <div class="about-us__item"
+                data-aos="slide-right"
+                data-aos-delay="100">
               <p class="about-us__point subtitle">
                 <span class="about-us__span-accent decoration-text">4 </span>млн. $
               </p>
@@ -922,7 +933,9 @@
               </p>
             </div>
 
-            <div class="about-us__item">
+            <div class="about-us__item"
+            data-aos="slide-right"
+                  data-aos-delay="200">
               <p class="about-us__point subtitle">
                 <span class="about-us__span-accent decoration-text">256 </span>квартир
               </p>
@@ -931,7 +944,9 @@
               </p>
             </div>
 
-            <div class="about-us__item">
+            <div class="about-us__item"
+            data-aos="slide-right"
+                  data-aos-delay="300">
               <p class="about-us__point subtitle">
                 <span class="about-us__span-accent decoration-text">1450 </span>м<sup>2</sup>
               </p>
@@ -961,7 +976,8 @@
             </p>
           </div>
 
-          <div class="team__inner">
+          <div class="team__inner"
+          data-aos="flip-up">
 
             <div class="team__item">
               <img class="team__photo"
@@ -1028,7 +1044,8 @@
 
 
             <div class="advantages__inner">
-              <ul class="advantages__list">
+              <ul class="advantages__list"
+              data-aos="fade-up">
                 <li class="advantages__list-item">
                   <h3 class="advantages__point subtitle">
                     Не предлагаем ничего у нас купить
@@ -1119,7 +1136,8 @@
 
             <div class="faq__inner">
               <ul class="faq__list">
-                <li class="faq__list-item">
+                <li class="faq__list-item"
+                data-aos="slide-left">
                   <div class="accordion faq__accordion">
                     <h3 class=" faq__point subtitle">
                       Occaecat dolor Lorem incididunt ex qui?
@@ -1131,7 +1149,9 @@
                     </p>
                   </div>
                 </li>
-                <li class="faq__list-item">
+                <li class="faq__list-item"
+                data-aos="slide-left"
+                data-aos-delay="100">
                   <div class="accordion faq__accordion">
                     <h3 class=" faq__point subtitle">
                       Consectetur cillum incididunt nostrud commodo ut aliquip quis cupidatat irure?
@@ -1143,7 +1163,9 @@
                     </p>
                   </div>
                 </li>
-                <li class="faq__list-item">
+                <li class="faq__list-item"
+                data-aos="slide-left"
+                data-aos-delay="200">
                   <div class="accordion faq__accordion">
                     <h3 class=" faq__point subtitle">
                       Incididunt minim proident laborum proident?
@@ -1155,7 +1177,9 @@
                     </p>
                   </div>
                 </li>
-                <li class="faq__list-item">
+                <li class="faq__list-item"
+                data-aos="slide-left"
+                data-aos-delay="300">
                   <div class="accordion faq__accordion">
                     <h3 class=" faq__point subtitle">
                       Laboris ut exercitation laboris velit laboris quis eiusmod reprehenderit Lorem quis irure non mollit ex?
@@ -1235,7 +1259,8 @@
         </section>
 
         <!-- Финальный блок - ИНТЕРЕС-->
-        <section id="final-test" class="final-test container">
+        <section id="final-test" class="final-test container"
+        data-aos="fade-up">
           <div class="final-test__inner">
             <div class="final-test__title-block">
               <h2 class="final-test__title title">
@@ -1266,9 +1291,70 @@
 
       </main>
 
-
-      <footer class="footer">foooolter</footer>
+      <footer class="footer">
+        <div class="footer__columns">
+          <div class="footer__column footer__column_content_copyright">
+            <a class="logo logo_place_footer" href="#">
+              <img src="./images/logo.png" alt="">
+            </a>
+            <p class="footer__author subtitle">
+              &copy; 2023. Real Estate Solutions
+            </p>
+          </div>
+          <div class="footer__column footer__column_content_info">
+            <h4 class="footer__column-heading description">Инвестиции в Турции</h4>
+            <nav class="footer__column-links">
+              <ul class="footer__column-list">
+                <li>
+                  <a class="footer__column-link description" href="#">
+                    Главная
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__column-link description" href="#">
+                    Проекты
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__column-link description" href="#">
+                    Команда
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column footer__column_content_social">
+            <h4 class="footer__column-heading description">Контакты</h4>
+            <nav class="footer__column-links">
+              <ul class="footer__column-list">
+                <li>
+                  <a class="footer__column-link link" href="#">
+                    <img class="footer__social-icon"
+                      src="./images/svg/telegram.svg"
+                      alt="Telegram">
+                        Telegram
+                  </a>
+                </li>
+                <li>
+                  <a class="footer__column-link link" href="#">
+                    <img class="footer__social-icon"
+                      src="./images/svg/whatsapp.svg"
+                      alt="WhatsApp">
+                        WhatsApp
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="module" src="./src/index.js"></script>
+    <!-- libs -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
