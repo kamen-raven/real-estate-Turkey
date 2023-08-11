@@ -203,6 +203,23 @@
       }
   }
 
+
+    &_faq {
+      &::after {
+        content: "ответы";
+        font-size: $decorate * 1.5;
+        font-weight: $medium;
+        text-transform: uppercase;
+        position: absolute;
+        top: 15rem;
+        left: 0;
+        background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        }
+    }
 }
 
 .background-decoration {
@@ -305,6 +322,15 @@
     left: 10%;
     width: 350px;
     height: 350px;
+  }
+
+  &_faq {
+    position: absolute;
+    filter: blur(45px);
+    top: 15%;
+    left: 30%;
+    width: 300px;
+    height: 300px;
   }
 }
 

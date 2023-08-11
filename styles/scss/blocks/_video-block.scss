@@ -1,0 +1,21 @@
+
+.video-block {
+  grid-area: video-block;
+  display: flex;
+  flex-direction: column;
+
+  &__title{
+
+}
+  &__content {
+    max-width: 60%;
+    max-height: 540px;
+    margin: 2.5rem auto;
+}
+
+  &__img{
+    max-height: 480px;
+    opacity: .7;
+  }
+
+}

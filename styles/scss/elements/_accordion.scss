@@ -1,0 +1,42 @@
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .accordion:after {
+  content: '';
+  background-image: url(../../../images/svg/advntgs.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: transparent;
+  border: $white 1px solid;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.5s ease;
+}
+
+.active:after {
+  content: '';
+  background-image: url(../../../images/svg/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $accent-blue;
+  border: $accent-blue 1px solid;
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.5s ease;
+}
+
+  .active, .accordion:hover {
+  font-weight: $medium;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}

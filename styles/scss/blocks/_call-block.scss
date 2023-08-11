@@ -55,9 +55,15 @@
   }
 
   &__inner{
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 120px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    align-items: end;
+/*     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-between; */
     column-gap: 120px;
 
     width: 100%;
@@ -72,9 +78,9 @@
   flex-direction: column;
 
 
-  max-width: 660px;
+/*   max-width: 660px;
   width: 100%;
-
+ */
 
 }
 

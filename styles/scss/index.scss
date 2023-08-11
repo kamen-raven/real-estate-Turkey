@@ -17,6 +17,7 @@
 @import './elements/links';
 @import './elements/background';
 @import './elements/video';
+@import './elements/accordion';
 
 //подключаем блоки
 @import './blocks/header';
@@ -34,12 +35,15 @@
 @import './blocks/about-us';
 @import './blocks/team';
 @import './blocks/advantages';
+@import './blocks/video-block';
+@import './blocks/faq';
+@import './blocks/final-test';
 
-/* //dev-style
+//dev-style
 body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
   outline: solid red 1px;
 }
- */
+
 //
 
 

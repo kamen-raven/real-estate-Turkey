@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/css/index.css" />
+    <link rel="stylesheet" href="./styles/scss/index.scss" />
     <title>Real estate in Turkey</title>
   </head>
 
@@ -214,13 +214,6 @@
                   6-ти таунхаусов.
                 </p>
               </div>
-              <div class="project-example__item project-example__img">
-                <img
-                  class="project-example__img"
-                  src="./images/templates/Projects_template1.jpg"
-                  alt=""
-                />
-              </div>
               <div class="project-example__item project-example__item_color">
                 <p
                   class="project-example__description project-example__description_big"
@@ -231,6 +224,13 @@
                 <br>
                 <span class="span-accent_title"> 125% всего или 62,5% годовых</span>
                 </p>
+              </div>
+              <div class="project-example__item project-example__img">
+                <img
+                  class="project-example__img"
+                  src="./images/templates/Projects_template1.jpg"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -534,7 +534,7 @@
               >
                 <img
                   class="video__img"
-                  src="./images/templates/Cooperation_Video 1.jpg"
+                  src="./images/templates/Video 1_cooperation.jpg"
                   alt="ШАБЛОН"
                 />
                 <div class="video__play"></div>
@@ -1078,6 +1078,96 @@
 
           <div class="background-text
                       background-text_advantages">
+          </div>
+        </section>
+
+        <!-- Видео-блок - ПРОДАЕТСЯ -->
+        <section id="video-block" class="video-block container"
+                data-aos="fade-up"
+                data-aos-delay="200">
+          <div class="video-block__title">
+            <h2 class="title">
+              <span class="span-accent">Про</span>дается
+            </h2>
+          </div>
+          <div class="video-block__content video">
+            <a class="video__link "
+                data-fancybox
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+              <img class="video__img video-block__img"
+                    src="./images/templates/Video 2_video-block.jpg"
+                    alt="ШАБЛОН" />
+              <div class="video__play"></div>
+            </a>
+          </div>
+        </section>
+
+        <!-- ОТВЕТЫ НА ЧАСТЫЕ ВОПРОСЫ -->
+        <section id="FAQ" class="faq container
+                                    background-text
+                                    background-text_faq"
+        >
+
+        <div class=" background-decoration background-decoration_faq"></div>
+          <div class="faq__grid">
+            <div class="faq__title">
+              <h2 class="title">
+                <span class="span-accent">Ответы</span>
+                на частые вопросы
+              </h2>
+            </div>
+
+            <div class="faq__inner">
+              <ul class="faq__list">
+                <li class="faq__list-item">
+                  <div class="accordion faq__accordion">
+                    <h3 class=" faq__point subtitle">
+                      Occaecat dolor Lorem incididunt ex qui?
+                    </h3>
+                  </div>
+                  <div class="panel">
+                    <p class="faq__description description">
+                      Dolor Lorem ea esse cillum ullamco deserunt dolore velit velit. Laboris deserunt ad aliqua sint sit. Duis eu eiusmod exercitation duis quis proident duis.
+                    </p>
+                  </div>
+                </li>
+                <li class="faq__list-item">
+                  <div class="accordion faq__accordion">
+                    <h3 class=" faq__point subtitle">
+                      Consectetur cillum incididunt nostrud commodo ut aliquip quis cupidatat irure?
+                    </h3>
+                  </div>
+                  <div class="panel">
+                    <p class="faq__description description">
+                      Duis reprehenderit voluptate laboris eiusmod tempor exercitation. Mollit dolor duis elit non consequat consequat. In elit et ullamco officia Lorem. Id elit do commodo consectetur proident non exercitation quis eiusmod. Aliqua anim proident laborum culpa incididunt.
+                    </p>
+                  </div>
+                </li>
+                <li class="faq__list-item">
+                  <div class="accordion faq__accordion">
+                    <h3 class=" faq__point subtitle">
+                      Incididunt minim proident laborum proident?
+                    </h3>
+                  </div>
+                  <div class="panel">
+                    <p class="faq__description description">
+                      Dolor cillum culpa ullamco nulla amet ut ad. Velit ullamco officia eiusmod Lorem proident mollit reprehenderit nulla incididunt culpa id dolore officia eu.
+                    </p>
+                  </div>
+                </li>
+                <li class="faq__list-item">
+                  <div class="accordion faq__accordion">
+                    <h3 class=" faq__point subtitle">
+                      Laboris ut exercitation laboris velit laboris quis eiusmod reprehenderit Lorem quis irure non mollit ex?
+                    </h3>
+                  </div>
+                  <div class="panel">
+                    <p class="faq__description description">
+                      Est fugiat quis veniam aliquip dolor irure amet commodo ex voluptate id. Dolore qui magna aliquip aute in sit excepteur. Irure Lorem pariatur deserunt occaecat irure anim pariatur duis. Aliqua ea est ut voluptate laborum. Cupidatat ipsum quis aute eiusmod commodo adipisicing sint quis do. Amet do nostrud irure nulla id do proident labore ad qui cillum. Sunt officia do ipsum eu proident quis.
+                    </p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -1089,7 +1179,7 @@
                   data-aos="fade-right"
                   data-aos-delay="50">
               <h2 class="title call-block__title">
-                Пора поговорить<br />
+                Пора поговорить
                 <span class="span-accent span-accent_title"> лично</span>
               </h2>
               <p class="call-block__subtitle subtitle">
@@ -1141,6 +1231,35 @@
                 </a>
               </div>
             </div>
+          </div>
+        </section>
+
+        <!-- Финальный блок - ИНТЕРЕС-->
+        <section id="final-test" class="final-test container">
+          <div class="final-test__inner">
+            <div class="final-test__title-block">
+              <h2 class="final-test__title title">
+                <span class="span-accent">
+                  Дочитав до этого места
+                </span>
+                вы получили общее представление
+                <span class="span-accent">
+                  о нашем предложении и фактически
+                </span>
+                проявили интерес
+              </h2>
+              <p class="subtitle final-test__subtitle">
+                Ответьте на несколько вопросов и получите предварительный
+                расчет доходности ваших инвестиций и предложение проекта
+              </p>
+            </div>
+          <button
+            class="final-test__button button button__blink js-btn"
+            type="button"
+            aria-label="получить консультацию"
+          >
+            Начать тест
+          </button>
           </div>
         </section>
 
