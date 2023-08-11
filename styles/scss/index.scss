@@ -1,7 +1,7 @@
 //подключаем normalize
 @import url(../vendor/normalize.css);
 //подключаем шрифты
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 //подключаем переменные
 @import './variables/variables';
 
@@ -35,8 +35,8 @@
 @import './blocks/team';
 @import './blocks/advantages';
 
-//dev-style
-/* body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
+/* //dev-style
+body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
   outline: solid red 1px;
 }
  */

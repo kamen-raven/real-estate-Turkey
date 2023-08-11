@@ -21,8 +21,7 @@
 
   &__subtitle {
     margin: 0;
-    padding: 0 5vw;
-    margin-bottom: 25px;
+    padding: 0 5rem;
     display: flex;
     flex-direction: column;
   }
@@ -51,7 +50,7 @@
     &_color {
       background-color: $accent-blue;
       border-radius: 10px;
-      padding: 5vw 0;
+      padding: 5rem 0;
     }
   }
 

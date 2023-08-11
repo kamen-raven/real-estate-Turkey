@@ -14,7 +14,7 @@
       rgba(0, 0, 0, 0.1005) 16.36%,
       rgba(0, 0, 0, 0.67) 46.71%,
       rgba(0, 0, 0, 0.67) 78.62%),
-    url(../../images/background/main-background.jpg);
+    url(../../images/background/business-man.jpg);
   border-radius: 0 0 10px 10px;
 /*   &::before {
     content: "";
@@ -40,32 +40,21 @@
 
 //блок условия сотрудничества
 &_conditions {
-  &::before {
+  &::after {
     content: "условия";
     font-size: $decorate * 2.5;
     font-weight: $medium;
+    text-transform: uppercase;
     position: absolute;
-    top: 20%;
-    right: 0;
+    top: 30%;
+    left: 0;
     background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 71.8%);
     -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
   }
-  &::after {
-    content: "сотрудничества";
-    font-size: $decorate * 1.5;
-    font-weight: $medium;
-    position: absolute;
-    top: 40%;
-    right: 0;
-    background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    }
+
 }
 
 //блок с информацией
@@ -86,7 +75,7 @@
   }
 
 //блок с сотрудничеством
-  &_cooperation {
+/*   &_cooperation {
     &::after {
       content: "сотрудничество";
       font-weight: $medium;
@@ -102,26 +91,30 @@
       text-fill-color: transparent;
       }
   }
-
+ */
 //блок с динамикой
-  &_dynamics {
+/*   &_dynamics {
     justify-content: flex-start;
     align-items: center;
     &::after {
       content: "динамика";
+      font-size: $decorate * 2.5;
       font-weight: $medium;
-      font-size: $decorate;
+      text-transform: uppercase;
       position: absolute;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1518) 0%, rgba(255, 255, 255, 0) 100%);
+      top: -50%;
+      left: 0;
+      background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 71.8%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       text-fill-color: transparent;
+      z-index: -10;
       }
-  }
+  } */
 
 
-  &_law {
+/*   &_law {
     text-align: right;
     padding-top: 10rem;
     margin-bottom: 2.5rem;
@@ -138,16 +131,17 @@
       background-clip: text;
       text-fill-color: transparent;
       }
-  }
+  } */
 
   &_guarantees {
     &::after {
       content: "гарантии";
       font-size: $decorate * 2.5;
       font-weight: $medium;
+      text-transform: uppercase;
       position: absolute;
       top: 35%;
-      right: 5%;
+      left: 0;
       background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -159,13 +153,13 @@
   &_about-us {
     &::after {
       content: "о компании";
-      font-size: $decorate * 2;
+      font-size: $decorate * 1.5;
       font-weight: $medium;
       position: absolute;
-      top: -15%;
+      top: -20%;
       right: 0;
       opacity: .8;
-      background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1518) 0%, rgba(255, 255, 255, 0) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -179,9 +173,9 @@
       font-size: $decorate * 1.5;
       font-weight: $medium;
       position: absolute;
-      top: 25%;
-      right: 15%;
-      background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
+      top: -15%;
+      right: -80px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1518) 0%, rgba(255, 255, 255, 0) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -191,14 +185,16 @@
 
   &_advantages {
     text-align: right;
-    padding-top: 10rem;
+    padding-top: 1px;
+    z-index: -10;
     &::after {
       content: "преимущества";
+      font-size: $decorate *1.5;
       font-weight: $medium;
-      font-size: $decorate * 1.5;
+      text-transform: uppercase;
       position: absolute;
-      bottom: 2rem;
-      left: -80px;
+      top: -22rem;
+      left: 0;
       background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -218,14 +214,14 @@
 //блок условия сотрудничества
 &_conditions {
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 30%;
+  right: 40%;
   width: 300px;
   height: 300px;
 }
 //блок с информацией
   &_info {
-    margin-left: 5vw;
+    margin-left: 5rem;
     width: 300px;
     height: 300px;
   }
@@ -234,7 +230,7 @@
   &_cooperation {
     filter: blur(55px);
     position: absolute;
-    bottom: -10%;
+    top: 5%;
     left: -5%;
     width: 300px;
     height: 300px;
@@ -263,8 +259,8 @@
       width: 300px;
       height: 300px;
       position: absolute;
-      top: -5%;
-      right: 0%;
+      top: -40%;
+      left: 0%;
     }
       &_law2 {
         filter: blur(35px);
@@ -278,8 +274,8 @@
 //блок гарантии
   &_guarantees {
     position: absolute;
-    top: 25%;
-    left: 35%;
+    top: 35%;
+    left: 40%;
     width: 300px;
     height: 300px;
   }

@@ -1,7 +1,8 @@
 .counter {
   counter-increment: num;
   font-size: $small-text;
-  font-weight: $medium;
+  font-weight: $extra-light;
+  
 
   &::before {
     content: counter(num);

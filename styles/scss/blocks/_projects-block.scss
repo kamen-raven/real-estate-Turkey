@@ -58,17 +58,18 @@
 
 
   &__description {
-    padding: 0 5vw;
-    text-align: justify;
+    padding: 0 5rem;
     margin: 0;
+    
     &_big {
       font-size: $description-big;
+      font-weight: $regular;
       opacity: 1;
     }
   }
 
   &__img {
-    max-height: 320px;
+    height: 400px;
     object-fit: cover;
     width: 100%;
     border-radius: 10px;

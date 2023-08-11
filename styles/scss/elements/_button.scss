@@ -7,7 +7,7 @@
   border-radius: 10px;
   position: relative;
   text-transform: uppercase;
-  font-weight: $medium;
+  font-weight: $semi-bold;
   font-size: $link-text;
   line-height: 120%;
   border: none;
@@ -19,7 +19,7 @@
     overflow: hidden;
   }
   &__blink {
-      &:hover:after {
+      &:after {
       margin-left: -30px;
       content: " ";
       width: 30px;
@@ -34,7 +34,14 @@
       animation-duration: 2.5s;
       animation-iteration-count: infinite;
       transform: rotate(45deg);
-  }
+    }
+
+
+    &:hover {
+      opacity: .8;
+      transform: scale(1.05);
+      transition: all 1s;
+    }
   }
 }
 //animated button

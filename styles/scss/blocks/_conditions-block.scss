@@ -8,6 +8,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;//repeat(3, auto);
     align-items: start;
+    margin-bottom: 2.5rem;
 }
 
 
@@ -15,6 +16,7 @@
     position: sticky;
     top: 0;
     align-self: start;
+    margin-bottom: 20rem;
   }
 
 
@@ -32,7 +34,7 @@
     padding: 0;
     margin: 0;
     text-align: justify;
-    opacity: .8;
+
     overflow: hidden;
 }
   &__list-item {
@@ -44,15 +46,14 @@
 }
   &__point {
   text-transform: lowercase;
-
   display: flex;
   align-items: baseline;
   margin: 0;
   padding-bottom: 10px;
   line-height: 100%;
+  font-size: 56px;
     &_span {
-      font-size: $decorate;
-      line-height: 100%;
+          line-height: 100%;
     }
 }
   &__description {
