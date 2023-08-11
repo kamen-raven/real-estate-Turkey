@@ -19,8 +19,9 @@
   }
     &__inner {
       display: flex;
-      gap: $gap * 1.2;
+      gap: calc($gap * 1.2);
       justify-content: space-between;
+      margin-bottom: 2.5rem;
   }
     &__item {
       display: flex;

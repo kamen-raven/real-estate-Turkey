@@ -43,7 +43,7 @@
     grid-template-rows: repeat(3, minmax(min-content, max-content));
     grid-auto-flow: column;
     row-gap: $gap;
-    column-gap: $gap / 2;
+    column-gap: calc($gap / 2);
 
 
 }
