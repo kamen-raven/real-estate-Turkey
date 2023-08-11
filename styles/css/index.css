@@ -60,7 +60,7 @@
   justify-items: stretch;
   grid-auto-flow: column;
   row-gap: 80px;
-  grid-template-areas: "head-block" "projects" "call-block" "conditions" "info" "cooperation" "quiz-block" "dynamics" "law-block" "call-block-2" "guarantees" "about-us" "team" "advantages";
+  grid-template-areas: "head-block" "projects" "call-block" "conditions" "info" "cooperation" "quiz-block" "dynamics" "law-block" "call-block-2" "guarantees" "about-us" "team" "advantages" "call-block-3";
 }
 
 .title {
@@ -819,6 +819,13 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+.call-block_3 {
+  grid-area: call-block-3;
+  background: radial-gradient(68.78% 134.94% at 66.7% 31.75%, rgba(0, 0, 0, 0.1005) 20.31%, rgba(0, 0, 0, 0.67) 46.71%, rgba(0, 0, 0, 0.67) 78.62%), url(../../images/background/business-man.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .call-block__title {
   margin: auto 0 0.5em;
