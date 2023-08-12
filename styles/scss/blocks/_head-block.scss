@@ -27,7 +27,7 @@
 
   &__advantages-list {
     display: flex;
-    max-width: 50%;
+    width: 50%;
     justify-content: space-between;
     list-style: none;
     padding: 0;
@@ -51,4 +51,29 @@
       opacity: .8;
     }
   }
+}
+
+
+.head-block__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-block__bullet {
+  width: 35px;
+  height: 35px;
+  background-color: $white;
+  border-radius: 50%;
+  background-image: url(../../../images/svg/checkmark-tiny.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.head-block__caption {
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
 }

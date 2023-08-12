@@ -4,15 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- libs -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
-    />
-    <!-- libs -->
-    <link rel="stylesheet" href="./styles/css/index.css" />
+    <link rel="stylesheet" href="./src/pages/index.css" />
     <title>Real estate in Turkey</title>
   </head>
 
@@ -135,17 +127,24 @@
               Получить консультацию
             </button>
           </div>
-          <ul class="head-block__advantages-list" >
-            <li class="head-block__list-item small-text">
-              понятная юридическая схема
-            </li>
-            <li class="head-block__list-item small-text">
-              реализуем собственные проекты
-            </li>
-            <li class="head-block__list-item small-text">
-              прозрачность процесса
-            </li>
-          </ul>
+          <div class="head-block__block">
+            <ul class="head-block__advantages-list" >
+              <li class="head-block__list-item small-text">
+                понятная юридическая схема
+              </li>
+              <li class="head-block__list-item small-text">
+                реализуем собственные проекты
+              </li>
+              <li class="head-block__list-item small-text">
+                прозрачность процесса
+              </li>
+            </ul>
+            <div class="head-block__caption">
+              <div class="head-block__bullet"></div>
+              <p class="description">руководитель проекта</p>
+              <p class="subtitle">Павел Соколов</p>
+            </div>
+          </div>
         </section>
 
         <!-- Проекты - ПРОЕКТЫ 2023 ГОДА -->
@@ -1349,12 +1348,6 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="./src/index.js"></script>
-    <!-- libs -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
+    <script type="module" src="./src/pages/index.js"></script>
   </body>
 </html>
