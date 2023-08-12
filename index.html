@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- libs -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- libs -->
     <link rel="stylesheet" href="./src/pages/index.css" />
     <title>Real estate in Turkey</title>
   </head>
@@ -1348,6 +1356,11 @@
         </div>
       </footer>
     </div>
-    <script type="module" src="./src/pages/index.js"></script>
+    <!-- libs -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script  src="./src/pages/index.js"></script>
   </body>
 </html>

@@ -1,10 +1,10 @@
-import FancyBox from './libs/fancyapps/fancybox';
+/* import FancyBox from './libs/fancyapps/fancybox';
 import animatedScrollLib from './libs/aos/aos';
 
 FancyBox();
 animatedScrollLib();
 
-
+ */
 
 const acc = document.querySelectorAll(".accordion");
 
