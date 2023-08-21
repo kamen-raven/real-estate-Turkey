@@ -15,10 +15,10 @@
   //ссылка номера телефона
   &_phone {
     opacity: 1;
-    font-size: $description;
+    font-size: $description-big;
     letter-spacing: 0.1em;
     font-weight: $medium;
-    padding-bottom: 2px;
+    padding-bottom: 4px;
   }
   &_phone:hover {
     transform: scale(1.05);
@@ -26,8 +26,9 @@
   }
   //ссылка кнопки обратного звонка
   &_call {
+    font-size: $description;
     position: relative;
-    padding: 0 2px 4px;
+    padding: 0 0 4px;
   }
   &_call::before {
     content: "";
@@ -36,7 +37,7 @@
     bottom: 0;
     width: 100%;
     height: 1px;
-    border-bottom: 2px solid $accent-blue;
+    border-bottom: 1px solid $accent-blue;
     transition: all .4s;
   }
   &_call:hover:before {

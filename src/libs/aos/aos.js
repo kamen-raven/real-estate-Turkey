@@ -1,6 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './_aos-custom.css'; // You can also use <link> for styles
+import './_aos-custom.scss'; // You can also use <link> for styles
 
 
 const animatedScrollLib = () => {

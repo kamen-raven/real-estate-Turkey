@@ -1,6 +1,6 @@
 //colors
 $white: #ffffff;
-$accent-blue: #16B2B2;
+$accent-blue: #16b2b2;
 $black-bg: #212022;
 $danger :#B21616;
 
@@ -18,15 +18,17 @@ $semi-bold: 600;
 $bold: 700;
 
 //font-size:
-$decorate: 96px;
-$h1: 48px;
-$title: 40px;
-$subtitle: 26px;
-$description-big: 20px; //24px
-$description: 16px; //20px
-$link-text: 14px; //18px
-$small-text: 14px; //16px
+$decorate: 6rem; //96px;
+$h1: 3rem;//48px;
+$title: 2.5rem; //40px;
+$subtitle: 1.625rem; //26px;
+$description-big: 1.25rem; //20px;
+$description: 1rem;// 16px;
+$link-text: 0.875rem; //14px;
+$small-text: 0.875rem; //14px;
 
 //
-$gap: 80px;
-$margin-side: 80px;
+$gap: 5rem; //80px;
+$margin-side: 5rem; //80px;
+
+$border-radius: 10px;
