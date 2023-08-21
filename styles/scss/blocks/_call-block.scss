@@ -4,33 +4,33 @@
   align-items: center;
   height: 80vh;
   min-height: 600px;
-  border-radius: 10px;
+  border-radius: $border-radius;
   overflow: hidden;
 
     &_1 {
       grid-area: call-block;
       background:
-                linear-gradient(108.83deg,
-                rgba(0, 0, 0, 0.67) 56.27%,
-                rgba(0, 0, 0, 0.2211) 88.62%),
-                url(../../images/background/call-background.jpg);
+      radial-gradient(68.78% 134.94% at 66.7% 31.75%,
+                      rgba(0, 0, 0, 0.1005) 20.31%,
+                      rgba(0, 0, 0, 0.67) 46.71%,
+                      rgba(0, 0, 0, 0.67) 78.62%),
+                      url(../../images/background/business-man.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     }
 
     &_2 {
       grid-area: call-block-2;
       background:
-                linear-gradient(108.83deg,
-                rgba(0, 0, 0, 0.67) 56.27%,
-                rgba(0, 0, 0, 0.2211) 88.62%),
-                url(../../images/background/call-background.jpg);
+      radial-gradient(68.78% 134.94% at 66.7% 31.75%,
+                      rgba(0, 0, 0, 0.1005) 20.31%,
+                      rgba(0, 0, 0, 0.67) 46.71%,
+                      rgba(0, 0, 0, 0.67) 78.62%),
+                      url(../../images/background/business-man.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     }
 
     &_3 {

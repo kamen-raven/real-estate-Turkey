@@ -19,7 +19,7 @@
   }
     &__inner {
       display: flex;
-      gap: calc($gap * 1.2);
+      gap: calc($gap / 2);
       justify-content: space-between;
       margin-bottom: 2.5rem;
   }

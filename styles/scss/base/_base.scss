@@ -4,6 +4,7 @@
   background-color: $black-bg;
   color: $white;
   font-weight: $regular;
+  font-size: $description;
 
   display: flex;
   flex-direction: column;
@@ -13,49 +14,13 @@
   margin: 0 auto;
 
   &__container {
-
-
-    position: relative;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-auto-rows: auto;
     grid-template-areas:
-    "header header"
-    "main main"
-    "footer footer"
+    "header"
+    "main"
+    "footer"
     ;
   }
-}
-
-.background {
-  z-index: -10;
-  width: 100%;
-  height: 100vh;
-  min-height: 910px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 55%;
-  background-image:
-    radial-gradient(70.38% 109.56% at 65.1% 57.12%,
-      rgba(0, 0, 0, 0.1005) 16.36%,
-      rgba(0, 0, 0, 0.67) 46.71%,
-      rgba(0, 0, 0, 0.67) 78.62%),
-    url(../../../images/background/background.jpg);
-  border-radius: 0 0 10px 10px;
-/*   &::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100vh;
-    min-height: 910px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: radial-gradient(70.38% 109.56% at 65.1% 57.12%, rgba(0, 0, 0, 0.1005) 16.36%, rgba(0, 0, 0, 0.67) 46.71%, rgba(0, 0, 0, 0.67) 78.62%);
-  } */
 }
 
 .container {
@@ -88,8 +53,7 @@
   "video-block"
   "faq-block"
   "call-block-3"
-  "final-test"
-  ;
+  "final-test";
 }
 
 

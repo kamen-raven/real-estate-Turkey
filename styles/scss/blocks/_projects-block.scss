@@ -51,7 +51,7 @@
 
     &_color {
       background-color: $accent-blue;
-      border-radius: 10px;
+      border-radius: $border-radius;
       padding: 3em 0;
     }
   }
@@ -60,7 +60,7 @@
   &__description {
     padding: 0 5rem;
     margin: 0;
-    
+
     &_big {
       font-size: $description-big;
       font-weight: $regular;
@@ -72,6 +72,6 @@
     height: 400px;
     object-fit: cover;
     width: 100%;
-    border-radius: 10px;
+    border-radius: $border-radius;
   }
 }

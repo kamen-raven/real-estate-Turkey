@@ -13,6 +13,10 @@
     display: flex;
     gap: $gap;
     margin: 40px 0 40px;
+
+    @include breakpoint(lg) {
+      flex-wrap: wrap;
+    }
 }
   &__item {
     display: flex;
@@ -25,6 +29,10 @@
 }
   &__span-accent {
     line-height: 120%;
+
+    @include breakpoint(2xl) {
+      font-size: calc($decorate * 0.8);
+    }
   }
 
   &__description {
