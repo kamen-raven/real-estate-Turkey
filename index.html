@@ -14,8 +14,11 @@
       <header class="header container">
         <!--внутренняя часть хэдера - скрыта на мобилке -->
         <div class="header__inner">
-          <div class="header__logo">
-            <img class="lazyloaded" src="./images/logo.png" alt="logo" />
+          <img class="header__logo lazyloaded" src="./images/logo.png" alt="logo" />
+          <!-- кнопки бургер и закрытие -->
+          <div class="header__mob mob">
+            <div class="header__burger header__burger_active"></div>
+            <div class="header__burger-close"></div>
           </div>
           <div class="header__block">
             <div class="header__social">
@@ -43,40 +46,8 @@
           </div>
         </div>
         <!-- меню навигации -->
-        <div class="header__nav">
+        <div class="header__menu">
           <nav class="nav">
-            <!-- кнопки бургер и закрытие -->
-            <div class="nav__mob mob">
-              <svg
-                width="15"
-                height="10"
-                viewBox="0 0 15 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="14.9996" height="2.62717" fill="white" />
-                <rect
-                  y="7.30664"
-                  width="10.9088"
-                  height="2.62717"
-                  fill="white"
-                />
-              </svg>
-              <svg
-                width="15"
-                height="15"
-                viewBox="0 0 15 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M7.49994 9.18959L1.86075 14.9999L0 13.0827L5.63919 7.27239L0.441823 1.91733L2.30257 0.000131333L7.49994 5.35518L12.6974 0L14.5582 1.9172L9.36068 7.27239L15 13.0828L13.1393 15L7.49994 9.18959Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
             <!-- пункты меню навигации -->
             <ul class="nav__list">
               <li class="nav__item">
@@ -141,6 +112,7 @@
                 прозрачность процесса
               </li>
             </ul>
+            <img src="./images/background/business-man.jpg" alt="" class="head-block__photo">
             <div class="head-block__caption">
               <div class="head-block__bullet"></div>
               <p class="description">руководитель проекта</p>
@@ -154,7 +126,7 @@
           <div class="projects__title">
             <h2 class="title">
               Проекты
-              <span class="span-accent"> 2023 года </span>
+              <span class="span-accent"> 2023 года </span>
             </h2>
           </div>
           <!-- ПРОЕКТ №1-->
@@ -169,14 +141,14 @@
               <div class="project-example__item counter counter_center">
                 <p class="project-example__description description">
                   купили дома под снос общей стоимостью
-            <span class="span-accent_title">1 000 000$</span> . <br> Придумали концепцию и получили разрешение на строительство
+            <span class="span-accent_title">1 000 000$.</span> <br> Придумали концепцию и получили разрешение на строительство
 6-ти таунхаусов.
                 </p>
               </div>
               <div class="project-example__item counter counter_center">
                 <p class="project-example__description description">
                   купили дома под снос общей стоимостью
-            <span class="span-accent_title">1 000 000$</span> . <br> Придумали концепцию и получили разрешение на строительство
+            <span class="span-accent_title">1 000 000$.</span><br> Придумали концепцию и получили разрешение на строительство
 6-ти таунхаусов.
                 </p>
               </div>
@@ -192,7 +164,7 @@
                   class="project-example__description project-example__description_big"
                 >
                 Вложив 550 000$
-                реализуем проект с бюджетом 3 005 000$ и ожидаемой доходностью:
+                реализуем проект с бюджетом 3 005 000$ и ожидаемой доходностью:
                 <br>
                 <br>
                 <span class="span-accent_title"> 125% всего или 62,5% годовых</span>
@@ -247,7 +219,7 @@
         </section>
 
         <!-- Контакт-блок №1 - ОТВЕТИМ НА ЛЮБЫЕ ВОПРОСЫ-->
-        <section id="call" class="call-block call-block_1">
+<!--         <section id="call" class="call-block call-block_1">
           <div class="call-block__inner">
             <div class="call-block__block"
                   data-aos="fade-right"
@@ -306,10 +278,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- Условия - УСЛОВИЯ СОТРУДНИЧЕСТВА В ЦИФРАХ-->
-        <section id="conditions" class="conditions container
+<!--         <section id="conditions" class="conditions container
                                         background-text
                                         background-text_conditions"
         >
@@ -403,7 +375,7 @@
               </ul>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- Варианты инвестиций - СУЩЕСТВУЕТ 2 ВАРИАНТА ИНВЕСТИЦИЙ-->
         <section id="info" class="info">
@@ -504,7 +476,7 @@
         </section>
 
         <!-- Сотрудничество - КАК НАЧАТЬ СОТРУДНИЧЕСТВО -->
-        <section id="cooperation" class="cooperation
+<!--         <section id="cooperation" class="cooperation
                                         container"
           data-aos="fade-up"
           data-aos-delay="200"
@@ -550,10 +522,10 @@
               </a>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- Квиз - ПРОСЧИТАЙТЕ ДОХОДНОСТЬ -->
-        <section id="quiz" class="quiz container">
+<!--         <section id="quiz" class="quiz container">
           <div class="quiz__inner">
             <div class="quiz__title">
               <h2 class="title">
@@ -571,9 +543,6 @@
                 data-aos="fade-right"
                 data-aos-offset="400"
                 data-aos-duration="800">
-<!--               <div
-                class="background-decoration background-decoration_quiz"
-              ></div> -->
               <div class="quiz__item">
                 <img
                   src="./images/templates/TEMPLATE_Quiz.jpg"
@@ -586,10 +555,10 @@
               <img src="./images/Quiz-image.jpg" alt="" class="quiz__img" />
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- Варианты инвестиций - СУЩЕСТВУЕТ 2 ВАРИАНТА ИНВЕСТИЦИЙ-->
-        <section id="dynamics" class="dynamics container"
+<!--         <section id="dynamics" class="dynamics container"
                   data-aos="fade-up"
                   data-aos-delay="200">
 
@@ -616,9 +585,7 @@
                     объяснять». Лишь 1 график заслуживает внимания.
                   </p>
                   <div class="background-text background-text_dynamics">
-<!--                     <div
-                      class="background-decoration background-decoration_dynamics"
-                    ></div> -->
+
                   </div>
                 </div>
               </div>
@@ -633,10 +600,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- ЮРИДИЧЕСКАЯ СХЕМА-->
-        <section id="law" class="law container">
+<!--         <section id="law" class="law container">
           <div class="law__title">
             <h2 class="title">
               <span class="span-accent"> Юридическая </span>
@@ -737,17 +704,11 @@
                 class="background-decoration background-decoration_law1"
               ></div>
             </div>
-
-<!--             <div class="background-text background-text_law">
-              <div
-                class="background-decoration background-decoration_law2"
-              ></div>
-            </div> -->
           </div>
-        </section>
+        </section> -->
 
         <!-- Контакт-блок #2 - ПОРА ЛИЧНО ПОГОВОРИТЬ -->
-        <section id="call-2" class="call-block call-block_2">
+<!--         <section id="call-2" class="call-block call-block_2">
           <div class="call-block__inner">
             <div class="call-block__block"
                   data-aos="fade-right"
@@ -806,10 +767,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- ГАРАНТИИ-->
-        <section id="guarantees" class="guarantees container
+<!--         <section id="guarantees" class="guarantees container
                                         background-text background-text_guarantees"
         >
         <div class=""></div>
@@ -899,13 +860,12 @@
               </ul>
             </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- О НАС-->
-        <section id="about-us" class="about-us
+<!--         <section id="about-us" class="about-us
                                     background-text
                                     background-text_about-us">
-<!--           <div class=" background-decoration background-decoration_about-us"></div> -->
           <div class="about-us__title">
             <h2 class="title">
               <span class="span-accent">О </span>нас
@@ -918,7 +878,7 @@
                 <span class="about-us__span-accent decoration-text">3 </span>млн. $
               </p>
               <p class="about-us__description description">
-                собственный капитал
+                собственный капитал
               </p>
             </div>
 
@@ -929,7 +889,7 @@
                 <span class="about-us__span-accent decoration-text">4 </span>млн. $
               </p>
               <p class="about-us__description description">
-                кредиты банка
+                кредиты банка
               </p>
             </div>
 
@@ -940,7 +900,7 @@
                 <span class="about-us__span-accent decoration-text">256 </span>квартир
               </p>
               <p class="about-us__description description">
-                построено за 5 лет работы
+                построено за 5 лет работы
               </p>
             </div>
 
@@ -951,14 +911,14 @@
                 <span class="about-us__span-accent decoration-text">1450 </span>м<sup>2</sup>
               </p>
               <p class="about-us__description description">
-                коммерческих площадей
+                коммерческих площадей
               </p>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- КОМАНДА -->
-        <section id="team" class="team container">
+<!--         <section id="team" class="team container">
           <div class="team__block
                       background-text
                       background-text_team">
@@ -1023,10 +983,10 @@
             </div>
 
           </div>
-        </section>
+        </section> -->
 
         <!-- ПРЕИМУЩЕСТВА -->
-        <section id="advantages" class="advantages">
+<!--         <section id="advantages" class="advantages">
           <div class="background-text
           background-text_advantages">
           </div>
@@ -1097,10 +1057,10 @@
           </div>
 
 
-        </section>
+        </section> -->
 
         <!-- Видео-блок - ПРОДАЕТСЯ -->
-        <section id="video-block" class="video-block container"
+<!--         <section id="video-block" class="video-block container"
                 data-aos="fade-up"
                 data-aos-delay="200">
           <div class="video-block__title">
@@ -1118,10 +1078,10 @@
               <div class="video__play"></div>
             </a>
           </div>
-        </section>
+        </section> -->
 
         <!-- ОТВЕТЫ НА ЧАСТЫЕ ВОПРОСЫ -->
-        <section id="FAQ" class="faq container
+<!--         <section id="FAQ" class="faq container
                                     background-text
                                     background-text_faq"
         >
@@ -1195,10 +1155,10 @@
               </ul>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- Контакт-блок #2 - ПОРА ЛИЧНО ПОГОВОРИТЬ -->
-        <section id="call-3" class="call-block call-block_3">
+<!--         <section id="call-3" class="call-block call-block_3">
           <div class="call-block__inner">
             <div class="call-block__block"
                   data-aos="fade-right"
@@ -1257,10 +1217,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
 
         <!-- Финальный блок - ИНТЕРЕС-->
-        <section id="final-test" class="final-test container"
+<!--         <section id="final-test" class="final-test container"
         data-aos="fade-up">
           <div class="final-test__inner">
             <div class="final-test__title-block">
@@ -1287,7 +1247,7 @@
             Начать тест
           </button>
           </div>
-        </section>
+        </section> -->
 
 
       </main>

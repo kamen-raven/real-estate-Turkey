@@ -18,6 +18,12 @@
   &:not(:disabled) {
     overflow: hidden;
   }
+
+  @include breakpoint(screen480) {
+    font-size: calc($link-text * .9);
+  }
+
+
   &__blink {
       &:after {
       margin-left: -30px;

@@ -5,6 +5,19 @@
   text-transform: uppercase;
   line-height: 120%;
   margin: 1em 0 1em;
+
+  @include breakpoint(screen960) {
+    font-size: calc($title * .9);
+  }
+  @include breakpoint(screen768) {
+    font-size: calc($title * .8);
+  }
+  @include breakpoint(screen640) {
+
+  }
+  @include breakpoint(screen480) {
+    font-size: calc($title * .75);
+  }
 }
 
 .subtitle {
@@ -13,6 +26,24 @@
   text-transform: uppercase;
   line-height: 120%;
   margin: 0;
+
+
+  @include breakpoint(screen960) {
+    font-size: calc($subtitle * .9);
+  }
+  @include breakpoint(screen768) {
+    font-size: calc($subtitle * .8);
+  }
+  @include breakpoint(screen640) {
+
+  }
+  @include breakpoint(screen480) {
+    font-size: calc($subtitle * .75);
+  }
+
+
+
+
 }
 
 .description {
@@ -21,6 +52,11 @@
   line-height: 140%;
   opacity: .8;
   margin: 0;
+
+
+  @include breakpoint(screen480) {
+    font-size: calc($description * .9);
+  }
 }
 
 .small-text {
@@ -28,6 +64,11 @@
   font-size: $small-text;
   line-height: 120%;
   margin: 0;
+
+
+  @include breakpoint(screen480) {
+    font-size: calc($small-text * .9);
+  }
 }
 
 .decoration-text {
@@ -35,6 +76,11 @@
   font-size: $decorate;
   line-height: 120%;
   margin: 0;
+
+
+  @include breakpoint(screen480) {
+    font-size: calc($decorate * .9);
+  }
 }
 
 

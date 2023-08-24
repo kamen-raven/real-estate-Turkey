@@ -2,13 +2,15 @@
 @import url(../vendor/normalize.css);
 //подключаем шрифты
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+//подключаем мобильные стили
+@import './mixin/adaptive';
+
 //подключаем переменные
 @import './variables/variables';
 
+
 //подключаем базовые стили
 @import './base/base';
-//подключаем мобильные стили
-@import './mixin/adaptive';
 
 //подключаем UI-компоненты
 @import './elements/text-block';
@@ -50,14 +52,6 @@ body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span,
 
 
 
-
-.mob{
-  display: none;
-
-  &_active {
-      display: flex;
-  }
-}
 
 
 

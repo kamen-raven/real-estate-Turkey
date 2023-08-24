@@ -11,9 +11,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 2.5em 0;
+  margin: 0 0 2.5em 0;
+
   &__name {
-    margin: 0 0 2.5rem;
+    margin: 2rem 0 2.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -26,6 +27,15 @@
       background: $accent-blue;
       opacity: .8;
     }
+    @include breakpoint(screen1024) {
+      margin: 1rem 0 2.5rem;
+    }
+    @include breakpoint(screen640) {
+      margin: 1.5rem 0 2.5rem;
+    }
+    @include breakpoint(screen480) {
+      margin: 1.5rem 0 2rem;
+    }
   }
 
   &__grid {
@@ -37,7 +47,22 @@
     align-content: space-between;
     gap: 60px 120px;
     counter-reset: num;
-
+    @include breakpoint(screen1280) {
+      gap: 60px;
+    }
+    @include breakpoint(screen1024) {
+      gap: 40px 60px;
+    }
+    @include breakpoint(screen640) {
+      grid-template-columns: repeat(1, minmax(min-content, 1fr));
+      grid-template-rows: auto;
+      gap: 2.5rem;
+    }
+    @include breakpoint(screen480) {
+      grid-template-columns: repeat(1, minmax(min-content, 1fr));
+      grid-template-rows: auto;
+      gap: 2rem;
+    }
   }
 
   &__item {
@@ -52,7 +77,29 @@
     &_color {
       background-color: $accent-blue;
       border-radius: $border-radius;
-      padding: 3em 0;
+      padding: 3rem 0;
+
+      @include breakpoint(screen1280) {
+        padding: 2rem 0;
+      }
+      @include breakpoint(screen960) {
+        height: 100%;
+        padding: 0;
+      }
+
+      @include breakpoint(screen768) {
+        height: auto;
+        padding: 1rem 1rem 1rem 0;
+      }
+      @include breakpoint(screen640) {
+        padding: 2.5rem 1rem 2.5rem 0;
+      }
+      @include breakpoint(screen480) {
+        padding: 2rem 1rem 2rem 0;
+      }
+      @include breakpoint(screen320) {
+        padding: 1.5rem 1rem 1.5rem 0;
+      }
     }
   }
 
@@ -60,18 +107,53 @@
   &__description {
     padding: 0 5rem;
     margin: 0;
+    @include breakpoint(screen1280) {
+      padding: 0 4rem;
+    }
+    @include breakpoint(screen960) {
+      padding: 0 2rem 0 4rem;
+    }
+    @include breakpoint(screen768) {
+      padding: 0 1.5rem 0 3.5rem;
+    }
+    @include breakpoint(screen640) {
+      padding: 0 0 0 4rem;
+    }
+
 
     &_big {
       font-size: $description-big;
       font-weight: $regular;
       opacity: 1;
+
+      @include breakpoint(screen960) {
+        font-size: calc($description-big * 0.9);
+      }
+      @include breakpoint(screen640) {
+        font-size: calc($description-big * 0.9);
+      }
+      @include breakpoint(screen480) {
+        font-size: calc($description-big * 0.8);
+      }
+
     }
   }
 
   &__img {
-    height: 400px;
+    max-height: 440px;
     object-fit: cover;
     width: 100%;
+    height: 100%;
     border-radius: $border-radius;
+
+    @include breakpoint(screen1024) {
+      max-height: 340px;
+    }
+    @include breakpoint(screen960) {
+      max-height: 300px;
+    }
+    @include breakpoint(screen480) {
+      max-height: 240px;
+    }
   }
 }

@@ -14,7 +14,7 @@
     gap: $gap;
     margin: 40px 0 40px;
 
-    @include breakpoint(lg) {
+    @include breakpoint(screen1024) {
       flex-wrap: wrap;
     }
 }
@@ -30,7 +30,11 @@
   &__span-accent {
     line-height: 120%;
 
-    @include breakpoint(2xl) {
+
+    @media (max-width: 1324px) {
+      font-size: calc($decorate * 0.9);
+    }
+    @include breakpoint(screen1280) {
       font-size: calc($decorate * 0.8);
     }
   }
