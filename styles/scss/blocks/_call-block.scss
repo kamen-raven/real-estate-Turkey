@@ -4,17 +4,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
-  min-height: 600px;
   border-radius: $border-radius;
   overflow: hidden;
 
-  @include breakpoint(screen768) {
-    height: 100%;
 
-  }
 
     &_1 {
+      height: 80vh;
+      min-height: 600px;
       grid-area: call-block;
       background:
       radial-gradient(68.78% 134.94% at 66.7% 31.75%,
@@ -27,6 +24,7 @@
     background-position: top;
 
     @include breakpoint(screen768) {
+      height: 100%;
       background-position: 60%;
     }
     @include breakpoint(screen576) {
@@ -35,6 +33,8 @@
     }
 
     &_2 {
+      height: 80vh;
+      min-height: 600px;
       grid-area: call-block-2;
       background:
       radial-gradient(68.78% 134.94% at 66.7% 31.75%,
@@ -47,6 +47,7 @@
     background-position: top;
 
     @include breakpoint(screen768) {
+      height: 100%;
       background-position: 60%;
     }
     @include breakpoint(screen576) {
@@ -55,6 +56,8 @@
     }
 
     &_3 {
+      height: 80vh;
+      min-height: 600px;
       grid-area: call-block-3;
       background:
       radial-gradient(68.78% 134.94% at 66.7% 31.75%,
@@ -67,6 +70,7 @@
     background-position: top;
 
     @include breakpoint(screen768) {
+      height: 100%;
       background-position: 60%;
     }
     @include breakpoint(screen576) {

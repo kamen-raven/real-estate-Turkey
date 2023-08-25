@@ -78,8 +78,21 @@
   margin: 0;
 
 
+  @include breakpoint(screen1280) {
+    font-size: calc($decorate * .88);
+  }
+  @include breakpoint(screen1024) {
+    font-size: calc($decorate * .85);
+  }
+
+  @include breakpoint(screen768) {
+   font-size: calc($decorate * .75);
+  }
+  @include breakpoint(screen576) {
+    font-size: calc($decorate * .7);
+  }
   @include breakpoint(screen480) {
-    font-size: calc($decorate * .9);
+    font-size: calc($decorate * .55);
   }
 }
 
