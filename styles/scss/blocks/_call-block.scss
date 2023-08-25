@@ -1,11 +1,18 @@
 
 .call-block {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 80vh;
   min-height: 600px;
   border-radius: $border-radius;
   overflow: hidden;
+
+  @include breakpoint(screen768) {
+    height: 100%;
+
+  }
 
     &_1 {
       grid-area: call-block;
@@ -18,6 +25,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+
+    @include breakpoint(screen768) {
+      background-position: 60%;
+    }
+    @include breakpoint(screen576) {
+      background: none;
+    }
     }
 
     &_2 {
@@ -31,6 +45,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+
+    @include breakpoint(screen768) {
+      background-position: 60%;
+    }
+    @include breakpoint(screen576) {
+      background: none;
+    }
     }
 
     &_3 {
@@ -44,49 +65,114 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+
+    @include breakpoint(screen768) {
+      background-position: 60%;
+    }
+    @include breakpoint(screen576) {
+      background: none;
+    }
+    }
+
+
+    &__inner {
+      padding: 0 $margin-side;
+      max-width: calc(100% - $margin-side*2);
+      @include breakpoint(screen1280) {
+        max-width: calc(100% - ($margin-side / 1.5) * 2);
+        padding: 0 calc($margin-side / 1.5);
+      }
+      @include breakpoint(screen1024) {
+        max-width: calc(100% - ($margin-side / 3) * 2);
+        padding: 0 calc($margin-side / 3);
+      }
+      @include breakpoint(screen768) {
+
+        padding: 2rem calc($margin-side / 4);
+
+      }
+      @include breakpoint(screen640) {
+        max-width: calc(100% - ($margin-side / 4) * 2);
+        padding: 0 calc($margin-side / 4);
+
+      }
+      @include breakpoint(screen480) {
+        max-width: calc(100% - ($margin-side / 6) * 2);
+        padding: 0 calc($margin-side / 6);
+      }
+      @include breakpoint(screen320) {
+        max-width: calc(100% - ($margin-side / 8) * 2);
+        padding: 0 calc($margin-side / 8);
+      }
+
+    }
+
+    &__title {
+      @include breakpoint(screen768) {
+        max-width: 55%;
+      }
+      @include breakpoint(screen576) {
+        max-width: 100%;
+      }
     }
 
 
 
-
-  &__title {
-    margin: auto 0 0.5em;
-
-  }
-
-  &__inner{
+  &__grid {
     display: grid;
     grid-auto-flow: column;
-    column-gap: 120px;
+    gap: 120px;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
-    align-items: end;
+    align-items: stretch;
 /*     display: flex;
     align-items: flex-end;
     justify-content: space-between; */
-    column-gap: 120px;
 
     width: 100%;
-    margin: 0 $margin-side;
 
 
+    @include breakpoint(screen1280) {
+      gap: 60px;
+    }
+    @include breakpoint(screen960) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include breakpoint(screen768) {
+      margin-bottom: 2rem;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 40px 60px;
+    }
 
+    @include breakpoint(screen576) {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto;
+      row-gap: 30px;
+    }
 }
 
 &__block{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 60px;
 
-
-/*   max-width: 660px;
-  width: 100%;
- */
-
+  @include breakpoint(screen1024) {
+    gap: 40px;
+  }
+  @include breakpoint(screen768) {
+    gap: 1rem;
+  }
 }
 
   &__subtitle {
     line-height: 140%;
     margin: 0;
+    @include breakpoint(screen480) {
+      text-align: center;
+    }
+
 }
   &__description {
     text-transform: uppercase;
@@ -95,33 +181,88 @@
 
 
   &__button{
-    margin-top: 60px;
     width: 360px;
     height: 75px;
+
+    @include breakpoint(screen960) {
+      width: calc(360px * .9);
+      height: calc(75px * .9);
+    }
+
+    @include breakpoint(screen768) {
+      margin-top: 1rem;
+    }
+    @include breakpoint(screen640) {
+      width: calc(360px * .8);
+      height: calc(75px * .8);
+    }
+    @include breakpoint(screen480) {
+      //width: 80%;
+      margin: 0 auto;
+    }
+    @include breakpoint(screen320) {
+      //width: 100%;
+    }
 }
 
   &__social{
-    margin-top:1em;
     display: flex;
-    gap: 1.2em;
+    flex-direction: column;
+    gap: 1.2rem;
 
-
+    @include breakpoint(screen1280) {
+      gap: .5rem;
+    }
+    @include breakpoint(screen576) {
+      align-items: center;
+    }
 }
+
+  &__social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+
   &__contacts {
     display: flex;
     align-items: flex-end;
-    margin-top: 2em;
     white-space:nowrap;
     flex-wrap: wrap;
-    margin-top: 2em;
-    gap: 1em;
+    gap: 1rem;
+    @include breakpoint(screen1280) {
+      gap: .5rem;
+    }
+    @include breakpoint(screen576) {
+      flex-direction: column;
+      align-items: center;
+    }
+
 
     &_link {
       font-size: $subtitle;
+    }
+  }
 
+  &__photo {
+    display: none;
+    object-fit: cover;
+    object-position: 73.5%;
+    width: 100%;
+    height: 360px;
+    border-radius: $border-radius;
+
+    @include breakpoint(screen576) {
+      display: flex;
+    }
+    @include breakpoint(screen480) {
+
+    }
+    @include breakpoint(screen320) {
 
     }
   }
+
+
 }
 
 

@@ -4,6 +4,30 @@
   flex-direction: column;
   overflow: hidden;
   padding: 0 $margin-side;
+  margin: 0 auto;
+  max-width: calc(100% - $margin-side*2);
+  @include breakpoint(screen1280) {
+    max-width: calc(100% - ($margin-side / 1.5) * 2);
+    padding: 0 calc($margin-side / 1.5);
+  }
+  @include breakpoint(screen1024) {
+    max-width: calc(100% - ($margin-side / 3) * 2);
+    padding: 0 calc($margin-side / 3);
+  }
+  @include breakpoint(screen640) {
+    max-width: calc(100% - ($margin-side / 4) * 2);
+    padding: 0 calc($margin-side / 4);
+
+  }
+  @include breakpoint(screen480) {
+    max-width: calc(100% - ($margin-side / 6) * 2);
+    padding: 0 calc($margin-side / 6);
+  }
+  @include breakpoint(screen320) {
+    max-width: calc(100% - ($margin-side / 8) * 2);
+    padding: 0 calc($margin-side / 8);
+  }
+
   &__title {
     max-width: 780px;
     width: 100%;
@@ -17,31 +41,122 @@
   flex-direction: column;
   position: relative;
   margin: 2.5em 0;
-
+  @include breakpoint(screen640) {
+    margin: 2em 0;
+  }
 
   &__subtitle {
     margin: 0;
     padding: 0 5rem;
     display: flex;
     flex-direction: column;
+
+    @include breakpoint(screen1280) {
+      padding: 0 4rem;
+    }
+    @include breakpoint(screen1024) {
+      padding: 0 1rem 0 4rem;
+    }
+    @include breakpoint(screen960) {
+      padding: 0 1rem 0 4rem;
+    }
+    @include breakpoint(screen768) {
+      padding: 0 0 1rem 3.5rem;
+    }
+    @include breakpoint(screen640) {
+      padding: 0 0 1rem 4rem;
+    }
+
   }
 
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
-    grid-template-rows: auto 30px auto 70px auto;//repeat(3, auto);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "title-1 title-2"
+    "gap-1 gap-1"
+    "info-1 info-2"
+    "gap-2 gap-2"
+    "colored caption";
     grid-auto-flow: row;
     justify-content: space-between;
     align-content: space-between;
     column-gap: 120px;
     counter-reset: num;
+
+    @include breakpoint(screen1280) {
+      column-gap: 60px;
+    }
+    @include breakpoint(screen1024) {
+
+    }
+
+    @include breakpoint(screen768) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "title-1"
+      "info-1"
+      "gap-1"
+      "title-2"
+      "info-2"
+      "gap-2"
+      "colored";
+
+    }
+
+    &_title-1 {
+      grid-area: title-1;
+    }
+    &_info-1 {
+      grid-area: info-1;
+    }
+    &_title-2 {
+      grid-area: title-2;
+    }
+    &_info-2 {
+      grid-area: info-2;
+    }
+    &_colored {
+      grid-area: colored;
+    }
+    &_caption {
+      grid-area: caption;
+      @include breakpoint(screen768) {
+        display: none;
+      }
+    }
+    &_gap-1 {
+      height: 30px;
+      grid-area: gap-1;
+      @include breakpoint(screen768) {
+        height: 2.5rem;
+      }
+      @include breakpoint(screen480) {
+        height: 2rem;
+      }
+    }
+    &_gap-2{
+      height: 60px;
+      grid-area: gap-2;
+      @include breakpoint(screen1024) {
+        height: 40px;
+      }
+      @include breakpoint(screen768) {
+        height: 2.5rem;
+      }
+      @include breakpoint(screen480) {
+        height: 2rem;
+      }
+    }
   }
+
 
   &__item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    align-items: stretch;
     max-width: 100%;
     min-width: min-content;
     position: relative;
@@ -51,12 +166,50 @@
       background-color: $accent-blue;
       border-radius: $border-radius;
       padding: 5rem 0;
+
+
+
+      @include breakpoint(screen1280) {
+        padding: 3.5rem 0;
+      }
+      @include breakpoint(screen960) {
+        padding: 2.5rem 0;
+      }
+
+      @include breakpoint(screen768) {
+        //grid-column: 1 / 3;
+        //height: auto;
+        padding: 1.5rem 1rem 1.5rem 0;
+      }
+      @include breakpoint(screen640) {
+        //grid-column: 1 / 2;
+        padding: 2.5rem 1rem 2.5rem 0;
+      }
+      @include breakpoint(screen480) {
+        padding: 2rem 1rem 2rem 0;
+      }
+      @include breakpoint(screen320) {
+        padding: 1.5rem 1rem 1.5rem 0;
+      }
+
     }
   }
 
   &__list {
-    padding: 0 5vw;
-    //text-align: justify;
+    padding: 0 5rem;
+
+    @include breakpoint(screen1280) {
+      padding: 0 2rem 0 4rem;
+    }
+    @include breakpoint(screen1024) {
+      padding: 0 1rem 0 4rem;
+    }
+    @include breakpoint(screen768) {
+      padding: 0 0 0 3.5rem;
+    }
+    @include breakpoint(screen640) {
+      padding: 0 0 0 4rem;
+    }
 
   }
 
@@ -67,9 +220,24 @@
   }
 
   &__description {
-    padding: 0 5vw;
+    padding: 0 5rem;
     text-align: left;
     opacity: 1;
+
+    @include breakpoint(screen1280) {
+      padding: 0 2rem 0 4rem;
+    }
+    @include breakpoint(screen1024) {
+      padding: 0 1rem 0 4rem;
+    }
+    @include breakpoint(screen768) {
+      padding: 0 0 0 3.5rem;
+    }
+    @include breakpoint(screen640) {
+      padding: 0 0 0 4rem;
+    }
+
+
   }
 
 
