@@ -167,24 +167,31 @@
   }
 
   &_about-us {
+
     &::after {
-      content: "о компании";
-      font-size: $decorate * 1.5;
-      font-weight: $medium;
+      content: "";
       position: absolute;
-      top: -20%;
-      right: 0;
-      opacity: .8;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1518) 0%, rgba(255, 255, 255, 0) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 142px;
+      margin-left: 30%;
+      background: url(../../../images/background/bg-text/О\ КОМПАНИИ.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include breakpoint(screen960) {
+        top: 5%;
+      }
+      @include breakpoint(screen576) {
+
+        top: 7%;
+      }
       }
   }
 
   &_team {
-    z-index: -10;
+
     &::after {
       content: "люди";
       font-size: $decorate * 1.5;
@@ -201,7 +208,7 @@
   }
 
   &_advantages {
-    z-index: -10;
+
     position: relative;
     &::before {
       content: "";
@@ -271,6 +278,12 @@
     left: -5%;
     width: 300px;
     height: 300px;
+
+    @include breakpoint(screen480) {
+      left: 0;
+      width: 250px;
+      height: 250px;
+    }
   }
 
   &_quiz {
@@ -298,15 +311,26 @@
       position: absolute;
       top: -40%;
       left: 0%;
-    }
-      &_law2 {
-        filter: blur(35px);
+
+
+      @include breakpoint(screen1024) {
+        top: -30%;
+      }
+      @include breakpoint(screen768) {
+        top: -20%;
+      }
+      @include breakpoint(screen480) {
+        top: -15%;
         width: 250px;
         height: 250px;
-        position: absolute;
-        top: -25%;
-        left: 25%;
       }
+      @include breakpoint(screen480) {
+        top: -10%;
+        width: 200px;
+        height: 200px;
+      }
+    }
+
 
 //блок гарантии
   &_guarantees {
@@ -315,6 +339,16 @@
     left: 40%;
     width: 300px;
     height: 300px;
+
+
+    @include breakpoint(screen576) {
+      left: 10%;
+    }
+    @include breakpoint(screen480) {
+      left: 0;
+      width: 250px;
+      height: 250px;
+    }
   }
 
 // блок О нас

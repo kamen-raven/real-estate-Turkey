@@ -91,7 +91,7 @@
         padding: 0 calc($margin-side / 3);
       }
       @include breakpoint(screen768) {
-
+        max-width: calc(100% - ($margin-side / 4) * 2);
         padding: 2rem calc($margin-side / 4);
 
       }

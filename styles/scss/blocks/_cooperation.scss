@@ -9,17 +9,47 @@
     grid-auto-flow: column;
     column-gap: 120px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;//repeat(3, auto);
+    grid-template-rows: auto;
     align-items: start;
+
+
+    @include breakpoint(screen1280) {
+      gap: 60px;
+    }
+    @include breakpoint(screen960) {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      gap: 0;
+    }
+
 }
 
+  &__title {
+    @include breakpoint(screen480) {
+
+    }
+  }
+
+
   &__list{
-    padding: 0;
+    padding: 0 5rem;
+
+    @include breakpoint(screen1280) {
+      padding: 0 2rem 0 4rem;
+    }
+    @include breakpoint(screen1024) {
+      padding: 0 1rem 0 4rem;
+    }
+    @include breakpoint(screen768) {
+      padding: 0 0 0 3.5rem;
+    }
+
+
   }
   &__list-item{
     margin: 5px 0;
     list-style-type: disc;
-    list-style-position: inside;
+    list-style-position: outside;
   }
 
 

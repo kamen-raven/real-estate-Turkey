@@ -14,6 +14,9 @@
     column-gap: 40px;
     justify-items: end;
     align-items: stretch;
+    @include breakpoint(screen960) {
+      grid-template-columns: auto;
+    }
 }
 
   &__inner{
@@ -29,6 +32,12 @@
     width: 100%;
     min-width: min-content;
     height: 100%;
+
+
+    @include breakpoint(screen960) {
+      display: none;
+    }
+
   }
 
   &__form {

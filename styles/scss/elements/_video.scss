@@ -39,6 +39,26 @@
       background-image: url(../../images/svg/play.svg);
       background-position: center;
       background-repeat: no-repeat;
+
+
+
+      @include breakpoint(screen1280) {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      @include breakpoint(screen960) {
+        width: 5rem;
+        height: 5rem;
+      }
+      @include breakpoint(screen576) {
+        width: 3rem;
+        height: 3rem;
+      }
+      @include breakpoint(screen320) {
+        width: 2em;
+        height: 2em;
+      }
       }
 
       }
@@ -55,6 +75,23 @@
 
     animation: pulse 2s linear infinite;
     -webkit-animation: pulse 2s linear infinite;
+
+    @include breakpoint(screen1280) {
+      width: 4em;
+      height: 4em;
+    }
+    @include breakpoint(screen960) {
+      width: 5em;
+      height: 5em;
+    }
+    @include breakpoint(screen576) {
+      width: 3em;
+      height: 3em;
+    }
+    @include breakpoint(screen320) {
+      width: 2em;
+      height: 2em;
+    }
   }
 }
 
