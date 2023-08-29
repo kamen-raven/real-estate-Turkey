@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 .page {
   font-family: $montserrat;
   font-style: normal;
@@ -5,6 +10,8 @@
   color: $white;
   font-weight: $regular;
   font-size: $description;
+
+
 
   display: flex;
   flex-direction: column;

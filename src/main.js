@@ -8,14 +8,10 @@ FancyBox();
 animatedScrollLib();
 
 
-
+/* Функция для аккордиона в блоке ВОПРОСЫ */
 const acc = document.querySelectorAll(".accordion");
 
-
-
-
 let i;
-
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -28,6 +24,32 @@ for (i = 0; i < acc.length; i++) {
       console.log("open")
     }
   });
-
 }
+
+
+
+const scrollPX = 300;
+const toTopButton = document.querySelector('.to-top-button');
+
+const getTop = () => window.scrollY || document.documentElement.scrollTop;
+
+window.addEventListener('scroll', () => {
+  if(getTop() > scrollPX) {
+    toTopButton.classList.add('show');
+  } else {
+    toTopButton.classList.remove('show');
+  }
+
+});
+
+
+
+//click
+toTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 
