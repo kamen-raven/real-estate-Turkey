@@ -40,19 +40,24 @@
 
   }
 
-  &__form {
+  &__form-container {
 /*     display: flex;
     flex-direction: column; */
     position: relative;
     width: 100%;
     padding: 0;
     margin: 2.5rem 0;
-
     background-color: $white;
     border-radius: $border-radius;
-
     border: solid $accent-blue 1px;
 
+    @include breakpoint(screen960) {
+      max-width: 80%;
+      margin: 2.5rem auto 0;
+    }
+    @include breakpoint(screen768) {
+      max-width: 100%;
+    }
 
     &_template {
       width: 100%;

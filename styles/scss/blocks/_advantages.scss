@@ -1,14 +1,23 @@
 .advantages {
   grid-area: advantages;
-  padding: 0 $margin-side;
 
   &__grid {
     display: grid;
     grid-auto-flow: column;
     column-gap: 120px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;//repeat(3, auto);
+    grid-template-rows: auto ;
     align-items: start;
+
+
+    @include breakpoint(screen1280) {
+      column-gap: 60px;
+    }
+
+    @include breakpoint(screen960) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+    }
 }
 
   &__title-block {
@@ -18,6 +27,12 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
+
+
+    @include breakpoint(screen960) {
+      margin-bottom: 0;
+      position: relative;
+    }
   }
 
   &__title {
@@ -26,12 +41,20 @@
 
   &__subtitle {
     margin: 0 0 2.5rem;
+    @include breakpoint(screen960) {
+      margin: 0 0 2rem;
+    }
   }
 
 
   &__inner {
-    grid-column: 2 / 3;
     margin: 2.5rem 0 2.5rem ;
+    @include breakpoint(screen960) {
+      margin-top: 2rem ;
+    }
+    @include breakpoint(screen480) {
+      margin-top: 0;
+    }
 }
 
   &__list {
@@ -46,10 +69,33 @@
     row-gap: $gap;
     column-gap: calc($gap / 2);
 
+    @include breakpoint(screen1280) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, auto);
+      padding-right: 2rem;
+      padding-left: 1.5rem;
+      gap: 40px;
+    }
+
+    @include breakpoint(screen1024) {
+      padding: 0;
+      padding-left: 1rem;
+    }
+    @include breakpoint(screen960) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, minmax(min-content, max-content));
+      padding-left: 0;
+    }
+    @include breakpoint(screen480) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, auto);
+      gap: 30px;
+    }
 
 }
   &__list-item {
-position: relative;
+  position: relative;
+
 }
 
 
@@ -65,8 +111,24 @@ position: relative;
     align-items: baseline;
 
     margin: 0;
-    padding-left: 2rem;
+    padding-left: 3rem;
     padding-bottom: 10px;
+    @include breakpoint(screen1024) {
+      padding-left: 3rem;
+    }
+    @include breakpoint(screen640) {
+      font-size: calc($description-big * .9);
+    }
+    @include breakpoint(screen480) {
+      padding-left: 2.5rem;
+    }
+    @include breakpoint(screen320) {
+      font-size: calc($description-big * .85);
+    }
+
+
+
+
 
       &::before {
         content: url(/images/svg/advntgs.svg);
@@ -77,7 +139,13 @@ position: relative;
       }
   }
       &__description {
-        padding-left: 2rem;
+        padding-left: 3rem;
+        @include breakpoint(screen1024) {
+          padding-left: 3rem;
+        }
+        @include breakpoint(screen480) {
+          padding-left: 2.5rem;
+        }
     }
 
 

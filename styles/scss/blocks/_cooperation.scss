@@ -55,6 +55,15 @@
 
   &__video {
     margin-top: 2.5rem;
+
+    @include breakpoint(screen960) {
+      max-width: 80%;
+      margin: 2.5rem auto 0;
+    }
+    @include breakpoint(screen768) {
+      max-width: 100%;
+      margin: 2.5rem auto 0;
+    }
   }
 }
 

@@ -197,11 +197,11 @@
       margin-top: 1rem;
     }
     @include breakpoint(screen640) {
-      width: calc(360px * .8);
+      max-width: calc(360px * .8);
       height: calc(75px * .8);
     }
     @include breakpoint(screen480) {
-      //width: 80%;
+      width: 100%;
       margin: 0 auto;
     }
     @include breakpoint(screen320) {

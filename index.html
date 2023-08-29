@@ -11,7 +11,7 @@
     <!--     <div class="background"></div> -->
     <div class="page__container">
 
-      <header class="header container">
+      <header id="main"  class="header container">
         <!--внутренняя часть хэдера - скрыта на мобилке -->
         <div class="header__inner">
           <img class="header__logo lazyloaded" src="./images/logo.png" alt="logo" />
@@ -47,7 +47,7 @@
         </div>
         <!-- меню навигации -->
         <div class="header__menu">
-          <nav class="nav">
+          <nav class="nav nav_header">
             <!-- пункты меню навигации -->
             <ul class="nav__list">
               <li class="nav__item">
@@ -82,7 +82,7 @@
       <main class="main">
 
         <!-- Заглавная страница - ИНВЕСТИЦИИ В СТРОИТЕЛЬСТВО  -->
-        <section id="main" class="container head-block">
+        <section class="container head-block">
           <div class="background"></div>
           <div class="head-block__inner" >
             <h1 class="head-block__title title">
@@ -530,13 +530,13 @@
           </div>
 
           <div class="quiz__grid">
-            <div class="quiz__form"
+            <div class="quiz__form-container"
 >
 
                 <img
                   src="./images/templates/TEMPLATE_Quiz.jpg"
                   alt="тут будет квиз"
-                  class="quiz__form_template"
+                  class="quiz__form-container_template"
                 />
 
             </div>
@@ -893,26 +893,23 @@
         </section>
 
         <!-- КОМАНДА -->
-<!--         <section id="team" class="team container">
-          <div class="team__block
-                      background-text
-                      background-text_team">
+        <section id="team" class="team container background-text
+        background-text_team">
+          <div class="team__block">
             <div class="background-decoration background-decoration_team"></div>
-            <div class="team__title">
-              <h2 class="title">
-                <span class="span-accent">
-                  Команда
-                </span>
-              </h2>
-            </div>
+            <h2 class="team__title title">
+              <span class="span-accent">
+                Команда
+              </span>
+            </h2>
             <p class="team__subtitle subtitle">
-              Только профессионалы с 10-летним опытом
+              Только профессионалы с 10&#8209;летним опытом
               в сфере строительства и недвижимости
             </p>
           </div>
 
           <div class="team__inner"
-          data-aos="flip-up">
+>
 
             <div class="team__item">
               <img class="team__photo"
@@ -922,7 +919,7 @@
                 <p class="team__name subtitle span-accent">
                   Павел Соколов
                 </p>
-                <p class="team__descriotion small-text">
+                <p class="team__description small-text">
                   гениральный директор
                 </p>
               </div>
@@ -937,7 +934,7 @@
                 <p class="team__name subtitle span-accent">
                   Петр Манько
                 </p>
-                <p class="team__descriotion small-text">
+                <p class="team__description small-text">
                   риэлтор
                 </p>
               </div>
@@ -951,20 +948,19 @@
                 <p class="team__name subtitle span-accent">
                   Елена Петрова
                 </p>
-                <p class="team__descriotion small-text">
+                <p class="team__description small-text">
                   риэлтор
                 </p>
               </div>
             </div>
-
           </div>
         </section>
- -->
+
 
 
 
         <!-- ПРЕИМУЩЕСТВА -->
-         <section id="advantages" class="advantages">
+        <section id="advantages" class="advantages container">
           <div class="background-text
           background-text_advantages">
           </div>
@@ -975,15 +971,13 @@
                   <span class="span-accent">преимущества</span>
                 </h2>
               </div>
-              <div class="advantages__subtitle">
-                <p class="subtitle">
+
+                <p class="advantages__subtitle subtitle">
                   сложно придумать новое в девелопменте,
                   <span class="span-accent span-accent_title">но мы смогли</span>
                 </p>
-              </div>
+
             </div>
-
-
             <div class="advantages__inner">
               <ul class="advantages__list"
               data-aos="fade-up">
@@ -1033,7 +1027,7 @@
         </section>
 
         <!-- Видео-блок - ПРОДАЕТСЯ -->
-<!--         <section id="video-block" class="video-block container"
+        <section id="video-block" class="video-block container"
                 data-aos="fade-up"
                 data-aos-delay="200">
           <div class="video-block__title">
@@ -1051,23 +1045,20 @@
               <div class="video__play"></div>
             </a>
           </div>
-        </section> -->
+        </section>
 
         <!-- ОТВЕТЫ НА ЧАСТЫЕ ВОПРОСЫ -->
-<!--         <section id="FAQ" class="faq container
+        <section id="FAQ" class="faq container
                                     background-text
                                     background-text_faq"
         >
 
         <div class=" background-decoration background-decoration_faq"></div>
           <div class="faq__grid">
-            <div class="faq__title">
-              <h2 class="title">
-                <span class="span-accent">Ответы</span>
-                на частые вопросы
-              </h2>
-            </div>
-
+            <h2 class="faq__title title">
+              <span class="span-accent">Ответы</span>
+              на частые вопросы
+            </h2>
             <div class="faq__inner">
               <ul class="faq__list">
                 <li class="faq__list-item"
@@ -1086,7 +1077,7 @@
                 <li class="faq__list-item"
                 data-aos="slide-left"
                 data-aos-delay="100">
-                  <div class="accordion faq__accordion">
+                  <div class="accordion faq__accordion ">
                     <h3 class=" faq__point subtitle">
                       Consectetur cillum incididunt nostrud commodo ut aliquip quis cupidatat irure?
                     </h3>
@@ -1116,19 +1107,19 @@
                 data-aos-delay="300">
                   <div class="accordion faq__accordion">
                     <h3 class=" faq__point subtitle">
-                      Laboris ut exercitation laboris velit laboris quis eiusmod reprehenderit Lorem quis irure non mollit ex?
+                      Laboris ut exercitation velit qui reprehenderit Lorem quis  non mollit ex?
                     </h3>
                   </div>
                   <div class="panel">
                     <p class="faq__description description">
-                      Est fugiat quis veniam aliquip dolor irure amet commodo ex voluptate id. Dolore qui magna aliquip aute in sit excepteur. Irure Lorem pariatur deserunt occaecat irure anim pariatur duis. Aliqua ea est ut voluptate laborum. Cupidatat ipsum quis aute eiusmod commodo adipisicing sint quis do. Amet do nostrud irure nulla id do proident labore ad qui cillum. Sunt officia do ipsum eu proident quis.
+                      Est fugiat quis aliquip dolor id. Dolore aute in sit excepteur. Irure Lorem pariatur deserunt occaecat irure anim pariatur duis. Aliqua ea est ut voluptate laborum. Cupidatat ipsum quis aute eiusmod commodo adipisicing sint quis do. Amet do nostrud irure nulla id do proident labore ad qui cillum. Sunt officia do ipsum eu proident quis.
                     </p>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
-        </section> -->
+        </section>
 
         <!-- Контакт-блок #3 - ПОРА ЛИЧНО ПОГОВОРИТЬ -->
         <section id="call-3" class="call-block call-block_3">
@@ -1196,7 +1187,7 @@
         </section>
 
         <!-- Финальный блок - ИНТЕРЕС-->
-<!--         <section id="final-test" class="final-test container"
+        <section id="final-test" class="final-test container"
         data-aos="fade-up">
           <div class="final-test__inner">
             <div class="final-test__title-block">
@@ -1211,8 +1202,8 @@
                 проявили интерес
               </h2>
               <p class="subtitle final-test__subtitle">
-                Ответьте на несколько вопросов и получите предварительный
-                расчет доходности ваших инвестиций и предложение проекта
+                Ответьте на несколько вопросов и получите предварительный
+                расчет доходности ваших инвестиций и предложение проекта
               </p>
             </div>
           <button
@@ -1223,69 +1214,66 @@
             Начать тест
           </button>
           </div>
-        </section> -->
+        </section>
 
 
       </main>
+      <footer class="footer container">
+        <div class="footer__inner">
+          <div class="footer__block">
+            <div class="footer__navigation">
+              <nav class="nav nav_footer">
+                <ul class="nav__list nav__list_footer">
+                  <li class="nav__item">
+                    <a class="link" href="conditions"> Условия </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="link" href="#income"> Как начать </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="link" href="#about-us"> О нас </a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="link" href="#FAQ"> Вопросы </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__social">
+              <a href="" class="link link_social">
+                <img
+                  class="lazyloaded"
+                  src="./images/svg/telegram.svg"
+                  alt=""
+                />
+              </a>
+              <a href="" class="link link_social">
+                <img
+                  class="lazyloaded"
+                  src="./images/svg/whatsapp.svg"
+                  alt=""
+                />
+              </a>
+              <a href="tel:+79219311501" class="link link_phone">
+                +7-921-931-15-01
+              </a>
+            </div>
+          </div>
 
-<!--       <footer class="footer">
-        <div class="footer__columns">
-          <div class="footer__column footer__column_content_copyright">
-            <a class="logo logo_place_footer" href="#">
-              <img src="./images/logo.png" alt="">
-            </a>
-            <p class="footer__author subtitle">
-              &copy; 2023. Real Estate Solutions
-            </p>
-          </div>
-          <div class="footer__column footer__column_content_info">
-            <h4 class="footer__column-heading description">Инвестиции в Турции</h4>
-            <nav class="footer__column-links">
-              <ul class="footer__column-list">
-                <li>
-                  <a class="footer__column-link description" href="#">
-                    Главная
-                  </a>
-                </li>
-                <li>
-                  <a class="footer__column-link description" href="#">
-                    Проекты
-                  </a>
-                </li>
-                <li>
-                  <a class="footer__column-link description" href="#">
-                    Команда
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer__column footer__column_content_social">
-            <h4 class="footer__column-heading description">Контакты</h4>
-            <nav class="footer__column-links">
-              <ul class="footer__column-list">
-                <li>
-                  <a class="footer__column-link link" href="#">
-                    <img class="footer__social-icon"
-                      src="./images/svg/telegram.svg"
-                      alt="Telegram">
-                        Telegram
-                  </a>
-                </li>
-                <li>
-                  <a class="footer__column-link link" href="#">
-                    <img class="footer__social-icon"
-                      src="./images/svg/whatsapp.svg"
-                      alt="WhatsApp">
-                        WhatsApp
-                  </a>
-                </li>
-              </ul>
-            </nav>
+          <div class="footer__block">
+            <div class="footer__copyright">
+              <p class="description">
+                &copy; 2023 Real Estate Solutions
+              </p>
+            </div>
+            <div class="footer__confidencial ">
+              <a class="link" href="#">
+                Политика конфиденциальности
+              </a>
+            </div>
           </div>
         </div>
-      </footer> -->
-    </div>
+      </footer>
     <!-- libs -->
 <!--     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

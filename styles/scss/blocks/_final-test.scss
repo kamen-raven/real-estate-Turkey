@@ -8,18 +8,42 @@
       margin: 0 0 2.5rem;
   }
     &__title-block{
+      margin-right: 25%;
+      @include breakpoint(screen960) {
+        margin-right: 0;
+      }
 
   }
     &__title{
       line-height: 150%;
-      max-width: 85%;
+      @include breakpoint(screen480) {
+        font-size: calc($title * .63);
+      }
   }
-    &__subtitle{
-      max-width: 75%;
-  }
+
     &__button{
       margin-top: 60px;
       width: 360px;
       height: 75px;
+
+      @include breakpoint(screen960) {
+        width: calc(360px * .9);
+        height: calc(75px * .9);
+      }
+
+      @include breakpoint(screen768) {
+        margin-top: 2.5rem;
+      }
+      @include breakpoint(screen640) {
+        max-width: calc(360px * .8);
+        height: calc(75px * .8);
+      }
+      @include breakpoint(screen480) {
+        width: 100%;
+        margin: 2.5rem auto 0;
+      }
+      @include breakpoint(screen320) {
+        //width: 100%;
+      }
   }
   }

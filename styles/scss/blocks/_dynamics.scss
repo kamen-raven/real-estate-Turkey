@@ -88,10 +88,15 @@
         grid-row: 2/3;
       }
       @include breakpoint(screen960) {
+        max-width: 80%;
+        margin: 2.5rem auto 0;
         grid-column: 1/2;
         grid-row: 3/4;
       }
+      @include breakpoint(screen768) {
+        max-width: 100%;
 
+      }
     }
   }
 

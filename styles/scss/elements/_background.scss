@@ -176,7 +176,7 @@
       width: 70%;
       height: 142px;
       margin-left: 30%;
-      background: url(../../../images/background/bg-text/О\ КОМПАНИИ.svg);
+      background: url(../../../images/background/bg-text/ОКОМПАНИИ.svg);
       background-repeat: no-repeat;
       background-size: contain;
 
@@ -193,17 +193,17 @@
   &_team {
 
     &::after {
-      content: "люди";
-      font-size: $decorate * 1.5;
-      font-weight: $medium;
+      z-index: -10;
+      content: "";
       position: absolute;
-      top: -15%;
-      right: -80px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1518) 0%, rgba(255, 255, 255, 0) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
+      top: -2%;
+      right: 0;
+      width: 50%;
+      height: 171px;
+
+      background: url(../../../images/background/bg-text/ЛЮДИ.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
       }
   }
 
@@ -226,18 +226,16 @@
 
     &_faq {
       &::after {
-        content: "ответы";
-        font-size: $decorate * 1.5;
-        font-weight: $medium;
-        text-transform: uppercase;
+        z-index: -10;
+        content: "";
         position: absolute;
         top: 15rem;
         left: 0;
-        background: linear-gradient(357.4deg, rgba(22, 178, 178, 0.0782) 5.94%, rgba(22, 178, 178, 0) 91.8%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent;
+        width: 100%;
+        height: 101px;
+        background: url(../../../images/background/bg-text/ОТВЕТЫ.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
         }
     }
 }
@@ -368,6 +366,9 @@
     right: 35%;
     width: 250px;
     height: 250px;
+    @include breakpoint(screen640) {
+      left: 0;
+    }
   }
 
   &_advantages {
@@ -379,12 +380,20 @@
   }
 
   &_faq {
+    z-index: -10;
     position: absolute;
     filter: blur(45px);
     top: 15%;
     left: 30%;
     width: 300px;
     height: 300px;
+
+
+    @include breakpoint(screen480) {
+      left: 0;
+      width: 250px;
+      height: 250px;
+    }
   }
 }
 
