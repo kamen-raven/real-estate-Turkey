@@ -3,53 +3,84 @@ import '../styles/scss/index.scss';
 
 import FancyBox from './libs/fancyapps/fancybox';
 import animatedScrollLib from './libs/aos/aos';
+import accordion from './libs/components/_accordion';
+import toTopButton from './libs/components/_to-top-button';
+import fixedMenu from './libs/components/_fixed-menu';
 
+/* подключаем библиотеки */
 FancyBox();
 animatedScrollLib();
-
-
-/* Функция для аккордиона в блоке ВОПРОСЫ */
-const acc = document.querySelectorAll(".accordion");
-
-let i;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      console.log("close")
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      console.log("open")
-    }
-  });
-}
+/* подключаем компоненты */
+fixedMenu(); //прилипание верхнего меню
+toTopButton(); // кнопка НАВЕРХ
+accordion(); // аккордеон
 
 
 
-const scrollPX = 300;
-const toTopButton = document.querySelector('.to-top-button');
-
-const getTop = () => window.scrollY || document.documentElement.scrollTop;
-
-window.addEventListener('scroll', () => {
-  if(getTop() > scrollPX) {
-    toTopButton.classList.add('show');
-  } else {
-    toTopButton.classList.remove('show');
-  }
-
-});
 
 
 
-//click
-toTopButton.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
+
+// script.js
+/* document.addEventListener('DOMContentLoaded', function() {
+  const fixedNav = document.getElementById('fixed-nav');
+  const sections = document.querySelectorAll('section');
+
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+          fixedNav.classList.add('active');
+      } else {
+          fixedNav.classList.remove('active');
+      }
+
+      sections.forEach(section => {
+          if (window.scrollY >= section.offsetTop - fixedNav.offsetHeight && window.scrollY < section.offsetTop + section.offsetHeight) {
+              const links = fixedNav.querySelectorAll('a');
+              links.forEach(link => link.classList.remove('active'));
+              const currentLink = fixedNav.querySelector(`a[href="#${section.id}"]`);
+              if (currentLink) {
+                  currentLink.classList.add('active');
+              }
+          }
+      });
   });
 });
 
+ */
 
+
+
+
+
+
+
+
+
+
+
+
+/* // script.js
+document.addEventListener('DOMContentLoaded', function() {
+  const burgerIcon = document.getElementById('burger-icon');
+  const menu = document.getElementById('menu');
+  const closeButton = document.getElementById('close-button');
+
+  burgerIcon.addEventListener('click', function() {
+      menu.classList.toggle('active');
+  });
+
+  closeButton.addEventListener('click', function() {
+      menu.classList.remove('active');
+  });
+
+  document.addEventListener('click', function(event) {
+      const isClickInsideMenu = menu.contains(event.target);
+      const isClickInsideIcon = burgerIcon.contains(event.target);
+
+      if (!isClickInsideMenu && !isClickInsideIcon && menu.classList.contains('active')) {
+          menu.classList.remove('active');
+      }
+  });
+});
+
+ */

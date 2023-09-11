@@ -1,0 +1,76 @@
+.mobile-menu {
+  display: none;
+  width: 100%;
+
+  @include breakpoint(screen960) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__burger{
+      display: block;
+      height: 30px;
+      width: 30px;
+      margin: 0.5rem 0;
+      background-image: url(../../images/svg/burger.svg);
+      background-repeat: no-repeat;
+      cursor: pointer;
+      border: 1px solid transparent;
+      &:focus {
+        border: 1px solid $accent-blue;
+      }
+  }
+
+  &__close{
+      display: block;
+      height: 30px;
+      width: 30px;
+
+      background-image: url(../../images/svg/close.svg);
+      background-repeat: no-repeat;
+      cursor: pointer;
+      border: 1px solid transparent;
+
+      &:focus {
+        border: 1px solid $accent-blue;
+      }
+
+      @include breakpoint(screen1024) {
+        margin-top: .5rem;
+        margin-right: calc(($margin-side / 3) );
+      }
+      @include breakpoint(screen640) {
+        max-width: calc(100% - ($margin-side / 4) * 2);
+      }
+      @include breakpoint(screen480) {
+        max-width: calc(100% - ($margin-side / 6) * 2);
+      }
+      @include breakpoint(screen320) {
+        max-width: calc(100% - ($margin-side / 8) * 2);
+      }
+
+
+
+
+
+  }
+
+
+  &__inner {
+    padding: 1.2rem;
+    position: relative;
+    display: none;
+    flex-direction: column;
+    max-width: 340px;
+    width: 100%;
+    right: -100%;
+    right: 0;
+    height: 100vh;
+    background: orange;
+    position: fixed;
+    z-index: 9999;
+    transition: 0.6s ease;
+    top: 0;
+    opacity: 1;
+  }
+}

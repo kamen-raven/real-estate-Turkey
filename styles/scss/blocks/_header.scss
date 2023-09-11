@@ -6,10 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  max-width: calc(100% - $margin-side*2);
   margin: 0 auto;
   width: 100%;
-  margin-top: calc($gap / 4);
+  max-width: calc(100% - $margin-side*2);
+ // margin-top: calc($gap / 4);
 
   @include breakpoint(screen1280) {
     max-width: calc(100% - ($margin-side / 1.5) * 2);
@@ -30,14 +30,14 @@
 
 
   &__inner {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 1.2rem;
+    padding: 1.2rem 0;
     position: relative;
-
     @include breakpoint(screen960) {
-      align-items: center;
+      padding: .3rem 0;
     }
 
   }
@@ -57,9 +57,19 @@
     object-fit: contain;
 
     @include breakpoint(screen960) {
-      width: 80px;
+      display: none;
     }
+
+      &_mob {
+        display: none;
+        width: 80px;
+
+        @include breakpoint(screen960) {
+          display: flex;
+        }
+      }
   }
+
   &__social {
     display: flex;
     gap: 1.2em;
@@ -67,47 +77,22 @@
     padding-bottom: 4px;
   }
 
-  &__menu {
+  &__nav-container{
+    //max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+
     @include breakpoint(screen960) {
       display: none;
     }
-  }
-
-  &__mob {
 
   }
 
-  &__burger {
-    display: none;
-    height: 30px;
-    width: 30px;
-    background-image: url(../../images/svg/burger.svg);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    border: 1px solid transparent;
-
-    &:focus {
-      border: 1px solid $accent-blue;
-    }
-    &_active {
-      display: block;
-    }
-
+  &__mobile-container {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__burger-close {
-    display: none;
-    height: 30px;
-    width: 30px;
-    background-image: url(../../images/svg/close.svg);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    border: 1px solid transparent;
-
-    &:focus {
-      border: 1px solid $accent-blue;
-    }
-  }
 }
 
 

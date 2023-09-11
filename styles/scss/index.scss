@@ -11,6 +11,7 @@
 
 //подключаем базовые стили
 @import './base/base';
+@import './base/utils';
 
 //подключаем UI-компоненты
 @import './elements/text-block';
@@ -22,6 +23,8 @@
 @import './elements/accordion';
 @import './elements/scrollbar';
 @import './elements/to-top-button';
+@import './elements/burger-menu';
+@import './elements/fixed-menu';
 
 //подключаем блоки
 @import './blocks/header';
@@ -45,9 +48,9 @@
 @import './blocks/footer';
 
 //dev-style
-/* body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
+body, div, main, section, header, nav, ul, li, footer, figure, figcaption, span, img, button, a, p, h1, h2, h3, fieldset, input, form, button {
   outline: solid red 1px;
-} */
+}
 
 //
 

@@ -1,6 +1,6 @@
 html, body {
   scrollbar-color: $accent-blue $black-bg; /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: .8rem;
+  scrollbar-width: $scrollbar-width;
 
 
   @include breakpoint(screen480) {
@@ -13,7 +13,7 @@ html, body {
 
 /* полоса прокрутки (скроллбар) */
 ::-webkit-scrollbar {
-  width: .8rem; /* ширина для вертикального скролла */
+  width: $scrollbar-width; /* ширина для вертикального скролла */
   height: .5rem; /* высота для горизонтального скролла */
   background-color: $black-bg;
 

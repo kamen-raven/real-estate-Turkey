@@ -98,11 +98,3 @@ html {
 
 
 
-.mob {
-  display: none;
-
-  @include breakpoint(screen960) {
-    display: block;
-  }
-}
-

@@ -1,12 +1,12 @@
 @mixin breakpoint($point) {
-  @if  $point == screen1280 {
-    @media (max-width: 1280px) {@content;}
+  @if  $point == screen1600 {
+    @media (max-width: 1600px) {@content;}
+  }
+  @else if $point == screen1280 {
+    @media (max-width: 1280px)  {@content;}
   }
   @else if $point == screen1024 {
     @media (max-width: 1024px) {@content;}
-  }
-  @else if $point == screen1023 {
-    @media (max-width: 1023px) {@content;}
   }
   @else if $point == screen960 {
     @media (max-width: 960px) {@content;}
@@ -27,8 +27,4 @@
     @media (max-width: 320px) {@content;}
   }
 }
-/*
-@include breakpoint(screen) {
 
-}
- */

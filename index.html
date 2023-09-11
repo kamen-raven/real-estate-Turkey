@@ -15,11 +15,6 @@
         <!--внутренняя часть хэдера - скрыта на мобилке -->
         <div class="header__inner">
           <img class="header__logo lazyloaded" src="./images/logo.png" alt="logo" />
-          <!-- кнопки бургер и закрытие -->
-          <div class="header__mob mob">
-            <div class="header__burger header__burger_active"></div>
-            <div class="header__burger-close"></div>
-          </div>
           <div class="header__block">
             <div class="header__social">
               <a href="" class="link link_social">
@@ -45,8 +40,11 @@
             </a>
           </div>
         </div>
-        <!-- меню навигации -->
-        <div class="header__menu">
+
+
+
+        <!-- меню навигации DESKTOP -->
+        <div class="header__nav-container">
           <nav class="nav nav_header">
             <!-- пункты меню навигации -->
             <ul class="nav__list">
@@ -77,6 +75,56 @@
             </ul>
           </nav>
         </div>
+
+        <!-- меню навигации MOBILE -->
+          <div class="header__mobile-container">
+            <!-- кнопки бургер и закрытие -->
+            <div class="mobile-menu">
+              <img class="header__logo header__logo_mob lazyloaded" src="./images/logo.png" alt="logo" />
+              <div class="mobile-menu__burger"></div>
+              <div class="mobile-menu__inner">
+                <div class="mobile-menu__close"></div>
+                <nav class="nav nav_mobile">
+                  <!-- пункты меню навигации -->
+                  <ul class="nav__list nav__list_mobile">
+                    <li class="nav__item">
+                      <a class="link" href="#projects"> Проекты 2023</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="link" href="#conditions"> Условия </a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="link" href="#income"> Как начать </a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="link" href="#quiz"> Рассчитать </a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="link" href="#warranty"> Гарантии </a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="link" href="#about-us"> О нас </a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="link" href="#FAQ"> Вопросы </a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="link" href="#contacts"> Контакты </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+
+
+
+
+            </div>
+
+          </div>
+
+
+
       </header>
 
       <main class="main">
