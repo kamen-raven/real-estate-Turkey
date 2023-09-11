@@ -1,76 +1,119 @@
 .mobile-menu {
   display: none;
   width: 100%;
-
+  z-index: 300;
   @include breakpoint(screen960) {
     display: flex;
     justify-content: space-between;
   }
 
-  &__burger{
+  &__button {
+      position: absolute;
+      top: .5rem;
+      right: 0;
       display: block;
       height: 30px;
       width: 30px;
-      margin: 0.5rem 0;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      border: 1px solid transparent;
+      z-index: 310;
+      margin-right: calc($margin-side / 3);
+      margin-top: .3rem;
       background-image: url(../../images/svg/burger.svg);
-      background-repeat: no-repeat;
-      cursor: pointer;
-      border: 1px solid transparent;
-      &:focus {
-        border: 1px solid $accent-blue;
-      }
-  }
+      transition: background-image 0.6s ease;
+      animation: menu-spin-back 0.4s ease-in-out;
+      animation-fill-mode: forwards;
 
-  &__close{
-      display: block;
-      height: 30px;
-      width: 30px;
 
-      background-image: url(../../images/svg/close.svg);
-      background-repeat: no-repeat;
-      cursor: pointer;
-      border: 1px solid transparent;
-
-      &:focus {
-        border: 1px solid $accent-blue;
-      }
-
-      @include breakpoint(screen1024) {
-        margin-top: .5rem;
-        margin-right: calc(($margin-side / 3) );
-      }
       @include breakpoint(screen640) {
-        max-width: calc(100% - ($margin-side / 4) * 2);
+        margin-right: calc($margin-side / 4);
       }
       @include breakpoint(screen480) {
-        max-width: calc(100% - ($margin-side / 6) * 2);
+        margin-right: calc($margin-side / 6);
       }
       @include breakpoint(screen320) {
-        max-width: calc(100% - ($margin-side / 8) * 2);
+        margin-right: calc($margin-side / 8);
       }
 
+      &:focus {
+        border: 1px solid $accent-blue;
+      }
 
-
-
-
+      &_opened {
+          transition: all 0.5s ease;
+          background-image: url(../../images/svg/close.svg);
+          animation: menu-spin 0.4s ease-in-out;
+          animation-fill-mode: forwards;
+      }
   }
+
+
 
 
   &__inner {
-    padding: 1.2rem;
-    position: relative;
-    display: none;
+    display: flex;
     flex-direction: column;
-    max-width: 340px;
+    justify-content: space-between;
+    max-width: 320px;
     width: 100%;
-    right: -100%;
-    right: 0;
-    height: 100vh;
-    background: orange;
+    height: calc(100vh - 10rem);
+    background: $black-bg;
     position: fixed;
-    z-index: 9999;
-    transition: 0.6s ease;
     top: 0;
-    opacity: 1;
+    right: -100%;
+    opacity: 0;
+    z-index: 300;
+    transition:  0.6s ease;
+    border-left: 1px solid rgba($color: $white, $alpha: .1);
+
+
+
+    padding-top: 5rem;
+    padding: 5rem calc($margin-side / 3);
+
+
+    @include breakpoint(screen640) {
+      padding: 5rem calc($margin-side / 4);
+    }
+    @include breakpoint(screen480) {
+      padding: 5rem calc($margin-side / 6);
+      max-width: calc(100% - ($margin-side / 6)*2);
+    }
+    @include breakpoint(screen320) {
+      padding: 5rem calc($margin-side / 8);
+      max-width: calc(100% - ($margin-side / 8)*2);
+    }
+
+
+    &_open {
+      right: 0;
+      opacity: 1;
+      transition:  0.5s ease;
+    }
+  }
+}
+
+@keyframes menu-spin {
+  50% {
+    border-radius: 100%;
+  }
+
+  100% {
+    border-radius: 100%;
+    transform: rotate(180deg);
+  }
+}
+
+
+
+@keyframes menu-spin-back {
+  50% {
+    border-radius: 0;
+  }
+
+  100% {
+    border-radius: 0;
+    transform: rotate(360deg);
   }
 }

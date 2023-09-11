@@ -10,7 +10,7 @@
     border-radius: $border-radius;
     object-fit: cover;
     opacity: .5;
-    z-index: -1;
+    z-index: -3;
     &:hover {
       cursor: pointer;
     }
@@ -33,7 +33,7 @@
       width: 5rem;
       height: 5rem;
       opacity: 1;
-      z-index: 1;
+      z-index: -1;
       background-color: $accent-blue;
       border-radius: 50%;
       background-image: url(../../images/svg/play.svg);
@@ -68,7 +68,7 @@
     width: 5em;
     height: 5em;
     opacity: 1;
-    z-index: 1;
+    z-index: -1;
 
     border-radius: 50%;
     border: solid $accent-blue 2px;

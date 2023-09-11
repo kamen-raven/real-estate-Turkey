@@ -6,6 +6,7 @@
   line-height: 100%;
   color: $white;
   font-weight: $extra-light;
+
   &:hover {
   cursor: pointer;
   transition: color .4s;
@@ -52,8 +53,18 @@
     }
   }
 
+  &_burger-menu {
+    font-size: $description;
+  }
 
 }
 
+.link_active {
+  transition: color .4s;
+  color: $accent-blue;
+  &:hover {
+    cursor: default;
+    }
 
+}
 

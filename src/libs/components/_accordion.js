@@ -9,10 +9,8 @@ const accordion = () => {
       let panel = this.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
-        console.log("close")
       } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
-        console.log("open")
       }
     });
   }

@@ -50,6 +50,15 @@
     @include breakpoint(screen960) {
       display: none;
     }
+
+    &_mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2.5rem 0 0;
+    }
+
+
   }
   &__logo {
     display: flex;
@@ -60,7 +69,7 @@
       display: none;
     }
 
-      &_mob {
+      &_mobile {
         display: none;
         width: 80px;
 

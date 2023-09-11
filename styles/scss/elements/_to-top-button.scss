@@ -7,7 +7,7 @@
   height: 50px;
   cursor: pointer;
   visibility: hidden;
-  z-index: 100;
+  z-index: 0;
   border-radius: 50%;
   background-color: $accent-blue;
   opacity: 0;
@@ -35,8 +35,8 @@
 
   &:after {
     content: '';
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 75%;
     background-image: url(../../images/svg/arrow-up.svg);
     background-repeat: no-repeat;
     background-size: contain;

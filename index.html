@@ -55,13 +55,13 @@
                 <a class="link" href="#conditions"> Условия </a>
               </li>
               <li class="nav__item">
-                <a class="link" href="#income"> Как начать </a>
+                <a class="link" href="#cooperation"> Как начать </a>
               </li>
               <li class="nav__item">
                 <a class="link" href="#quiz"> Рассчитать </a>
               </li>
               <li class="nav__item">
-                <a class="link" href="#warranty"> Гарантии </a>
+                <a class="link" href="#guarantees"> Гарантии </a>
               </li>
               <li class="nav__item">
                 <a class="link" href="#about-us"> О нас </a>
@@ -70,7 +70,7 @@
                 <a class="link" href="#FAQ"> Вопросы </a>
               </li>
               <li class="nav__item">
-                <a class="link" href="#contacts"> Контакты </a>
+                <a class="link" href="#call-3"> Контакты </a>
               </li>
             </ul>
           </nav>
@@ -80,39 +80,62 @@
           <div class="header__mobile-container">
             <!-- кнопки бургер и закрытие -->
             <div class="mobile-menu">
-              <img class="header__logo header__logo_mob lazyloaded" src="./images/logo.png" alt="logo" />
-              <div class="mobile-menu__burger"></div>
+              <img class="header__logo header__logo_mobile lazyloaded" src="./images/logo.png" alt="logo" />
+              <div class="mobile-menu__button"></div>
               <div class="mobile-menu__inner">
-                <div class="mobile-menu__close"></div>
                 <nav class="nav nav_mobile">
                   <!-- пункты меню навигации -->
                   <ul class="nav__list nav__list_mobile">
                     <li class="nav__item">
-                      <a class="link" href="#projects"> Проекты 2023</a>
+                      <a class="link link_burger-menu" href="#projects"> Проекты 2023</a>
                     </li>
                     <li class="nav__item">
-                      <a class="link" href="#conditions"> Условия </a>
+                      <a class="link link_burger-menu" href="#conditions"> Условия </a>
                     </li>
                     <li class="nav__item">
-                      <a class="link" href="#income"> Как начать </a>
+                      <a class="link link_burger-menu" href="#cooperation"> Как начать </a>
                     </li>
                     <li class="nav__item">
-                      <a class="link" href="#quiz"> Рассчитать </a>
+                      <a class="link link_burger-menu" href="#quiz"> Рассчитать </a>
                     </li>
                     <li class="nav__item">
-                      <a class="link" href="#warranty"> Гарантии </a>
+                      <a class="link link_burger-menu" href="#guarantees"> Гарантии </a>
                     </li>
                     <li class="nav__item">
-                      <a class="link" href="#about-us"> О нас </a>
+                      <a class="link link_burger-menu" href="#about-us"> О нас </a>
                     </li>
                     <li class="nav__item">
                       <a class="link" href="#FAQ"> Вопросы </a>
                     </li>
                     <li class="nav__item">
-                      <a class="link" href="#contacts"> Контакты </a>
+                      <a class="link link_burger-menu" href="#call-3"> Контакты </a>
                     </li>
                   </ul>
                 </nav>
+                <div class="header__block header__block_mobile">
+                  <div class="header__social">
+                    <a href="" class="link link_social">
+                      <img
+                        class="lazyloaded"
+                        src="./images/svg/telegram.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a href="" class="link link_social">
+                      <img
+                        class="lazyloaded"
+                        src="./images/svg/whatsapp.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <a href="tel:+79219311501" class="link link_phone">
+                    +7-921-931-15-01
+                  </a>
+                  <a href="#modal-call" class="link link_call js-btn">
+                    Обратный звонок
+                  </a>
+                </div>
               </div>
 
 
@@ -130,7 +153,7 @@
       <main class="main">
 
         <!-- Заглавная страница - ИНВЕСТИЦИИ В СТРОИТЕЛЬСТВО  -->
-        <section class="container head-block">
+        <section class="container head-block section">
           <div class="background"></div>
           <div class="head-block__inner" >
             <h1 class="head-block__title title">
@@ -168,7 +191,7 @@
         </section>
 
         <!-- Проекты - ПРОЕКТЫ 2023 ГОДА -->
-        <section id="projects" class="projects container">
+        <section id="projects" class="projects container section">
           <div class="projects__title">
             <h2 class="title">
               Проекты
@@ -265,7 +288,7 @@
         </section>
 
         <!-- Контакт-блок №1 - ОТВЕТИМ НА ЛЮБЫЕ ВОПРОСЫ-->
-        <section id="call" class="call-block call-block_1">
+        <section id="call" class="call-block call-block_1 section">
           <div class="call-block__inner">
 
             <h2 class="title call-block__title">
@@ -335,7 +358,8 @@
         <!-- Условия - УСЛОВИЯ СОТРУДНИЧЕСТВА В ЦИФРАХ-->
         <section id="conditions" class="conditions container
                                         background-text
-                                        background-text_conditions"
+                                        background-text_conditions
+                                        section"
         >
           <div
             class="background-decoration background-decoration_conditions"
@@ -427,7 +451,7 @@
         </section>
 
         <!-- Варианты инвестиций - СУЩЕСТВУЕТ 2 ВАРИАНТА ИНВЕСТИЦИЙ-->
-        <section id="info" class="info">
+        <section id="info" class="info section">
             <h2 class="info__title title">
               Существует 2 классических
               <span class="span-accent">
@@ -520,7 +544,7 @@
 
         <!-- Сотрудничество - КАК НАЧАТЬ СОТРУДНИЧЕСТВО -->
         <section id="cooperation" class="cooperation
-                                        container"
+                                        container section"
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -566,7 +590,7 @@
         </section>
 
         <!-- Квиз - ПРОСЧИТАЙТЕ ДОХОДНОСТЬ -->
-        <section id="quiz" class="quiz container">
+        <section id="quiz" class="quiz container section">
           <div class="quiz__inner">
               <h2 class="quiz__title title">
                 <span class="span-accent"> Просчитайте </span>
@@ -595,7 +619,7 @@
         </section>
 
         <!-- Варианты инвестиций - СУЩЕСТВУЕТ 2 ВАРИАНТА ИНВЕСТИЦИЙ-->
-        <section id="dynamics" class="dynamics container"
+        <section id="dynamics" class="dynamics container section"
                   data-aos="fade-up"
                   data-aos-delay="200">
           <div class="dynamics__grid">
@@ -630,7 +654,7 @@
         </section>
 
         <!-- ЮРИДИЧЕСКАЯ СХЕМА-->
-        <section id="law" class="law container">
+        <section id="law" class="law container section">
           <div class="law__title">
             <h2 class="title">
               <span class="span-accent"> Юридическая </span>
@@ -733,7 +757,7 @@
         </section>
 
         <!-- Контакт-блок #2 - ПОРА ЛИЧНО ПОГОВОРИТЬ -->
-        <section id="call-2" class="call-block call-block_2">
+        <section id="call-2" class="call-block call-block_2 section">
           <div class="call-block__inner">
             <h2 class="title call-block__title">
               Пора поговорить
@@ -799,7 +823,7 @@
 
         <!-- ГАРАНТИИ-->
         <section id="guarantees" class="guarantees container
-                                        background-text background-text_guarantees"
+                                        background-text background-text_guarantees section"
         >
         <div class=" background-decoration background-decoration_guarantees "></div>
           <div class="guarantees__grid">
@@ -888,7 +912,7 @@
         <!-- О НАС-->
         <section id="about-us" class="about-us
                                     background-text
-                                    background-text_about-us">
+                                    background-text_about-us section">
           <div class="about-us__title">
             <h2 class="title">
               <span class="span-accent">О </span>нас
@@ -942,7 +966,7 @@
 
         <!-- КОМАНДА -->
         <section id="team" class="team container background-text
-        background-text_team">
+        background-text_team section">
           <div class="team__block">
             <div class="background-decoration background-decoration_team"></div>
             <h2 class="team__title title">
@@ -1008,7 +1032,7 @@
 
 
         <!-- ПРЕИМУЩЕСТВА -->
-        <section id="advantages" class="advantages container">
+        <section id="advantages" class="advantages container section">
           <div class="background-text
           background-text_advantages">
           </div>
@@ -1075,7 +1099,7 @@
         </section>
 
         <!-- Видео-блок - ПРОДАЕТСЯ -->
-        <section id="video-block" class="video-block container"
+        <section id="video-block" class="video-block container section"
                 data-aos="fade-up"
                 data-aos-delay="200">
           <div class="video-block__title">
@@ -1098,7 +1122,7 @@
         <!-- ОТВЕТЫ НА ЧАСТЫЕ ВОПРОСЫ -->
         <section id="FAQ" class="faq container
                                     background-text
-                                    background-text_faq"
+                                    background-text_faq section"
         >
 
         <div class=" background-decoration background-decoration_faq"></div>
@@ -1170,7 +1194,7 @@
         </section>
 
         <!-- Контакт-блок #3 - ПОРА ЛИЧНО ПОГОВОРИТЬ -->
-        <section id="call-3" class="call-block call-block_3">
+        <section id="call-3" class="call-block call-block_3 section">
           <div class="call-block__inner">
             <h2 class="title call-block__title">
               Пора поговорить
@@ -1235,7 +1259,7 @@
         </section>
 
         <!-- Финальный блок - ИНТЕРЕС-->
-        <section id="final-test" class="final-test container"
+        <section id="final-test" class="final-test container section"
         data-aos="fade-up">
           <div class="final-test__inner">
             <div class="final-test__title-block">

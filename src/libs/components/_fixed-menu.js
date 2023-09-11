@@ -11,7 +11,8 @@ const fixedMenu = () => {
   const navMobOffset = navMobContainer.offsetTop; // определяем расстояние от высоты
   const navMobHeight = navMobContainer.offsetHeight; // определяем высоту контейнера НАВИГАЦИИ
 
-
+  const sections = document.querySelectorAll('section');
+  const fixedNav = document.querySelectorAll('nav');
 
 
   window.addEventListener('scroll', () => {
@@ -39,7 +40,56 @@ const fixedMenu = () => {
 
       header.setAttribute("style", "margin-bottom: 0"); // обнуляем сдвиг шапки
     }
+
+
+
+    sections.forEach(section => {
+      if (window.scrollY >= section.offsetTop - header.offsetHeight && window.scrollY < section.offsetTop + section.offsetHeight ) {
+        fixedNav.forEach(nav => {
+          const links = nav.querySelectorAll('a');
+          links.forEach(link => link.classList.remove('link_active'));
+          const currentLink = nav.querySelector(`a[href="#${section.id}"]`);
+          if (currentLink) {
+              currentLink.classList.add('link_active');
+          }
+        })
+
+
+      }
+  });
+
+
   });
 }
 
 export default fixedMenu;
+
+
+// script.js
+/* document.addEventListener('DOMContentLoaded', function() {
+  const fixedNav = document.querySelector('nav_header');
+  const sections = document.querySelectorAll('section');
+
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 100) {
+          fixedNav.classList.add('active');
+      } else {
+          fixedNav.classList.remove('active');
+      }
+
+      sections.forEach(section => {
+          if (window.scrollY >= section.offsetTop - fixedNav.offsetHeight && window.scrollY < section.offsetTop + section.offsetHeight) {
+              const links = fixedNav.querySelectorAll('a');
+              links.forEach(link => link.classList.remove('active'));
+              const currentLink = fixedNav.querySelector(`a[href="#${section.id}"]`);
+              if (currentLink) {
+                  currentLink.classList.add('active');
+              }
+          }
+      });
+
+
+
+  });
+});
+ */

@@ -21,66 +21,35 @@ accordion(); // аккордеон
 
 
 
+
+
+
+
+
+
+
+
+
 // script.js
-/* document.addEventListener('DOMContentLoaded', function() {
-  const fixedNav = document.getElementById('fixed-nav');
-  const sections = document.querySelectorAll('section');
-
-  window.addEventListener('scroll', function() {
-      if (window.scrollY > 100) {
-          fixedNav.classList.add('active');
-      } else {
-          fixedNav.classList.remove('active');
-      }
-
-      sections.forEach(section => {
-          if (window.scrollY >= section.offsetTop - fixedNav.offsetHeight && window.scrollY < section.offsetTop + section.offsetHeight) {
-              const links = fixedNav.querySelectorAll('a');
-              links.forEach(link => link.classList.remove('active'));
-              const currentLink = fixedNav.querySelector(`a[href="#${section.id}"]`);
-              if (currentLink) {
-                  currentLink.classList.add('active');
-              }
-          }
-      });
-  });
-});
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-/* // script.js
 document.addEventListener('DOMContentLoaded', function() {
-  const burgerIcon = document.getElementById('burger-icon');
-  const menu = document.getElementById('menu');
-  const closeButton = document.getElementById('close-button');
+  const burgerButton = document.querySelector('.mobile-menu__button');
+  const mobileMenu = document.querySelector('.mobile-menu__inner');
 
-  burgerIcon.addEventListener('click', function() {
-      menu.classList.toggle('active');
+  burgerButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('mobile-menu__inner_open');
+    burgerButton.classList.toggle('mobile-menu__button_opened');
   });
 
-  closeButton.addEventListener('click', function() {
-      menu.classList.remove('active');
-  });
 
   document.addEventListener('click', function(event) {
-      const isClickInsideMenu = menu.contains(event.target);
-      const isClickInsideIcon = burgerIcon.contains(event.target);
+      const isClickInsideMenu = mobileMenu.contains(event.target);
+      const isClickInsideIcon = burgerButton.contains(event.target);
 
-      if (!isClickInsideMenu && !isClickInsideIcon && menu.classList.contains('active')) {
-          menu.classList.remove('active');
+      if (!isClickInsideMenu && !isClickInsideIcon && mobileMenu.classList.contains('mobile-menu__inner_open')) {
+        mobileMenu.classList.remove('mobile-menu__inner_open');
+        burgerButton.classList.toggle('mobile-menu__button_opened');
       }
   });
 });
 
- */
+
