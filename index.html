@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/real-estate-Turkey/assets/shield-3652fa67.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real estate in Turkey</title>
-    <script type="module" crossorigin src="/real-estate-Turkey/assets/index-197f23cc.js"></script>
-    <link rel="stylesheet" href="/real-estate-Turkey/assets/index-f85feaea.css">
+    <script type="module" crossorigin src="/real-estate-Turkey/assets/index-ffd21433.js"></script>
+    <link rel="stylesheet" href="/real-estate-Turkey/assets/index-f31971fc.css">
   </head>
 
   <body class="page">
@@ -18,7 +18,7 @@
       <header id="main"  class="header container">
         <!--внутренняя часть хэдера - скрыта на мобилке -->
           <div class="header__inner">
-            <img class="header__logo lazyloaded" src="/real-estate-Turkey/assets/logo-af8fae35.png" alt="logo" />
+            <img class="header__logo lazyloaded" src="/real-estate-Turkey/assets/logo2-9bffb5c5.png" alt="logo" />
             <div class="header__block">
               <div class="header__social">
                 <a href="" class="link link_social">
@@ -83,7 +83,7 @@
             <!-- кнопки бургер и закрытие -->
             <div class="mobile-menu">
               <a href="#" class="link link_logo">
-                <img class="header__logo header__logo_mobile lazyloaded" src="/real-estate-Turkey/assets/logo-af8fae35.png" alt="logo" />
+                <img class="header__logo header__logo_mobile lazyloaded" src="/real-estate-Turkey/assets/logo2-9bffb5c5.png" alt="logo" />
               </a>
               <div class="mobile-menu__button"></div>
               <div class="mobile-menu__inner">
@@ -960,7 +960,7 @@
 
         <!-- КОМАНДА -->
         <section id="team" class="team container background-text
-        background-text_team section">
+                            background-text_team section">
           <div class="team__block">
             <div class="background-decoration background-decoration_team"></div>
             <h2 class="team__title title">
@@ -974,51 +974,65 @@
             </p>
           </div>
 
-          <div class="team__inner"
->
+          <div class="team__inner">
 
-            <div class="team__item">
-              <img class="team__photo"
-                    src="/real-estate-Turkey/assets/Pavel S-e2701720.jpg"
-                    alt="" >
-              <div class="team__caption">
-                <p class="team__name subtitle span-accent">
-                  Павел Соколов
-                </p>
-                <p class="team__description small-text">
-                  гениральный директор
-                </p>
+
+            <div class="team__slider">
+<!--               <div class="button team__slider-button team__slider-button_prev"
+                    id="prev">
+
+
+                  </div> -->
+
+              <div class="team__item">
+                <img class="team__photo"
+                      src="/real-estate-Turkey/assets/Pavel S-e2701720.jpg"
+                      alt="" >
+                <div class="team__caption">
+                  <p class="team__name subtitle span-accent">
+                    Павел Соколов
+                  </p>
+                  <p class="team__description small-text">
+                    генеральный директор
+                  </p>
+                </div>
               </div>
-            </div>
-
-
-            <div class="team__item">
-              <img class="team__photo"
-                    src="/real-estate-Turkey/assets/Petr M-60bfb18e.jpg"
-                    alt="" >
-              <div class="team__caption">
-                <p class="team__name subtitle span-accent">
-                  Петр Манько
-                </p>
-                <p class="team__description small-text">
-                  риэлтор
-                </p>
+              <div class="team__item">
+                <img class="team__photo"
+                      src="/real-estate-Turkey/assets/Petr M-60bfb18e.jpg"
+                      alt="" >
+                <div class="team__caption">
+                  <p class="team__name subtitle span-accent">
+                    Петр Манько
+                  </p>
+                  <p class="team__description small-text">
+                    риелтор
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div class="team__item">
-              <img class="team__photo"
-                    src="/real-estate-Turkey/assets/Elen P-72bbdf38.jpg"
-                    alt="" >
-              <div class="team__caption">
-                <p class="team__name subtitle span-accent">
-                  Елена Петрова
-                </p>
-                <p class="team__description small-text">
-                  риэлтор
-                </p>
+              <div class="team__item">
+                <img class="team__photo"
+                      src="/real-estate-Turkey/assets/Elen P-72bbdf38.jpg"
+                      alt="" >
+                <div class="team__caption">
+                  <p class="team__name subtitle span-accent">
+                    Елена Петрова
+                  </p>
+                  <p class="team__description small-text">
+                    риелтор
+                  </p>
+                </div>
               </div>
-            </div>
+
+<!--               <div class="button team__slider-button team__slider-button_next"
+              id="next"></div>
+
+            </div> -->
+
+
+
+
+
           </div>
         </section>
 
@@ -1353,7 +1367,7 @@
               Заполните форму <br> и мы свяжемся с вами в ближайшее время
             </h2>
             <form id="contactForm"
-                  class="popup__form "
+                  class="popup__form popup__form_contact-form"
                   name="contactForm"
                   action="https://formspree.io/f/mknlzewe"
                   method="POST"
@@ -1376,6 +1390,7 @@
                         type="tel"
                         name="phone"
                         placeholder="Телефон"
+                        minlength="11"
                         maxlength="30"
                         value=""
                         required>
