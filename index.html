@@ -5,17 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/real-estate-Turkey/assets/shield-3652fa67.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real estate in Turkey</title>
-    <script type="module" crossorigin src="/real-estate-Turkey/assets/index-ffd21433.js"></script>
-    <link rel="stylesheet" href="/real-estate-Turkey/assets/index-f31971fc.css">
+    <script type="module" crossorigin src="/real-estate-Turkey/assets/index-1f9cce9b.js"></script>
+    <link rel="stylesheet" href="/real-estate-Turkey/assets/index-8fbf76f0.css">
   </head>
 
   <body class="page">
-    <!--     <div class="background"></div> -->
-
 
     <div class="page__container">
 
-      <header id="main"  class="header container">
+      <header id="header" class="header container">
         <!--внутренняя часть хэдера - скрыта на мобилке -->
           <div class="header__inner">
             <img class="header__logo lazyloaded" src="/real-estate-Turkey/assets/logo2-9bffb5c5.png" alt="logo" />
@@ -147,7 +145,10 @@
           </div>
       </header>
 
-      <main class="main">
+
+
+
+      <main id="main" class="main">
         <!-- Заглавная страница - ИНВЕСТИЦИИ В СТРОИТЕЛЬСТВО  -->
         <section class="container head-block section">
           <div class="background"></div>
@@ -960,7 +961,7 @@
 
         <!-- КОМАНДА -->
         <section id="team" class="team container background-text
-                            background-text_team section">
+        background-text_team section">
           <div class="team__block">
             <div class="background-decoration background-decoration_team"></div>
             <h2 class="team__title title">
@@ -974,60 +975,100 @@
             </p>
           </div>
 
-          <div class="team__inner">
+          <div class="team__inner splide" aria-label="Team">
+            <!-- BUTTONS -->
+            <div class="splide__arrows team__slider-buttons">
+              <button id="btn-prev" class="splide__arrow splide__arrow--prev
+              button team__slider-button team__slider-button_prev">
+              </button>
+              <button id="btn-next" class="splide__arrow splide__arrow--next
+              button team__slider-button team__slider-button_next">
+              </button>
+            </div>
 
-
-            <div class="team__slider">
-<!--               <div class="button team__slider-button team__slider-button_prev"
-                    id="prev">
-
-
-                  </div> -->
-
-              <div class="team__item">
-                <img class="team__photo"
-                      src="/real-estate-Turkey/assets/Pavel S-e2701720.jpg"
-                      alt="" >
-                <div class="team__caption">
-                  <p class="team__name subtitle span-accent">
-                    Павел Соколов
-                  </p>
-                  <p class="team__description small-text">
-                    генеральный директор
-                  </p>
-                </div>
-              </div>
-              <div class="team__item">
-                <img class="team__photo"
-                      src="/real-estate-Turkey/assets/Petr M-60bfb18e.jpg"
-                      alt="" >
-                <div class="team__caption">
-                  <p class="team__name subtitle span-accent">
-                    Петр Манько
-                  </p>
-                  <p class="team__description small-text">
-                    риелтор
-                  </p>
-                </div>
-              </div>
-              <div class="team__item">
-                <img class="team__photo"
-                      src="/real-estate-Turkey/assets/Elen P-72bbdf38.jpg"
-                      alt="" >
-                <div class="team__caption">
-                  <p class="team__name subtitle span-accent">
-                    Елена Петрова
-                  </p>
-                  <p class="team__description small-text">
-                    риелтор
-                  </p>
-                </div>
-              </div>
-
-<!--               <div class="button team__slider-button team__slider-button_next"
-              id="next"></div>
-
-            </div> -->
+            <div class=" splide__track">
+              <ul class=" splide__list team__slider">
+                <li class="team__item splide__slide">
+                  <img class="team__photo"
+                        src="/real-estate-Turkey/assets/Pavel S-e2701720.jpg"
+                        alt="" >
+                  <div class="team__caption">
+                    <p class="team__name subtitle span-accent">
+                      Павел Соколов
+                    </p>
+                    <p class="team__description small-text">
+                      генеральный директор
+                    </p>
+                  </div>
+                </li>
+                <li class="team__item splide__slide">
+                  <img class="team__photo"
+                        src="/real-estate-Turkey/assets/Petr M-60bfb18e.jpg"
+                        alt="" >
+                  <div class="team__caption">
+                    <p class="team__name subtitle span-accent">
+                      Петр Манько
+                    </p>
+                    <p class="team__description small-text">
+                      риелтор
+                    </p>
+                  </div>
+                </li>
+                <li class="team__item splide__slide">
+                  <img class="team__photo"
+                        src="/real-estate-Turkey/assets/Elen P-72bbdf38.jpg"
+                        alt="" >
+                  <div class="team__caption">
+                    <p class="team__name subtitle span-accent">
+                      Елена Петрова
+                    </p>
+                    <p class="team__description small-text">
+                      риелтор
+                    </p>
+                  </div>
+                </li>
+                <!-- template -->
+                <li class="team__item splide__slide">
+                  <img class="team__photo"
+                        src="/real-estate-Turkey/assets/IM-8bf861d2.jpg"
+                        alt="" >
+                  <div class="team__caption">
+                    <p class="team__name subtitle span-accent">
+                      Тони Старк
+                    </p>
+                    <p class="team__description small-text">
+                      Железный человек
+                    </p>
+                  </div>
+                </li>
+                <li class="team__item splide__slide">
+                  <img class="team__photo"
+                        src="/real-estate-Turkey/assets/CA-5ae1e2f5.jpg"
+                        alt="" >
+                  <div class="team__caption">
+                    <p class="team__name subtitle span-accent">
+                      Стивен Роджерс
+                    </p>
+                    <p class="team__description small-text">
+                      Капитан Америка
+                    </p>
+                  </div>
+                </li>
+                <li class="team__item splide__slide">
+                  <img class="team__photo"
+                        src="/real-estate-Turkey/assets/Tor-f01f43a0.jpg"
+                        alt="" >
+                  <div class="team__caption">
+                    <p class="team__name subtitle span-accent">
+                      Тор Одинсон
+                    </p>
+                    <p class="team__description small-text">
+                      Бог грома
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
 
 
@@ -1035,8 +1076,6 @@
 
           </div>
         </section>
-
-
 
 
         <!-- ПРЕИМУЩЕСТВА -->
@@ -1352,67 +1391,64 @@
         </div>
       </footer>
 
-
     </div>
-      <!-- TO-TOP-BUTTON -->
-      <div class="to-top-button">
-      </div>
-      <!--POPUP Contact-form-->
-      <div class="popup popup__contact-form">
-        <div class="popup__container container">
-          <div class="popup__close-button">
-          </div>
-          <div class="popup__content ">
-            <h2 class="popup__title subtitle">
-              Заполните форму <br> и мы свяжемся с вами в ближайшее время
-            </h2>
-            <form id="contactForm"
-                  class="popup__form popup__form_contact-form"
-                  name="contactForm"
-                  action="https://formspree.io/f/mknlzewe"
-                  method="POST"
-                  novalidate>
-              <fieldset class="popup__fieldset">
-                <input class="popup__input description"
-                        id="input-name"
-                        type="text"
-                        name="name"
-                        placeholder="Имя"
-                        minlength="2"
-                        maxlength="40"
-                        value=""
-                        required>
-                <span class="popup__input-error"
-                      id="input-name-error">
-                </span>
-                <input class="popup__input description"
-                        id="input-phone"
-                        type="tel"
-                        name="phone"
-                        placeholder="Телефон"
-                        minlength="11"
-                        maxlength="30"
-                        value=""
-                        required>
-                <span class="popup__input-error"
-                      id="input-phone-error">
-                </span>
-              </fieldset>
-              <button class="popup__submit-button button"
-                      type="submit">
-                Отправить
-              </button>
-            </form>
-          </div>
+
+    <!-- TO-TOP-BUTTON -->
+    <div class="to-top-button">
+    </div>
+
+    <!-- POPUPS -->
+    <!-- Contact-form popup -->
+    <div class="popup popup__contact-form">
+      <div class="popup__container container">
+        <div class="popup__close-button">
+        </div>
+        <div class="popup__content ">
+          <h2 class="popup__title subtitle">
+            Заполните форму <br> и мы свяжемся с вами в ближайшее время
+          </h2>
+          <form id="contactForm"
+                class="popup__form popup__form_contact-form"
+                name="contactForm"
+                action="https://formspree.io/f/mknlzewe"
+                method="POST"
+                novalidate>
+            <fieldset class="popup__fieldset">
+              <input class="popup__input description"
+                      id="input-name"
+                      type="text"
+                      name="name"
+                      placeholder="Имя"
+                      minlength="2"
+                      maxlength="40"
+                      value=""
+                      required>
+              <span class="popup__input-error"
+                    id="input-name-error">
+              </span>
+              <input class="popup__input description"
+                      id="input-phone"
+                      type="tel"
+                      name="phone"
+                      placeholder="Телефон"
+                      minlength="11"
+                      maxlength="30"
+                      value=""
+                      required>
+              <span class="popup__input-error"
+                    id="input-phone-error">
+              </span>
+            </fieldset>
+            <button class="popup__submit-button button"
+                    type="submit">
+              Отправить
+            </button>
+          </form>
         </div>
       </div>
+    </div>
 
-
-    <!-- libs -->
-<!--     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script> -->
+    <!-- scripts -->
     
   </body>
 </html>
