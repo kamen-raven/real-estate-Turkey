@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/real-estate-Turkey/assets/shield-3652fa67.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real estate in Turkey</title>
-    <script type="module" crossorigin src="/real-estate-Turkey/assets/index-1f9cce9b.js"></script>
-    <link rel="stylesheet" href="/real-estate-Turkey/assets/index-8fbf76f0.css">
+    <script type="module" crossorigin src="/real-estate-Turkey/assets/index-da7edc0d.js"></script>
+    <link rel="stylesheet" href="/real-estate-Turkey/assets/index-3655af5a.css">
   </head>
 
   <body class="page">
@@ -59,7 +59,7 @@
                   <a class="link" href="#cooperation"> Как начать </a>
                 </li>
                 <li class="nav__item">
-                  <a class="link" href="#quiz"> Рассчитать </a>
+                  <a class="link" href="#quiz-block"> Рассчитать </a>
                 </li>
                 <li class="nav__item">
                   <a class="link" href="#guarantees"> Гарантии </a>
@@ -98,7 +98,7 @@
                       <a class="link link_burger-menu" href="#cooperation"> Как начать </a>
                     </li>
                     <li class="nav__item">
-                      <a class="link link_burger-menu" href="#quiz"> Рассчитать </a>
+                      <a class="link link_burger-menu" href="#quiz-block"> Рассчитать </a>
                     </li>
                     <li class="nav__item">
                       <a class="link link_burger-menu" href="#guarantees"> Гарантии </a>
@@ -586,33 +586,102 @@
         </section>
 
         <!-- Квиз - ПРОСЧИТАЙТЕ ДОХОДНОСТЬ -->
-        <section id="quiz" class="quiz container section">
-          <div class="quiz__inner">
-              <h2 class="quiz__title title">
+        <section id="quiz-block" class="quiz-block container section">
+          <div class="quiz-block__inner">
+              <h2 class="quiz-block__title title">
                 <span class="span-accent"> Просчитайте </span>
                 доходность своих вложений
               </h2>
-              <p class="quiz__subtitle subtitle">
+              <p class="quiz-block__subtitle subtitle">
                 Ответьте на несколько вопросов
               </p>
           </div>
 
-          <div class="quiz__grid">
-            <div class="quiz__form-container"
->
+          <div class="quiz-block__grid">
 
-                <img
-                  src="/real-estate-Turkey/assets/TEMPLATE_Quiz-2fd0b8e9.jpg"
-                  alt="тут будет квиз"
-                  class="quiz__form-container_template"
-                />
+
+            <div id="quiz" class="quiz">
+              <div class="quiz__container">
+
+                <div class="quiz__progress" id="quiz-progress">
+                  <div class="quiz__progress-wrapper">
+                    <div class="quiz__progress-bar"></div>
+                    <p class="quiz__progress-description small-text">
+                      % пройден
+                    </p>
+                  </div>
+                </div>
+                  <form id="quiz-form" class="quiz__form" method="POST">
+<!--                     <div class="quiz__form-container">
+                      <h3 class="quiz__question subtitle">Question 1 Culpa cillum tempor minim ex commodo culpa in exercitation culpa do?</h3>
+                      <ul class="quiz__answers-list">
+                        <li class="quiz__answer-item">
+                          <label class="quiz__answer-label">
+                            <input class="quiz__answer-input" type="checkbox" name="01">
+                            <span class="quiz__answer-pseudo-item quiz__answer-pseudo-item_checkbox"></span>
+                            <span class="quiz__answer-span description">Answer 1 Proident in ipsum sint adipisicing proident eu tempor.</span>
+                          </label>
+                        </li>
+                        <li class="quiz__answer-item">
+                          <label class="quiz__answer-label">
+                            <input class="quiz__answer-input" type="checkbox" name="01">
+                            <span class="quiz__answer-pseudo-item quiz__answer-pseudo-item_checkbox"></span>
+                            <span class="quiz__answer-span description" >Answer 2 Laborum aliqua amet  elit ipsum proident ea ipsum.</span>
+                          </label>
+                        </li>
+                        <li class="quiz__answer-item">
+                          <label class="quiz__answer-label">
+                            <input class="quiz__answer-input" type="radio" name="01">
+                            <span class="quiz__answer-pseudo-item quiz__answer-pseudo-item_radio"></span>
+                            <span class="quiz__answer-span description">Answer 3 Eiusmod irure  enim mollit cillum.</span>
+                          </label>
+                        </li>
+                        <li class="quiz__answer-item">
+                          <label class="quiz__answer-label">
+                            <input class="quiz__answer-input" type="radio" name="01">
+                            <span class="quiz__answer-pseudo-item quiz__answer-pseudo-item_radio"></span>
+                            <span class="quiz__answer-span description">Answer 4 Pariatur enim eiusmod dolore amet.</span>
+                          </label>
+                        </li>
+                      </ul>
+                      <div class="quiz__buttons">
+                        <button id="quiz-button-prev"
+                                class="quiz__button quiz__button_prev button"
+                                type="button">
+                          Назад
+                        </button>
+                        <button id="quiz-button-next"
+                                class="quiz__button quiz__button_next button"
+                                type="button">
+                          Далее
+                        </button>
+                      </div>
+                    </div> -->
+                  </form>
+
+
+
+              </div>
 
             </div>
-            <div class="quiz__item">
-              <img src="/real-estate-Turkey/assets/Quiz-image-73f7dc0f.jpg" alt="" class="quiz__img" />
+
+
+
+            <div class="quiz-block__item">
+              <img src="/real-estate-Turkey/assets/Quiz-image-73f7dc0f.jpg" alt="" class="quiz-block__img" />
             </div>
           </div>
         </section>
+
+
+
+
+
+
+
+
+
+
 
         <!-- Варианты инвестиций - СУЩЕСТВУЕТ 2 ВАРИАНТА ИНВЕСТИЦИЙ-->
         <section id="dynamics" class="dynamics container section"
@@ -978,10 +1047,10 @@
           <div class="team__inner splide" aria-label="Team">
             <!-- BUTTONS -->
             <div class="splide__arrows team__slider-buttons">
-              <button id="btn-prev" class="splide__arrow splide__arrow--prev
+              <button id="slider-prev" class="splide__arrow splide__arrow--prev
               button team__slider-button team__slider-button_prev">
               </button>
-              <button id="btn-next" class="splide__arrow splide__arrow--next
+              <button id="slider-next" class="splide__arrow splide__arrow--next
               button team__slider-button team__slider-button_next">
               </button>
             </div>
@@ -1326,7 +1395,7 @@
             </div>
           <a
             class="final-test__button button button__blink"
-            href="#quiz"
+            href="#quiz-block"
           >
             Начать тест
           </a>
